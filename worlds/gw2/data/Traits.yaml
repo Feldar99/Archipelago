@@ -1,0 +1,100 @@
+WARRIOR:
+  Core:
+    - Strength
+    - Arms
+    - Defense
+    - Tactics
+    - Discipline
+  Elite:
+    - Berserker
+    - Spellbreaker
+    - Bladesworn
+
+GUARDIAN:
+  Core:
+    - Zeal
+    - Radiance
+    - Valor
+    - Honor
+    - Virtues
+  Elite:
+    - Dragonhunter
+    - Firebrand
+    - Willbender
+REVENANT:
+  Core:
+    - Corruption
+    - Retribution
+    - Salvation
+    - Invocation
+    - Devastation
+  Elite:
+    - Herald
+    - Renegade
+    - Vindicator
+THIEF:
+  Core:
+    - Deadly Arts
+    - Critical Strikes
+    - Shadow Arts
+    - Acrobatics
+    - Trickery
+  Elite:
+    - Daredevil
+    - Deadeye
+    - Specter
+ENGINEER:
+  Core:
+    - Explosives
+    - Firearms
+    - Inventions
+    - Alchemy
+    - Tools
+  Elite:
+    - Scrapper
+    - Holosmith
+    - Mechanist
+RANGER:
+  Core:
+    - Marksmanship
+    - Skirmishing
+    - Wilderness Survival
+    - Nature Magic
+    - Beastmastery
+  Elite:
+    - Druid
+    - Soulbeast
+    - Untamed
+MESMER:
+  Core:
+    - Domination
+    - Dueling
+    - Chaos
+    - Inspiration
+    - Illusions
+  Elite:
+    - Chronomancer
+    - Mirage
+    - Virtuoso
+ELEMENTALIST:
+  Core:
+    - Fire
+    - Air
+    - Earth
+    - Water
+    - Arcane
+  Elite:
+    - Tempest
+    - Weaver
+    - Catalyst
+NECROMANCER:
+  Core:
+    - Spite
+    - Curses
+    - Death Magic
+    - Blood Magic
+    - Soul Reaping
+  Elite:
+    - Reaper
+    - Scourge
+    - Harbinger

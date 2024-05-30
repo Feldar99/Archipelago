@@ -1,0 +1,552 @@
+WARRIOR:
+  Healing:
+    - Mending
+    - "To the Limit!"
+    - Healing Signet
+    - Defiant Stance
+  Utility:
+    - Banner of Defense
+    - Banner of Discipline
+    - Banner of Strength
+    - Banner of Tactics
+    - Bull's Charge
+    - Kick
+    - Stomp
+    - Throw Bolas
+    - "Fear Me!"
+    - "For Great Justice!"
+    - "On My Mark!"
+    - "Shake it Off!"
+    - Dolyak Signet
+    - Signet of Fury
+    - Signet of Might
+    - Signet of Stamina
+    - Balanced Stance
+    - Berserker Stance
+    - Endure Pain
+    - Frenzy
+  Elite:
+    - Battle Standard
+    - Rampage
+    - Signet of Rage
+  Berserker:
+    Healing:
+      - Blood Reckoning
+    Utility:
+      - Outrage
+      - Shattering Blow
+      - Sundering Leap
+      - Wild Blow
+    Elite:
+      - Head Butt
+  Spellbreaker:
+    Healing:
+      - Natural Healing
+    Utility:
+      - Sight beyond Sight
+      - Featherfoot Grace
+      - Imminent Threat
+      - Break Enchantments
+    Elite:
+      - Winds of Disenchantment
+  Bladesworn:
+    Healing:
+      - Combat Stimulant
+    Utility:
+      - Flow Stabilizer
+      - Overcharged Cartridges
+      - Electric Fence
+      - Dragonspike Mine
+    Elite:
+      - Tactical Reload
+GUARDIAN:
+  Healing:
+    - "Receive the Light!"
+    - Litany of Wrath
+    - Shelter
+    - Signet of Resolve
+  Utility:
+    - Hallowed Ground
+    - Purging Flames
+    - Sanctuary
+    - Wall of Reflection
+    - Contemplation of Purity
+    - Judge's Intervention
+    - Merciful Intervention
+    - Smite Condition
+    - "Hold the Line!"
+    - "Advance!"
+    - "Save Yourselves!"
+    - "Stand Your Ground!"
+    - Bane Signet
+    - Signet of Judgement
+    - Signet of Mercy
+    - Signet of Wrath
+    - Bow of Truth
+    - Hammer of Wisdom
+    - Shield of the Avenger
+    - Sword of Justice
+  Elite:
+    - "Feel My Wrath!"
+    - Renewed Focus
+    - Signet of Courage
+  Dragonhunter:
+    Healing:
+      - Purification
+    Utility:
+      - Fragments of Faith
+      - Light's Judgement
+      - Test of Faith
+      - Procession of Blades
+    Elite:
+      - Dragon's Maw
+  Firebrand:
+    Healing:
+      - Mantra of Solace
+    Utility:
+      - Mantra of Flame
+      - Mantra of Lore
+      - Mantra of Truth
+      - Mantra of Potence
+    Elite:
+      - Mantra of Liberation
+  Willbender:
+    Healing:
+      - Reversal of Fortune
+    Utility:
+      - Flash Combo
+      - Whirling Light
+      - Heel Crack
+      - Rolling Light
+    Elite:
+      - Heaven's Palm
+REVENANT:
+  Legend:
+    - Legendary Assassin Stance
+    - Legendary Demon Stance
+    - Legendary Dwarf Stance
+    - Legendary Centaur Stance
+  Herald:
+    Legend:
+      - Legendary Dragon Stance
+  Renegade:
+    Legend:
+      - Legendary Renegade Stance
+  Vindicator:
+    Legend:
+      - Legendary Alliance Stance
+THIEF:
+  Healing:
+    - Hide in Shadows
+    - Signet of Malice
+    - Withdraw
+    - Skelk Venom
+  Utility:
+    - Blinding Powder
+    - Shadow Refuge
+    - Shadowstep
+    - Smoke Screen
+    - Prepare Pitfall
+    - Prepare Thousand Needles
+    - Prepare Shadow Portal
+    - Prepare Seal Area
+    - Assassin's Signet
+    - Infiltrator's Signet
+    - Signet of Agility
+    - Signet of Shadows
+    - Caltrops
+    - Haste
+    - Roll for Initiative
+    - Scorpion Wire
+    - Devourer Venom
+    - Ice Drake Venom
+    - Skale Venom
+    - Spider Venom
+  Elite:
+    - Thieves Guild
+    - Basilisk Venom
+    - Daer Storm
+  Daredevil:
+    Healing:
+      - Channeled Vigor
+    Utility:
+      - Bandit's Defense
+      - Distracting Daggers
+      - Fist Flurry
+      - Impaling Daggers
+    Elite:
+      - Impact Strike
+  Deadeye:
+    Healing:
+      - Malicious Restoration
+    Utility:
+      - Binding Shadow
+      - Mercy
+      - Shadow Flare
+      - Shadow Gust
+    Elite:
+      - Shadow Meld
+  Specter:
+    Healing:
+      - Well of Gloom
+    Utility:
+      - Well of Bounty
+      - Well of Silence
+      - Well of Sorrow
+      - Well of Tears
+    Elite:
+      - Shadowfall
+ENGINEER:
+  Healing:
+    - A.E.D.
+    - Elixir H
+    - Healing Turret
+    - Med Kit
+  Utility:
+    - Bomb Kit
+    - Grenade Kit
+    - Elixir Gun
+    - Flamethrower
+    - Tool Kit
+    - Elixir B
+    - Elixir C
+    - Elixir R
+    - Elixir S
+    - Elixir U
+    - Personal Battering Ram
+    - Rocket Boots
+    - Slick Shoes
+    - Throw Mine
+    - Utility Goggles
+    - Flame Turret
+    - Net Turret
+    - Rifle Turret
+    - Harpoon Turret
+    - Rocket Turret
+    - Thumper Turret
+  Elite:
+    - Elite Mortar Kit
+    - Elixir X
+    - Supply Crate
+  Scrapper:
+    Healing:
+      - Medic Gyro
+    Utility:
+      - Blast Gyro
+      - Bulwark Gyro
+      - Purge Gyro
+      - Shredder Gyro
+    Elite:
+      - Sneak Gyro
+  Holosmith:
+    Healing:
+      - Coolant Blast
+    Utility:
+      - Spectrum Shield
+      - Hard Light Arena
+      - Laser Disk
+      - Photon Wall
+    Elite:
+      - Prime Light Beam
+  Mechanist:
+    Healing:
+      - Rectifier Signet
+    Utility:
+      - Barrier Signet
+      - Force Signet
+      - Shift Signet
+      - Superconducting Signet
+    Elite:
+      - Overclock Signet
+RANGER:
+  Healing:
+    - "We Heal as One!"
+    - Water Spirit
+    - Troll Unguent
+    - Healing Spring
+  Utility:
+    - "Guard!"
+    - "Protect Me!"
+    - "Search and Rescue!"
+    - "Sic 'Em!"
+    - Signet of Renewal
+    - Signet of Stone
+    - Signet of the Hunt
+    - Signet of the Wild
+    - Frost Spirit
+    - Stone Spirit
+    - Storm Spirit
+    - Sun Spirit
+    - Lightning Reflexes
+    - Muddy Terrain
+    - Quickening Zephyr
+    - Sharpening Stone
+    - Flame Trap
+    - Frost Trap
+    - Spike Trap
+    - Viper's Nest
+  Elite:
+    - "Strength of the Pack!"
+    - Spirit of Nature
+    - Entangle
+  Druid:
+    Healing:
+      - Glyph of Rejuvenation
+    Utility:
+      - Glyph of Alignment
+      - Glyph of Equality
+      - Glyph of Unity
+      - Glyph of the Tides
+    Elite:
+      - Glyph of the Stars
+  Soulbeast:
+    Healing:
+      - Bear Stance
+    Utility:
+      - Dolyak Stance
+      - Griffon Stance
+      - Moa Stance
+      - Vulture Stance
+    Elite:
+      - One Wolf Pack
+  Untamed:
+    Healing:
+      - Perilous Gift
+    Utility:
+      - Exploding Spores
+      - Mutate Conditions
+      - Unatural Traversal
+      - Nature's Binding
+    Elite:
+      - Forest's Fortification
+MESMER:
+  Healing:
+    - Ether Feast
+    - Mirror
+    - Mantra of Recovery
+    - Signet of the Ether
+  Utility:
+    - Decoy
+    - Mirror Images
+    - Feedback
+    - Null Field
+    - Portal Entre
+    - Veil
+    - Arcane Thievery
+    - Blink
+    - Illusion of Life
+    - Mimic
+    - Mantra of Concentration
+    - Mantra of Distraction
+    - Mantra of Pain
+    - Mantra of Resolve
+    - Phantasmal Defender
+    - Phantasmal Disenchanter
+    - Signet of Domination
+    - Signet of Illusions
+    - Signet of Inspiration
+    - Signet of Midnight
+  Elite:
+    - Time Warp
+    - Mass Invisibility
+    - Signet of Humility
+  Chronomancer:
+    Healing:
+      - Well of Eternity
+    Utility:
+      - Well of Action
+      - Well of Calamity
+      - Well of Precognition
+      - Well of Senility
+    Elite:
+      - Gravity Well
+  Mirage:
+    Healing:
+      - False Oasis
+    Utility:
+      - Crystal Sands
+      - Illusionary Ambush
+      - Mirage Advance
+      - Sand through Glass
+    Elite:
+      - Jaunt
+  Virtuoso:
+    Healing:
+      - Twin Blade Restoration
+    Utility:
+      - Blade Renewal
+      - Rain of Swords
+      - Psychic Force
+      - Sword of Decimation
+    Elite:
+      - Thousand Cuts
+ELEMENTALIST:
+  Healing:
+    - Arcane Brilliance
+    - Ether Renewal
+    - Glyph of Elemental Harmony
+    - Signet of Restoration
+  Utility:
+    - Arcane Blast
+    - Arcane Power
+    - Arcane Shield
+    - Arcane Wave
+    - Armor of Earth
+    - Cleansing Fire
+    - Lightning Flash
+    - Mist Form
+    - Conjure Earth Shield
+    - Conjure Flame Axe
+    - Conjure Frost Bow
+    - Conjure Lightning Hammer
+    - Glyph of Elemental Power
+    - Glyph of Lesser Elementals
+    - Glyph of Renewal
+    - Glyph of Storms
+    - Signet of Air
+    - Signet of Earth
+    - Signet of Fire
+    - Signet of Water
+  Elite:
+    - Conjure Fiery Greatsword
+    - Glyph of Elementals
+    - Tornado
+    - Whirlpool
+  Tempest:
+    Healing:
+      - "Wash the Pain Away!"
+    Utility:
+      - "Feel the Burn!"
+      - "Eye of the Storm!"
+      - "Aftershock!"
+      - "Flash-Freeze!"
+    Elite:
+      - "Rebound!"
+  Weaver:
+    Healing:
+      - Aquatic Stance
+    Utility:
+      - Primordial Stance
+      - Stone Resonance
+      - Unravel
+      - Twist of Fate
+    Elite:
+      - Weave Self
+  Catalyst:
+    Healing:
+      - Soothing Water
+    Utility:
+      - Relentless Fire
+      - Shattering Ice
+      - Invigorating Air
+      - Fortified Earth
+    Elite:
+      - Elemental Celerity
+NECROMANCER:
+  Healing:
+    - Consume Conditions
+    - Summon Blood Fiend
+    - Signet of Vampirism
+    - Well of Blood
+  Utility:
+    - Blood Is Power
+    - Corrosive Poison Cloud
+    - Corrupt Boon
+    - Epidemic
+    - Summon Bone Fiend
+    - Summon Bone Minions
+    - Summon Flesh Wurm
+    - Summon Shadow Fiend
+    - Plague Signet
+    - Signet of Spite
+    - Signet of the Locust
+    - Signet of Undeath
+    - Spectral Armor
+    - Spectral Grasp
+    - Spectral Walk
+    - Spectral Ring
+    - Well of Corruption
+    - Well of Darkness
+    - Well of Power
+    - Well of Suffering
+  Elite:
+    - Plaguelands
+    - Summon Flesh Golem
+    - Lich Form
+  Reaper:
+    Healing:
+      - "Your Soul is Mine!"
+    Utility:
+      - "Nothing Can Save You!"
+      - "Rise!"
+      - "Suffer!"
+      - "You Are All Weaklings!"
+    Elite:
+      - "Chilled to the Bone!"
+  Scourge:
+    Healing:
+      - Sand Flare
+    Utility:
+      - Trail of Anguish
+      - Desiccate
+      - Sand Swell
+      - Serpent Siphon
+    Elite:
+      - Ghastly Breach
+  Harbinger:
+    Healing:
+      - Elixir of Promise
+    Utility:
+      - Elixir of Risk
+      - Elixir of Anguish
+      - Elixir of Bliss
+      - Elixir of Ignorance
+    Elite:
+      - Elixir of Ambition
+ASURA:
+  Utility:
+    - Pain Inverter
+    - Radiation Field
+    - Technobabble
+  Elite:
+    - Summon 7-Series Golem
+    - Summon D-Series Golem
+    - Summon Power Suit
+CHARR:
+  Utility:
+    - Battle Roar
+    - Hidden Pistol
+    - Shrapnel Mine
+  Elite:
+    - Artillery Barrage
+    - Charrzooka
+    - Warband Support
+HUMAN:
+  Healing:
+    - Prayer to Dwayna
+  Utility:
+  - Prayer to Kormir
+  - Prayer to Lyssa
+  Elite:
+  - Avatar of Melandru
+  - Hounds of Balthazar
+  - Reaper of Grenth
+NORN:
+  Utility:
+    - Call Owl
+    - Call Wurm
+  Elite:
+    - Become the Bear
+    - Become the Raven
+    - Become the Snow Leopard
+    - Become the Wolf
+SYLVARI:
+  Healing:
+    - Healing Seed
+  Utility:
+    - Grasping Vines
+    - Seed Turret
+  Elite:
+    - Summon Druid Spirit
+    - Summon Sylvan Hound
+    - Take Root

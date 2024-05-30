@@ -1,0 +1,204 @@
+Axe:
+  Mainhand:
+    - Warrior
+    - Ranger
+    - Guardian:
+        Firebrand
+    - Thief:
+        Artisan of Arms
+    - Necromancer
+    - Mesmer:
+        Mirage
+  Offhand:
+    - Warrior
+    - Ranger
+    - Revenant
+Dagger:
+  Mainhand:
+    - Warrior:
+        Spellbreaker
+    - Ranger:
+        Soulbeast
+    - Thief
+    - Elementalist
+    - Necromancer
+    - Mesmer:
+        Virtuoso
+  Offhand:
+    - Warrior:
+        Spellbreaker
+    - Thief
+    - Elementalist
+    - Necromancer
+    - Ranger
+Mace:
+  Mainhand:
+    - Warrior
+    - Ranger:
+        Artisan of Arms
+    - Guardian
+    - Revenant
+    - Engineer:
+        Mechanist
+  Offhand:
+    - Warrior
+    - Ranger:
+        Artisan of Arms
+Pistol:
+  Mainhand:
+    - Guardian:
+        Artisan of Arms
+    - Engineer
+    - Thief
+    - Necromancer:
+        Harbinger
+    - Elementalist:
+        Artisan of Arms
+  Offhand:
+    - Guardian:
+        Artisan of Arms
+    - Engineer
+    - Thief
+    - Warrior:
+        Bladesworn
+    - Mesmer
+Sword:
+  Mainhand:
+    - Revenant
+    - Warrior
+    - Mesmer
+    - Necromancer:
+        Artisan of Arms
+    - Guardian
+    - Engineer:
+        Holosmith
+    - Ranger
+    - Thief
+    - Elementalist: Weaver
+  Offhand:
+    - Guardian:
+        Willbender
+    - Revenant
+    - Warrior
+    - Mesmer
+    - Necromancer:
+        Artisan of Arms
+Scepter:
+  Mainhand:
+    - Guardian
+    - Revenant:
+        Artisan of Arms
+    - Thief:
+        Specter
+    - Elementalist
+    - Mesmer
+    - Necromancer
+Focus:
+  Offhand:
+    - Guardian
+    - Elementalist
+    - Mesmer
+    - Necromancer
+Shield:
+  Offhand:
+    - Guardian
+    - Revenant:
+        Herald
+    - Warrior
+    - Engineer
+    - Mesmer:
+        Chronomancer
+Torch:
+  Offhand:
+    - Guardian
+    - Warrior:
+        Berserker
+    - Ranger
+    - Mesmer
+    - Necromancer:
+        Scourge
+Warhorn:
+  Offhand:
+    - Warrior
+    - Ranger
+    - Elementalist:
+        Tempest
+    - Necromancer
+Greatsword:
+  TwoHanded:
+    - Guardian
+    - Revenant:
+        Vindicator
+    - Warrior
+    - Ranger
+    - Mesmer
+    - Necromancer:
+        Reaper
+Hammer:
+  TwoHanded:
+    - Guardian
+    - Revenant
+    - Warrior
+    - Engineer:
+        Scrapper
+    - Ranger:
+        Untamed
+    - Elementalist:
+        Catalyst
+Longbow:
+  TwoHanded:
+    - Guardian:
+        Dragonhunter
+    - Warrior
+    - Ranger
+Rifle:
+  TwoHanded:
+    - Warrior
+    - Engineer
+    - Thief:
+        Deadeye
+    - Mesmer:
+        Artisan of Arms
+ShortBow:
+  TwoHanded:
+    - Revenant:
+        Renegade
+    - Ranger
+    - Thief
+    - Engineer:
+        Artisan of Arms
+Staff:
+  TwoHanded:
+    - Guardian
+    - Warrior:
+        Artisan of Arms
+    - Revenant
+    - Ranger:
+        Druid
+    - Thief:
+        Daredevil
+    - Elementalist
+    - Mesmer
+    - Necromancer
+HarpoonGun:
+  Aquatic:
+    - Warrior
+    - Engineer
+    - Ranger
+    - Thief
+Spear:
+  Aquatic:
+    - Guardian
+    - Revenant
+    - Warrior
+    - Ranger
+    - Thief
+    - Mesmer
+    - Necromancer
+Trident:
+  Aquatic:
+    - Guardian
+    - Revenant
+    - Elementalist
+    - Mesmer
+    - Necromancer
