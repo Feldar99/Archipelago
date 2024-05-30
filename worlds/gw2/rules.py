@@ -47,7 +47,6 @@ def has_skill(state: CollectionState, player: int, group: str, count: int, elite
         if skill_count >= count:
             return True
 
-    print("Missing " + group + " Skill")
     return False
 
 
@@ -67,7 +66,6 @@ def has_full_spec(state: CollectionState, player: int, elite_spec: Optional[str]
     specs_unlocked = 0
     if elite_spec is not None:
         if not state.has("Progressive " + elite_spec + " Trait", player, 3):
-            print("Missing 3 " + elite_spec + " Traits")
             return False
         specs_unlocked = 1
 
@@ -77,7 +75,6 @@ def has_full_spec(state: CollectionState, player: int, elite_spec: Optional[str]
         if specs_unlocked >= 3:
             return True
 
-    print("Missing Spec, specs_unlocked: ", specs_unlocked)
     return False
 
 
@@ -85,7 +82,6 @@ def has_all_gear(state: CollectionState, player: int) -> bool:
     if state.has_all([item.name for item in item_groups["Gear"]], player):
         return True
     else:
-        print("Missing Gear")
         return False
 
 
@@ -108,7 +104,6 @@ def has_all_weapon_slots(state: CollectionState, player: int, profession: Charac
                     weapon_matches_elite_spec = True
                     break
         if elite_spec_weapon and not weapon_matches_elite_spec:
-            print("No elite spec for ", item.name)
             continue
 
         if item.name.startswith("Mainhand"):
@@ -121,7 +116,6 @@ def has_all_weapon_slots(state: CollectionState, player: int, profession: Charac
         if mainhand_count + two_handed_count >= 2 and offhand_count + two_handed_count >= 2:
             return True
 
-    print("Missing Weapon")
     return False
 
 
@@ -133,11 +127,9 @@ def has_full_build_helper(state: CollectionState, player: int, profession: Chara
 
 def has_full_build(state: CollectionState, player: int, profession: CharacterProfession) -> bool:
     if has_full_build_helper(state, player, profession):
-        print("Full Core Build")
         return True
     for elite_spec in elite_specs:
         if (state.has("Progressive " + elite_spec + " Trait", player, 1)
                 and has_full_build_helper(state, player, profession, elite_spec)):
-            print("Full " + elite_spec + " Build")
             return True
     return False
