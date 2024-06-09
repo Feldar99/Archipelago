@@ -1,4 +1,5 @@
-
+import json
+import os
 from typing import Dict, Any, Iterable, Optional, Union, List, TextIO
 
 from BaseClasses import Region, Entrance, Location, Item, Tutorial, ItemClassification, MultiWorld
@@ -197,3 +198,20 @@ class Gw2World(World):
         elif self.options.starting_mainhand_weapon == StartingMainhandWeapon.option_staff:
             return item_table["TwoHanded Staff"]
         return None
+
+    def fill_slot_data(self) -> Dict[str, Any]:
+        return self.options.as_dict("storyline", casing="pascal")
+
+    # def generate_output(self, output_directory: str) -> None:
+    #     data = {}
+    #     for region in self.multiworld.regions:
+    #         if region.player != self.player:
+    #             continue
+    #         data[region.name] = []
+    #         for location in region.locations:
+    #             data[region.name].append(location.name)
+    #
+    #     filename = f"{self.multiworld.get_out_file_name_base(self.player)}.apgw2"
+    #     with open(os.path.join(output_directory, filename), 'w') as f:
+    #         json.dump(data, f)
+
