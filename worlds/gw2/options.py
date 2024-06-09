@@ -36,6 +36,21 @@ class CharacterRace(Choice):
     default = option_charr
 
 
+class Storyline(Choice):
+    """Storyline to focus on for PvE content"""
+
+    option_core = 0
+    option_season_1 = 1
+    option_season_2 = 2
+    option_heart_of_thorns = 3
+    option_season_3 = 4
+    option_path_of_fire = 5
+    option_season_4 = 6
+    option_icebrood_saga = 7
+    option_end_of_dragons = 8
+    option_secrets_of_the_obscure = 9
+
+
 class StartingMainhandWeapon(Choice):
     """Sets your starting mainhand weapon.
 
@@ -163,3 +178,4 @@ class GuildWars2Options(PerGameCommonOptions):
     quest_weight: QuestWeight
     training_weight: TrainingWeight
     world_boss_weight: WorldBossWeight
+    storyline: Storyline
