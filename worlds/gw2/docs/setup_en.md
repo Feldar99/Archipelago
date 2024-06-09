@@ -27,7 +27,7 @@ website to generate a YAML using a graphical interface.
 2. Under "Manage Modules", click "Archipelago"
 3. Enable all requested API Permissions
 4. Enter the Archipelago Server URL including the port number
-5. Enter the your slot name
+5. Enter your slot name
 6. Enter the server password if there is one. Note that this will be in clear text, but in an overlay program, so if you are streaming, make sure you are streaming the game window and not the monitor if you don't want viewers seeing the password
 7. Enter the name of the character you are going to use for the multiworld (You can make a new character or use an existing one)
 8. Press the "Generate" button.
