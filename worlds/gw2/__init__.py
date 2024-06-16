@@ -27,7 +27,6 @@ def item_is_usable(item: Gw2ItemData, profession: CharacterProfession,
     if len(item.specs) > 0:
         match = False
         for spec in item.specs:
-            print(spec.profession, " ", spec.elite_spec)
             if not allow_elite_spec and spec.elite_spec is not None:
                 continue
             if spec.profession.value == profession.value:
