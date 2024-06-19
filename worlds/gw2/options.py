@@ -115,6 +115,7 @@ class StartingOffhandWeapon(Choice):
         else:
             return super().from_text(text)
 
+
 class GroupContent(Choice):
     """Sets what kind of group content you are interested in. Please be respectful of other players and do not join
     pugs doing difficult content if you do not have the unlocks to contribute (Don't try to fight Dhuum naked)
@@ -129,6 +130,7 @@ class GroupContent(Choice):
     option_ten_man = 2
 
     default = option_none
+
 
 class IncludeCompetitive(Toggle):
     """Allows PvP and WvW achievements to be included"""
@@ -148,6 +150,14 @@ class QuestWeight(Range):
     range_start = 0
     range_end = 1000
     default = 100
+
+
+class MaxQuests(Range):
+    """ The maximum number of quest locations to generate"""
+
+    range_start = 0
+    range_end = 100
+    default = 0
 
 
 class TrainingWeight(Range):
@@ -176,6 +186,7 @@ class GuildWars2Options(PerGameCommonOptions):
     include_competitive: IncludeCompetitive
     achievement_weight: AchievementWeight
     quest_weight: QuestWeight
+    max_quests: MaxQuests
     training_weight: TrainingWeight
     world_boss_weight: WorldBossWeight
     storyline: Storyline

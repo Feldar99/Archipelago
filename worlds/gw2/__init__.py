@@ -104,7 +104,16 @@ class Gw2World(World):
                                                  self.options.world_boss_weight.value),
                                              k=item_count)
 
-        for location_type in location_types:
+        location_count = 0
+        max_counts = (item_count, self.options.max_quests, 0, 0)
+        weights = [self.options.achievement_weight.value,
+                   self.options.quest_weight.value if max_counts[1] > 0 else 0,
+                   self.options.training_weight.value if max_counts[2] > 0 else 0,
+                   self.options.world_boss_weight.value if max_counts[3] > 0 else 0]
+        counts = [0, 0, 0, 0]
+        while location_count < item_count:
+            location_type = self.random.choices([location for location in LocationType], weights=weights, k=1)[0]
+
             location_region_data = unused_locations[location_type]
             region = None
             while region is None:
@@ -117,6 +126,11 @@ class Gw2World(World):
 
             location = Gw2Location(self.player, location_data.name, location_data.code, region)
             region.locations.append(location)
+
+            counts[location_type.value] += 1
+            location_count += 1
+            if counts[location_type.value] >= max_counts[location_type.value]:
+                weights[location_type.value] = 0
 
         self.multiworld.regions.extend(self.region_table.values())
 
