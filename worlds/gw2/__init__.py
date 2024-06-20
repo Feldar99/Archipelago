@@ -97,12 +97,6 @@ class Gw2World(World):
             item_count += item.quantity
 
         #create a number of locations equal to the number of items that will be generated
-        location_types = self.random.choices([LocationType.ACHIEVEMENT, LocationType.QUEST,
-                                                LocationType.TRAINING, LocationType.WORLD_BOSS],
-                                             weights=(self.options.achievement_weight.value, self.options.quest_weight.value,
-                                                 self.options.training_weight.value,
-                                                 self.options.world_boss_weight.value),
-                                             k=item_count)
 
         location_count = 0
         max_counts = (item_count, self.options.max_quests, 0, 0)
