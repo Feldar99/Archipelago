@@ -175,6 +175,22 @@ class WorldBossWeight(Range):
     range_end = 1000
     default = 250
 
+class MistFragmentsRequired(Range):
+    """The number of "Mist Fragment" items required to complete this world"""
+
+    range_start = 1
+    range_end = 100
+    default = 20
+
+class ExtraMistFragmentPercent(Range):
+    """Multiplier to determine how many extra Mist Fragments to create. For example if mist_fragments_required is 20
+    and this is value is 50, there will be 30 Mist Fragments in the multi-world,
+    but only 20 will be required to finish. """
+
+    range_start = 0
+    range_end = 1000
+    default = 50
+
 
 @dataclass
 class GuildWars2Options(PerGameCommonOptions):
@@ -190,3 +206,5 @@ class GuildWars2Options(PerGameCommonOptions):
     training_weight: TrainingWeight
     world_boss_weight: WorldBossWeight
     storyline: Storyline
+    mist_fragments_required: MistFragmentsRequired
+    extra_mist_fragment_percent: ExtraMistFragmentPercent

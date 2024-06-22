@@ -85,6 +85,7 @@ weapons_by_slot: dict[str, [Gw2ItemData]] = {}
 item_groups: dict[str, [Gw2ItemData]] = {}
 elite_specs: set[str] = set()
 
+
 def load_weapons():
     weapons_items = []
     item_groups["Weapons"] = []
@@ -115,11 +116,10 @@ def load_weapons():
                 else:
                     weapons_by_slot[weapon_slot] = [weapon]
 
-
     return weapons_items
 
 
-def load_skill_group(skills_data, spec: Optional[Spec]=None, race: Optional[Race]=None):
+def load_skill_group(skills_data, spec: Optional[Spec] = None, race: Optional[Race] = None):
     skills = []
     skill_types = ["Healing", "Utility", "Elite", "Legend"]
     for skill_type in skill_types:
@@ -205,6 +205,7 @@ def load_items():
     items.extend(load_traits())
     items.extend(load_skills())
     items.extend(load_gear())
+    items.append(Gw2ItemData("Mist Fragment"))  # Quantity will get set after options have been loaded
 
     for item in items:
         item_table[item.name] = item

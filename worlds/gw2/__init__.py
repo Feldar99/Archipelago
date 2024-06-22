@@ -3,6 +3,7 @@ import os
 from typing import Dict, Any, Iterable, Optional, Union, List, TextIO
 
 from BaseClasses import Region, Entrance, Location, Item, Tutorial, ItemClassification, MultiWorld
+from .Util import random_round
 from .locations import location_table, LocationType, unused_locations, Gw2Location
 from .options import GuildWars2Options, GroupContent, StartingMainhandWeapon, CharacterProfession, CharacterRace, \
     StartingOffhandWeapon
@@ -40,6 +41,7 @@ def item_is_usable(item: Gw2ItemData, profession: CharacterProfession,
 
     return True
 
+
 class Gw2World(World):
     item_name_to_id = {name: data.code for name, data in item_table.items()}
     location_name_to_id = {name: data.code for name, data in location_table.items()}
@@ -55,6 +57,15 @@ class Gw2World(World):
     stories, awe-inspiring landscapes to explore, two challenging player vs. player modes—and no subscription fees!
     """
     game = "Guild Wars 2"
+
+    def generate_early(self) -> None:
+        #Update Mist Fragment count
+        mist_fragments_required = self.options.mist_fragments_required.value
+        bonus_mist_fragments = random_round(self.random, mist_fragments_required * (self.options.extra_mist_fragment_percent / 100.0))
+        mist_fragment_count = mist_fragments_required + bonus_mist_fragments
+        item_table["Mist Fragment"].quantity = mist_fragment_count
+
+        self.multiworld.local_items[self.player].value.add("Mist Fragment")
 
     def create_regions(self) -> None:
 
@@ -128,17 +139,18 @@ class Gw2World(World):
 
         self.multiworld.regions.extend(self.region_table.values())
 
-
     def create_item(self, item_data: Gw2ItemData) -> Gw2Item:
         return Gw2Item(item_data.name, ItemClassification.progression, item_data.code, self.player)
 
     def create_items(self) -> None:
         self.precollect_starting_weapons()
+
         for item_name, item_data in item_table.items():
             if not item_is_usable(item_data, self.options.character_profession, self.options.character_race, True):
                 continue
 
-            for i in range(item_data.quantity):
+            quantity = item_data.quantity
+            for i in range(quantity):
                 self.multiworld.itempool.append(self.create_item(item_data))
 
     def precollect_starting_weapons(self):
@@ -150,7 +162,6 @@ class Gw2World(World):
             offhand = self.select_starting_offhand()
             self.multiworld.push_precollected(self.create_item(offhand))
         self.multiworld.push_precollected(self.create_item(mainhand))
-
 
     def select_starting_offhand(self):
         offhand_weapons = list(filter(lambda weapon: item_is_usable(weapon, self.options.character_profession,
@@ -207,7 +218,11 @@ class Gw2World(World):
         return None
 
     def fill_slot_data(self) -> Dict[str, Any]:
-        return self.options.as_dict("storyline", casing="pascal")
+        return self.options.as_dict("storyline", "mist_fragments_required", casing="pascal")
+
+    def set_rules(self) -> None:
+        self.multiworld.completion_condition[self.player] = \
+            lambda state: state.has("Mist Fragment", self.player, self.options.mist_fragments_required.value)
 
     # def generate_output(self, output_directory: str) -> None:
     #     data = {}
@@ -221,4 +236,3 @@ class Gw2World(World):
     #     filename = f"{self.multiworld.get_out_file_name_base(self.player)}.apgw2"
     #     with open(os.path.join(output_directory, filename), 'w') as f:
     #         json.dump(data, f)
-
