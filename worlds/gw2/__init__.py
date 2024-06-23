@@ -218,7 +218,8 @@ class Gw2World(World):
         return None
 
     def fill_slot_data(self) -> Dict[str, Any]:
-        return self.options.as_dict("storyline", "mist_fragments_required", casing="pascal")
+        return self.options.as_dict("storyline", "mist_fragments_required", "character", "character_race",
+                                    "character_profession", casing="pascal")
 
     def set_rules(self) -> None:
         self.multiworld.completion_condition[self.player] = \

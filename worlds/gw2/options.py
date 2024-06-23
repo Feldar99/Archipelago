@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 
-from Options import Range, NamedRange, Toggle, Choice, OptionSet, PerGameCommonOptions, DeathLink
+from Options import Range, NamedRange, Toggle, Choice, OptionSet, PerGameCommonOptions, DeathLink, FreeText
 from .items import Profession as ProfessionEum, Race as RaceEnum
 
 
@@ -175,12 +175,14 @@ class WorldBossWeight(Range):
     range_end = 1000
     default = 250
 
+
 class MistFragmentsRequired(Range):
     """The number of "Mist Fragment" items required to complete this world"""
 
     range_start = 1
     range_end = 100
-    default = 20
+    default = 10
+
 
 class ExtraMistFragmentPercent(Range):
     """Multiplier to determine how many extra Mist Fragments to create. For example if mist_fragments_required is 20
@@ -190,6 +192,10 @@ class ExtraMistFragmentPercent(Range):
     range_start = 0
     range_end = 1000
     default = 50
+
+
+class Character(FreeText):
+    default = "New Character"
 
 
 @dataclass
@@ -208,3 +214,4 @@ class GuildWars2Options(PerGameCommonOptions):
     storyline: Storyline
     mist_fragments_required: MistFragmentsRequired
     extra_mist_fragment_percent: ExtraMistFragmentPercent
+    character: Character
