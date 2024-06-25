@@ -197,9 +197,24 @@ class ExtraMistFragmentPercent(Range):
 class Character(FreeText):
     default = "New Character"
 
+class HealSkill(Choice):
+    """A random core heal skill could be placed early or given to the player as a starting skill"""
+
+    option_randomize = 0,
+    option_early = 1,
+    option_starting = 2,
+
+class GearSlots(Choice):
+    """Gear slots could be placed early or given to the player at the start"""
+
+    option_randomize = 0,
+    option_early = 1,
+    option_starting = 2,
+
 
 @dataclass
 class GuildWars2Options(PerGameCommonOptions):
+    character: Character
     character_profession: CharacterProfession
     character_race: CharacterRace
     starting_mainhand_weapon: StartingMainhandWeapon
@@ -214,4 +229,5 @@ class GuildWars2Options(PerGameCommonOptions):
     storyline: Storyline
     mist_fragments_required: MistFragmentsRequired
     extra_mist_fragment_percent: ExtraMistFragmentPercent
-    character: Character
+    heal_skill: HealSkill
+    gear_slots: GearSlots

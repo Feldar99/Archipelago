@@ -6,9 +6,9 @@ from BaseClasses import Region, Entrance, Location, Item, Tutorial, ItemClassifi
 from .Util import random_round
 from .locations import location_table, LocationType, unused_locations, Gw2Location
 from .options import GuildWars2Options, GroupContent, StartingMainhandWeapon, CharacterProfession, CharacterRace, \
-    StartingOffhandWeapon
+    StartingOffhandWeapon, Storyline, HealSkill, GearSlots
 from worlds.AutoWorld import World, WebWorld
-from .items import item_table, Gw2ItemData, Gw2Item, weapons_by_slot
+from .items import item_table, Gw2ItemData, Gw2Item, weapons_by_slot, item_groups
 from .regions import RegionEnum, group_content, ten_man_content, competitive_content, get_region_rule
 
 
@@ -67,6 +67,23 @@ class Gw2World(World):
 
         self.multiworld.local_items[self.player].value.add("Mist Fragment")
 
+        if self.options.heal_skill.value == HealSkill.option_early:
+            skill = None
+            item_group = "Healing"
+            if self.options.character_profession.value == CharacterProfession.option_revenant:
+                item_group = "Legend"
+            self.random.shuffle(item_groups[item_group])
+            for heal_skill in item_groups[item_group]:
+                if item_is_usable(heal_skill, self.options.character_profession,
+                                  self.options.character_race, False):
+                    skill = heal_skill
+
+            self.multiworld.early_items[self.player][skill.name] = 1
+
+        if self.options.gear_slots.value == GearSlots.option_early:
+            for item in item_groups["Gear"]:
+                self.multiworld.early_items[self.player][item.name] = 1
+
     def create_regions(self) -> None:
 
         self.region_table = {}
@@ -123,6 +140,13 @@ class Gw2World(World):
             region = None
             while region is None:
                 region_enum = self.random.choice(location_type.get_valid_regions())
+
+                # Core story has no achievements
+                if (self.options.storyline == Storyline.option_core
+                        and region_enum == RegionEnum.STORY
+                        and location_type == LocationType.ACHIEVEMENT):
+                    continue
+
                 if region_enum in self.region_table.keys():
                     region = self.region_table[region_enum]
 
@@ -143,7 +167,7 @@ class Gw2World(World):
         return Gw2Item(item_data.name, ItemClassification.progression, item_data.code, self.player)
 
     def create_items(self) -> None:
-        self.precollect_starting_weapons()
+        self.precollect_starting_items()
 
         for item_name, item_data in item_table.items():
             if not item_is_usable(item_data, self.options.character_profession, self.options.character_race, True):
@@ -153,7 +177,27 @@ class Gw2World(World):
             for i in range(quantity):
                 self.multiworld.itempool.append(self.create_item(item_data))
 
-    def precollect_starting_weapons(self):
+    def precollect_starting_items(self) -> None:
+        self.precollect_starting_weapons()
+
+        if self.options.heal_skill.value == HealSkill.option_starting:
+            skill = None
+            item_group = "Healing"
+            if self.options.character_profession.value == CharacterProfession.option_revenant:
+                item_group = "Legend"
+            self.random.shuffle(item_groups[item_group])
+            for heal_skill in item_groups[item_group]:
+                if item_is_usable(heal_skill, CharacterProfession[self.options.character_profession],
+                                  CharacterRace[self.options.character_race], False):
+                    skill = heal_skill
+
+            self.multiworld.push_precollected(self.create_item(skill))
+
+        if self.options.gear_slots.value == GearSlots.option_early:
+            for item in item_groups["Gear"]:
+                self.multiworld.push_precollected(self.create_item(item))
+
+    def precollect_starting_weapons(self) -> None:
         two_handed_weapons = list(filter(lambda weapon: item_is_usable(weapon, self.options.character_profession,
                                                                        self.options.character_race, False),
                                          weapons_by_slot["TwoHanded"]))
@@ -163,7 +207,7 @@ class Gw2World(World):
             self.multiworld.push_precollected(self.create_item(offhand))
         self.multiworld.push_precollected(self.create_item(mainhand))
 
-    def select_starting_offhand(self):
+    def select_starting_offhand(self) -> None:
         offhand_weapons = list(filter(lambda weapon: item_is_usable(weapon, self.options.character_profession,
                                                                     self.options.character_race, False),
                                       weapons_by_slot["Offhand"]))
@@ -181,7 +225,7 @@ class Gw2World(World):
             return item_table["Offhand Warhorn"]
         return None
 
-    def select_starting_mainhand(self, two_handed_weapons: list[Gw2ItemData]):
+    def select_starting_mainhand(self, two_handed_weapons: list[Gw2ItemData]) -> None:
         mainhand_weapons = list(filter(lambda weapon: item_is_usable(weapon, self.options.character_profession,
                                                                      self.options.character_race, False),
                                        weapons_by_slot["Mainhand"]))
