@@ -187,8 +187,8 @@ class Gw2World(World):
                 item_group = "Legend"
             self.random.shuffle(item_groups[item_group])
             for heal_skill in item_groups[item_group]:
-                if item_is_usable(heal_skill, CharacterProfession[self.options.character_profession],
-                                  CharacterRace[self.options.character_race], False):
+                if item_is_usable(heal_skill, self.options.character_profession,
+                                  self.options.character_race, False):
                     skill = heal_skill
 
             self.multiworld.push_precollected(self.create_item(skill))
