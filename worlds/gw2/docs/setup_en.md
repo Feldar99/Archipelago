@@ -3,7 +3,7 @@
 ## Required Software
 * Download and unzip the [BlishHUD](https://blishhud.com/).
 * A free or paid version of [Guild Wars 2](https://www.guildwars2.com/en/)
-* The [Archipelago BlishHud Module](https://github.com/Feldar99/Gw2ArchipelagoClient/releases)
+* This [Gw2 Archipelago](https://github.com/Feldar99/Archipelago/releases) release
 
 ## Installing the Archipelago Mod using BlishHUD
 1. Move BlishHUD to a convenient location. You will need to open it manually.
@@ -21,8 +21,8 @@ An YAML file is the way that you provide your player options to Archipelago.
 See the [basic multiworld setup guide](/tutorial/Archipelago/setup/en) here on the Archipelago website to learn more.
 
 ### Where do I get a YAML?
-You can use the [game options page for Guild Wars 2](/games/Guild%20Wars%202/player-options) here on the Archipelago 
-website to generate a YAML using a graphical interface.
+Until this world is released you will have to edit your YAML manually. You can either modify the provided template,
+or generate one using the provided gw2YamlGenerator.exe to create one with triggers for using your existing characters
 
 ### Joining an Archipelago Game in Guild Wars 2
 1. Start the game and open the BlishHUD window.
@@ -66,4 +66,5 @@ unlock in this order
   * bottom center
   * bottom right
 * If any achievements are included as locations that you feel shouldn't be, please let me know in the Discord. This is
-unfortunately a much more manual process than I had hoped
+unfortunately a much more manual process than I had hoped. In the meantime, once you've gotten everything that you can
+feel free to hit the generate locations button again to get new achievements
