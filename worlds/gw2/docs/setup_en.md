@@ -24,6 +24,11 @@ See the [basic multiworld setup guide](/tutorial/Archipelago/setup/en) here on t
 Until this world is released you will have to edit your YAML manually. You can either modify the provided template,
 or generate one using the provided gw2YamlGenerator.exe to create one with triggers for using your existing characters
 
+### Generating a multi-world
+1. Unzip the gw2_world.zip and place the gw2 folder from it in your Archipelago/lib/worlds folder
+2. Follow the [standard instructions](https://archipelago.gg/tutorial/Archipelago/setup/en) for generating a 
+game locally 
+
 ### Joining an Archipelago Game in Guild Wars 2
 1. Start the game and open the BlishHUD window.
 2. Under "Manage Modules", click "Archipelago"
