@@ -8,8 +8,7 @@ config file.
 ## What does randomization do to this game?
 
 Players are not allowed to use parts of their builds until they are unlocked. This has to be tracked manually since
-this is an MMO, but there is a BlishHUD mod to help keep track of it, and it will let you know if you accidentally
-use something you're not supposed to.  What parts of your build are locked are customizable in the YAML, as are the
+this is an MMO, but there is a BlishHUD mod to help keep track of it.  What parts of your build are locked are customizable in the YAML, as are the
 the things you can do to unlock multiworld items. The mod also regularly polls the web API for unlocks.
 
 ## What Guild Wars 2 items can appear in other players' worlds?
