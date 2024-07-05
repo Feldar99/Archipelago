@@ -3,13 +3,15 @@
 ## Required Software
 * Download and unzip the [BlishHUD](https://blishhud.com/).
 * A free or paid version of [Guild Wars 2](https://www.guildwars2.com/en/)
+* The [Archipelago BlishHud Module](https://github.com/Feldar99/Gw2ArchipelagoClient/releases)
 
 ## Installing the Archipelago Mod using BlishHUD
 1. Move BlishHUD to a convenient location. You will need to open it manually.
 2. Launch Gw2
-3. Open BlishHUD
-4. Click the BlishHUD icon in the upper left hand corner of the Guild Wars 2 screen
-5. Find and install Archipelago from the "Module Repo" tab
+3. Move Gw2Archipelago.bhm to the BlishHUD module directory. This will probably be
+"Documents/Guild Wars 2/addons/blishud/modules"
+4. Open BlishHUD
+5. Click the BlishHUD icon in the upper left hand corner of the Guild Wars 2 screen
 6. Follow the instructions in "Manage API Keys" to register an API key with BlishHUD
 7. Under Manage Modules, make sure that Archipelago is enabled
 
@@ -28,14 +30,40 @@ website to generate a YAML using a graphical interface.
 3. Enable all requested API Permissions
 4. Enter the Archipelago Server URL including the port number
 5. Enter your slot name
-6. Enter the server password if there is one. Note that this will be in clear text, but in an overlay program, so if you are streaming, make sure you are streaming the game window and not the monitor if you don't want viewers seeing the password
-7. Enter the name of the character you are going to use for the multiworld (You can make a new character or use an existing one)
-8. Press the "Generate" button.
-9. Log into your chosen character
-10. In your Hero panel, clear an equipment template and a build template and activate the empty templates
-11. Equip gear, skills, and traits that the Archipelago module says you are allowed to use.
+6. If the "Enable Module" button is not disabled, click it.
+7. Click on the archipelago icon at the top of the screen to open the Archipelago window.
+8. Click "Connect"
+9. If you don't know what character you were playing it should populate on the modules screen now.
+10. Log into your chosen character
+    * If you created a new character for this, change the character name in the manage modules at this time 
+11. Click "Generate Locations." This can take several minutes, and when it's done you will see a selection of locations
+in the archipelago window
+12. In your Hero panel, clear an equipment template and a build template and activate the empty templates
+13. Equip gear, skills, and traits that the Archipelago module says you are allowed to use.
+
    
 ## Hints and other commands
 While playing in a multiworld, you can interact with the server using various commands listed in the 
 [commands guide](/tutorial/Archipelago/commands/en). You can use the Archipelago Text Client to do this,
 which is included in the latest release of the [Archipelago software](https://github.com/ArchipelagoMW/Archipelago/releases/latest).
+
+### Notes about Gw2 implementation
+* Your objective is to collect a number of "Mist Fragments" which are placed behind checks. They are all local in the 
+current implementation
+* This module uses the Gw2 public API to track locations, but this API can take up to 15 minutes to update, so you will
+not see your locations checked immediately
+* In order to not tie up your account entirely when doing an Archipelago run, this mod does not check that you are
+limiting yourself to the unlocked skills and traits
+* Progressive traits currently do not have names in the mod's UI. They are all for the major traits and are meant to
+unlock in this order
+  * center left
+  * center
+  * center right
+  * top left
+  * top center
+  * top right
+  * bottom left
+  * bottom center
+  * bottom right
+* If any achievements are included as locations that you feel shouldn't be, please let me know in the Discord. This is
+unfortunately a much more manual process than I had hoped
