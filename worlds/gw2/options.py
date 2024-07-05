@@ -19,7 +19,7 @@ class CharacterProfession(Choice):
     option_elementalist = ProfessionEum.ELEMENTALIST.value
     option_necromancer = ProfessionEum.NECROMANCER.value
 
-    default = option_engineer
+    default = "random"
 
 
 class CharacterRace(Choice):
@@ -33,7 +33,7 @@ class CharacterRace(Choice):
     option_norn = RaceEnum.NORN.value
     option_sylvari = RaceEnum.SYLVARI.value
 
-    default = option_charr
+    default = "random"
 
 
 class Storyline(Choice):
@@ -195,6 +195,9 @@ class ExtraMistFragmentPercent(Range):
 
 
 class Character(FreeText):
+    """ The name of the character that you will play or "New Character" if you will be making a new
+     character for it"""
+
     default = "New Character"
 
 class HealSkill(Choice):
