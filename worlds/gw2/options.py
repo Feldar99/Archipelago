@@ -207,12 +207,16 @@ class HealSkill(Choice):
     option_early = 1,
     option_starting = 2,
 
+    default = "starting"
+
 class GearSlots(Choice):
     """Gear slots could be placed early or given to the player at the start"""
 
     option_randomize = 0,
     option_early = 1,
     option_starting = 2,
+
+    default = "early"
 
 
 @dataclass
