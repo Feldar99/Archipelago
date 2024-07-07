@@ -153,11 +153,23 @@ class QuestWeight(Range):
 
 
 class MaxQuests(Range):
-    """ The maximum number of quest locations to generate"""
+    """ The maximum number of quest locations to generate. The number of quests in each storyline are as follows:
+
+        Core => 49,
+        Season1 => 30,
+        Season2 => 32,
+        HeartOfThorns => 16,
+        Season3 => 36,
+        PathOfFire => 16,
+        Season4 => 30,
+        IcebroodSaga => 41,
+        EndOfDragons => 27,
+        SecretsOfTheObscure => 20,
+    """
 
     range_start = 0
     range_end = 100
-    default = 0
+    default = 49
 
 
 class TrainingWeight(Range):
@@ -207,7 +219,7 @@ class HealSkill(Choice):
     option_early = 1,
     option_starting = 2,
 
-    default = "starting"
+    default = option_starting
 
 class GearSlots(Choice):
     """Gear slots could be placed early or given to the player at the start"""
@@ -216,7 +228,7 @@ class GearSlots(Choice):
     option_early = 1,
     option_starting = 2,
 
-    default = "early"
+    default = option_early
 
 
 @dataclass
