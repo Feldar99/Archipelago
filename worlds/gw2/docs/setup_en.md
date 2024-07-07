@@ -22,7 +22,9 @@ See the [basic multiworld setup guide](/tutorial/Archipelago/setup/en) here on t
 
 ### Where do I get a YAML?
 Until this world is released you will have to edit your YAML manually. You can either modify the provided template,
-or generate one using the provided gw2YamlGenerator.exe to create one with triggers for using your existing characters
+or generate one using the provided gw2YamlGenerator.exe to create one with triggers for using your existing characters.
+These triggers will set the profession and race to match the character and update the max_quests value to be the number
+of quests that character has remaining in the storyline.
 
 ### Generating a multi-world
 1. Unzip the gw2_world.zip and place the gw2 folder from it in your Archipelago/lib/worlds folder
