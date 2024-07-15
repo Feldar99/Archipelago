@@ -215,18 +215,18 @@ class Character(FreeText):
 class HealSkill(Choice):
     """A random core heal skill could be placed early or given to the player as a starting skill"""
 
-    option_randomize = 0,
-    option_early = 1,
-    option_starting = 2,
+    option_randomize = 0
+    option_early = 1
+    option_starting = 2
 
     default = option_starting
 
 class GearSlots(Choice):
     """Gear slots could be placed early or given to the player at the start"""
 
-    option_randomize = 0,
-    option_early = 1,
-    option_starting = 2,
+    option_randomize = 0
+    option_early = 1
+    option_starting = 2
 
     default = option_early
 
