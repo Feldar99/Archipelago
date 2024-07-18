@@ -9,7 +9,7 @@ from .locations import location_table, LocationType, location_groups, Gw2Locatio
 from .options import GuildWars2Options, GroupContent, StartingMainhandWeapon, CharacterProfession, CharacterRace, \
     StartingOffhandWeapon, Storyline, HealSkill, GearSlots
 from worlds.AutoWorld import World, WebWorld
-from .items import item_table, Gw2ItemData, Gw2Item, weapons_by_slot, item_groups
+from .items import item_table, Gw2ItemData, Gw2Item, weapons_by_slot, item_groups, item_data
 from .regions import RegionEnum, group_content, ten_man_content, competitive_content, get_region_rule
 
 
@@ -165,8 +165,11 @@ class Gw2World(World):
 
         self.multiworld.regions.extend(self.region_table.values())
 
-    def create_item(self, item_data: Gw2ItemData) -> Gw2Item:
-        return Gw2Item(item_data.name, ItemClassification.progression, item_data.code, self.player)
+    def create_item(self, item_name: str) -> Gw2Item:
+        return Gw2Item(item_name, ItemClassification.progression, self.item_name_to_id[item_name], self.player)
+
+    def create_item_from_data(self, data: Gw2ItemData) -> Gw2Item:
+        return Gw2Item(data.name, ItemClassification.progression, data.code, self.player)
 
     def create_items(self) -> None:
         self.precollect_starting_items()
@@ -177,7 +180,7 @@ class Gw2World(World):
 
             quantity = item_data.quantity
             for i in range(quantity):
-                self.multiworld.itempool.append(self.create_item(item_data))
+                self.multiworld.itempool.append(self.create_item_from_data(item_data))
 
     def precollect_starting_items(self) -> None:
         self.precollect_starting_weapons()
@@ -193,11 +196,11 @@ class Gw2World(World):
                                   self.options.character_race, False):
                     skill = heal_skill
 
-            self.multiworld.push_precollected(self.create_item(skill))
+            self.multiworld.push_precollected(self.create_item_from_data(skill))
 
         if self.options.gear_slots.value == GearSlots.option_early:
             for item in item_groups["Gear"]:
-                self.multiworld.push_precollected(self.create_item(item))
+                self.multiworld.push_precollected(self.create_item_from_data(item))
 
     def precollect_starting_weapons(self) -> None:
         two_handed_weapons = list(filter(lambda weapon: item_is_usable(weapon, self.options.character_profession,
@@ -206,8 +209,8 @@ class Gw2World(World):
         mainhand = self.select_starting_mainhand(two_handed_weapons)
         if mainhand not in two_handed_weapons:
             offhand = self.select_starting_offhand()
-            self.multiworld.push_precollected(self.create_item(offhand))
-        self.multiworld.push_precollected(self.create_item(mainhand))
+            self.multiworld.push_precollected(self.create_item_from_data(offhand))
+        self.multiworld.push_precollected(self.create_item_from_data(mainhand))
 
     def select_starting_offhand(self) -> None:
         offhand_weapons = list(filter(lambda weapon: item_is_usable(weapon, self.options.character_profession,

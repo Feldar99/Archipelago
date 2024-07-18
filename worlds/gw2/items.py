@@ -79,8 +79,10 @@ class Gw2ItemData:
         self.specs = set()
         self.race = None
         Gw2ItemData.next_id_val += 1
+        item_data[self.code] = self
 
 
+item_data: dict[int, Gw2ItemData] = {}
 weapons_by_slot: dict[str, [Gw2ItemData]] = {}
 item_groups: dict[str, [Gw2ItemData]] = {}
 elite_specs: set[str] = set()
