@@ -53,6 +53,8 @@ class Gw2World(World):
     region_table: dict[RegionEnum, Region]
     player_items: List[Gw2ItemData]
 
+    web = Gw2Web()
+
     """
     Guild Wars 2 is an online role-playing game with fast-paced action combat, a rich and detailed universe of
     stories, awe-inspiring landscapes to explore, two challenging player vs. player modes—and no subscription fees!
