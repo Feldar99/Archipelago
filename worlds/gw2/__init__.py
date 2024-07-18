@@ -1,10 +1,11 @@
 import json
 import os
 from typing import Dict, Any, Iterable, Optional, Union, List, TextIO
+from copy import deepcopy
 
 from BaseClasses import Region, Entrance, Location, Item, Tutorial, ItemClassification, MultiWorld
 from .Util import random_round
-from .locations import location_table, LocationType, unused_locations, Gw2Location
+from .locations import location_table, LocationType, location_groups, Gw2Location, LocationData
 from .options import GuildWars2Options, GroupContent, StartingMainhandWeapon, CharacterProfession, CharacterRace, \
     StartingOffhandWeapon, Storyline, HealSkill, GearSlots
 from worlds.AutoWorld import World, WebWorld
@@ -127,12 +128,13 @@ class Gw2World(World):
         #create a number of locations equal to the number of items that will be generated
 
         location_count = 0
-        max_counts = (item_count, self.options.max_quests, 0, 0)
+        max_counts = (item_count, self.options.max_quests.value, 0, 0)
         weights = [self.options.achievement_weight.value,
                    self.options.quest_weight.value if max_counts[1] > 0 else 0,
                    self.options.training_weight.value if max_counts[2] > 0 else 0,
                    self.options.world_boss_weight.value if max_counts[3] > 0 else 0]
         counts = [0, 0, 0, 0]
+        unused_locations = deepcopy(location_groups)
         while location_count < item_count:
             location_type = self.random.choices([location for location in LocationType], weights=weights, k=1)[0]
 

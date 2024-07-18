@@ -42,24 +42,24 @@ class LocationData:
 
 
 location_table = {}
-unused_locations = {}  #dict[LocationType, dict[RegionEnum, list[LocationData]]]
+location_groups = {}  #dict[LocationType, dict[RegionEnum, list[LocationData]]]
 
 
 def create_locations():
     MINIMUM_LOCATION_COUNT = 150
 
     for location_type in LocationType:
-        unused_locations[location_type] = {}
+        location_groups[location_type] = {}
         for region in RegionEnum:
-            unused_locations[location_type][region] = []
+            location_groups[location_type][region] = []
 
     for i in range(MINIMUM_LOCATION_COUNT):
         for location_type in LocationType:
             for region in location_type.get_valid_regions():
-                unused_locations[location_type][region].append(LocationData(type=location_type,
+                location_groups[location_type][region].append(LocationData(type=location_type,
                                                                             region=region, name_index=i))
 
-    for location_type, data in unused_locations.items():
+    for location_type, data in location_groups.items():
         for region_type, locations in data.items():
             for location in locations:
                 location_table[location.name] = location
