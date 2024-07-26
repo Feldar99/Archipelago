@@ -7,10 +7,11 @@ from BaseClasses import Region, Entrance, Location, Item, Tutorial, ItemClassifi
 from .Util import random_round
 from .locations import location_table, LocationType, location_groups, Gw2Location, LocationData
 from .options import GuildWars2Options, GroupContent, StartingMainhandWeapon, CharacterProfession, CharacterRace, \
-    StartingOffhandWeapon, Storyline, HealSkill, GearSlots
+    StartingOffhandWeapon, Storyline, HealSkill, GearSlots, StorylineItems
 from worlds.AutoWorld import World, WebWorld
-from .items import item_table, Gw2ItemData, Gw2Item, weapons_by_slot, item_groups, item_data
+from .items import item_table, Gw2ItemData, Gw2Item, weapons_by_slot, item_groups, item_data, elite_specs
 from .regions import RegionEnum, group_content, ten_man_content, competitive_content, get_region_rule
+from .storylines import StorylineEnum, storyline_from_str
 
 
 class Gw2Web(WebWorld):
@@ -22,29 +23,6 @@ class Gw2Web(WebWorld):
         "setup/en",
         ["Feldar"]
     )]
-
-
-def item_is_usable(item: Gw2ItemData, profession: CharacterProfession,
-                   race: CharacterRace, allow_elite_spec: bool) -> bool:
-    if len(item.specs) > 0:
-        match = False
-        for spec in item.specs:
-            if not allow_elite_spec and spec.elite_spec is not None:
-                continue
-            if spec.profession.value == profession.value:
-                match = True
-                break
-        if not match:
-            return False
-
-    # Revenants can't use racial skills
-    if item.race is not None and profession == CharacterProfession.option_revenant:
-        return False
-
-    if item.race is not None and item.race.value != race.value:
-        return False
-
-    return True
 
 
 class Gw2World(World):
@@ -65,10 +43,60 @@ class Gw2World(World):
     """
     game = "Guild Wars 2"
 
+    def includes_storyline(self, storyline: StorylineEnum):
+        if storyline is StorylineEnum.CORE:
+            return True
+        match self.options.storyline_items.value:
+            case StorylineItems.option_all:
+                return True
+            case StorylineItems.option_storyline_plus:
+                return storyline.value <= self.options.storyline.value
+            case StorylineItems.option_storyline:
+                match self.options.storyline.value:
+                    case Storyline.option_season_3:
+                        return storyline == StorylineEnum.HEART_OF_THORNS
+                    case Storyline.option_season_4:
+                        return storyline == StorylineEnum.PATH_OF_FIRE
+                    case Storyline.option_icebrood_saga:
+                        return storyline == StorylineEnum.PATH_OF_FIRE
+                    case _:
+                        return storyline == self.options.storyline
+            case _:
+                return False
+
+    def item_is_usable(self, item: Gw2ItemData, allow_elite_spec: bool) -> bool:
+        if item.storyline is not None and not self.includes_storyline(item.storyline):
+            return False
+
+        if len(item.specs) > 0:
+            match = False
+            for spec in item.specs:
+                if not allow_elite_spec and spec.elite_spec is not None:
+                    continue
+                if spec.profession.value == self.options.character_profession.value:
+                    if spec.elite_spec is not None:
+                        storyline = storyline_from_str(spec.elite_spec) or elite_specs[spec.elite_spec]
+                        if storyline is not None and not self.includes_storyline(storyline):
+                            continue
+                    match = True
+                    break
+            if not match:
+                return False
+
+        # Revenants can't use racial skills
+        if item.race is not None and self.options.character_profession == CharacterProfession.option_revenant:
+            return False
+
+        if item.race is not None and item.race.value != self.options.character_race.value:
+            return False
+
+        return True
+
     def generate_early(self) -> None:
         #Update Mist Fragment count
         mist_fragments_required = self.options.mist_fragments_required.value
-        bonus_mist_fragments = random_round(self.random, mist_fragments_required * (self.options.extra_mist_fragment_percent / 100.0))
+        bonus_mist_fragments = random_round(self.random, mist_fragments_required * (
+                    self.options.extra_mist_fragment_percent / 100.0))
         mist_fragment_count = mist_fragments_required + bonus_mist_fragments
         item_table["Mist Fragment"].quantity = mist_fragment_count
 
@@ -81,8 +109,7 @@ class Gw2World(World):
                 item_group = "Legend"
             self.random.shuffle(item_groups[item_group])
             for heal_skill in item_groups[item_group]:
-                if item_is_usable(heal_skill, self.options.character_profession,
-                                  self.options.character_race, False):
+                if self.item_is_usable(heal_skill, False):
                     skill = heal_skill
 
             self.multiworld.early_items[self.player][skill.name] = 1
@@ -122,9 +149,7 @@ class Gw2World(World):
         self.player_items = []
         item_count = 0
         for item_name, item in item_table.items():
-            if not item_is_usable(item,
-                                  self.options.character_profession,
-                                  self.options.character_race,
+            if not self.item_is_usable(item,
                                   True):
                 continue
 
@@ -181,7 +206,7 @@ class Gw2World(World):
         self.precollect_starting_items()
 
         for item_name, item_data in item_table.items():
-            if not item_is_usable(item_data, self.options.character_profession, self.options.character_race, True):
+            if not self.item_is_usable(item_data, True):
                 continue
 
             quantity = item_data.quantity
@@ -198,8 +223,7 @@ class Gw2World(World):
                 item_group = "Legend"
             self.random.shuffle(item_groups[item_group])
             for heal_skill in item_groups[item_group]:
-                if item_is_usable(heal_skill, self.options.character_profession,
-                                  self.options.character_race, False):
+                if self.item_is_usable(heal_skill, False):
                     skill = heal_skill
 
             self.multiworld.push_precollected(self.create_item_from_data(skill))
@@ -209,8 +233,7 @@ class Gw2World(World):
                 self.multiworld.push_precollected(self.create_item_from_data(item))
 
     def precollect_starting_weapons(self) -> None:
-        two_handed_weapons = list(filter(lambda weapon: item_is_usable(weapon, self.options.character_profession,
-                                                                       self.options.character_race, False),
+        two_handed_weapons = list(filter(lambda weapon: self.item_is_usable(weapon, False),
                                          weapons_by_slot["TwoHanded"]))
         mainhand = self.select_starting_mainhand(two_handed_weapons)
         if mainhand not in two_handed_weapons:
@@ -219,8 +242,7 @@ class Gw2World(World):
         self.multiworld.push_precollected(self.create_item_from_data(mainhand))
 
     def select_starting_offhand(self) -> None:
-        offhand_weapons = list(filter(lambda weapon: item_is_usable(weapon, self.options.character_profession,
-                                                                    self.options.character_race, False),
+        offhand_weapons = list(filter(lambda weapon: self.item_is_usable(weapon, False),
                                       weapons_by_slot["Offhand"]))
         if self.options.starting_offhand_weapon == StartingOffhandWeapon.option_random_proficient:
             return self.random.choice(offhand_weapons)
@@ -237,8 +259,7 @@ class Gw2World(World):
         return None
 
     def select_starting_mainhand(self, two_handed_weapons: list[Gw2ItemData]) -> None:
-        mainhand_weapons = list(filter(lambda weapon: item_is_usable(weapon, self.options.character_profession,
-                                                                     self.options.character_race, False),
+        mainhand_weapons = list(filter(lambda weapon: self.item_is_usable(weapon, False),
                                        weapons_by_slot["Mainhand"]))
         if self.options.starting_mainhand_weapon == StartingMainhandWeapon.option_random_proficient:
             return self.random.choice(mainhand_weapons + two_handed_weapons)

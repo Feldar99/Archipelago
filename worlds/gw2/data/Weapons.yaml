@@ -5,7 +5,7 @@ Axe:
     - Guardian:
         Firebrand
     - Thief:
-        Artisan of Arms
+        SecretsOfTheObscure
     - Necromancer
     - Mesmer:
         Mirage
@@ -35,7 +35,7 @@ Mace:
   Mainhand:
     - Warrior
     - Ranger:
-        Artisan of Arms
+        SecretsOfTheObscure
     - Guardian
     - Revenant
     - Engineer:
@@ -43,20 +43,20 @@ Mace:
   Offhand:
     - Warrior
     - Ranger:
-        Artisan of Arms
+        SecretsOfTheObscure
 Pistol:
   Mainhand:
     - Guardian:
-        Artisan of Arms
+        SecretsOfTheObscure
     - Engineer
     - Thief
     - Necromancer:
         Harbinger
     - Elementalist:
-        Artisan of Arms
+        SecretsOfTheObscure
   Offhand:
     - Guardian:
-        Artisan of Arms
+        SecretsOfTheObscure
     - Engineer
     - Thief
     - Warrior:
@@ -68,7 +68,7 @@ Sword:
     - Warrior
     - Mesmer
     - Necromancer:
-        Artisan of Arms
+        SecretsOfTheObscure
     - Guardian
     - Engineer:
         Holosmith
@@ -82,12 +82,12 @@ Sword:
     - Warrior
     - Mesmer
     - Necromancer:
-        Artisan of Arms
+        SecretsOfTheObscure
 Scepter:
   Mainhand:
     - Guardian
     - Revenant:
-        Artisan of Arms
+        SecretsOfTheObscure
     - Thief:
         Specter
     - Elementalist
@@ -158,7 +158,7 @@ Rifle:
     - Thief:
         Deadeye
     - Mesmer:
-        Artisan of Arms
+        SecretsOfTheObscure
 ShortBow:
   TwoHanded:
     - Revenant:
@@ -166,12 +166,12 @@ ShortBow:
     - Ranger
     - Thief
     - Engineer:
-        Artisan of Arms
+        SecretsOfTheObscure
 Staff:
   TwoHanded:
     - Guardian
     - Warrior:
-        Artisan of Arms
+        SecretsOfTheObscure
     - Revenant
     - Ranger:
         Druid

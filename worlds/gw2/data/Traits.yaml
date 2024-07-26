@@ -6,9 +6,9 @@ WARRIOR:
     - Tactics
     - Discipline
   Elite:
-    - Berserker
-    - Spellbreaker
-    - Bladesworn
+    HeartOfThorns: Berserker
+    PathOfFire:    Spellbreaker
+    EndOfDragons:  Bladesworn
 
 GUARDIAN:
   Core:
@@ -18,9 +18,9 @@ GUARDIAN:
     - Honor
     - Virtues
   Elite:
-    - Dragonhunter
-    - Firebrand
-    - Willbender
+    HeartOfThorns: Dragonhunter
+    PathOfFire:    Firebrand
+    EndOfDragons:  Willbender
 REVENANT:
   Core:
     - Corruption
@@ -29,9 +29,9 @@ REVENANT:
     - Invocation
     - Devastation
   Elite:
-    - Herald
-    - Renegade
-    - Vindicator
+    HeartOfThorns: Herald
+    PathOfFire:    Renegade
+    EndOfDragons:  Vindicator
 THIEF:
   Core:
     - Deadly Arts
@@ -40,9 +40,9 @@ THIEF:
     - Acrobatics
     - Trickery
   Elite:
-    - Daredevil
-    - Deadeye
-    - Specter
+    HeartOfThorns: Daredevil
+    PathOfFire:    Deadeye
+    EndOfDragons:  Specter
 ENGINEER:
   Core:
     - Explosives
@@ -51,9 +51,9 @@ ENGINEER:
     - Alchemy
     - Tools
   Elite:
-    - Scrapper
-    - Holosmith
-    - Mechanist
+    HeartOfThorns: Scrapper
+    PathOfFire:    Holosmith
+    EndOfDragons:  Mechanist
 RANGER:
   Core:
     - Marksmanship
@@ -62,9 +62,9 @@ RANGER:
     - Nature Magic
     - Beastmastery
   Elite:
-    - Druid
-    - Soulbeast
-    - Untamed
+    HeartOfThorns: Druid
+    PathOfFire:    Soulbeast
+    EndOfDragons:  Untamed
 MESMER:
   Core:
     - Domination
@@ -73,9 +73,9 @@ MESMER:
     - Inspiration
     - Illusions
   Elite:
-    - Chronomancer
-    - Mirage
-    - Virtuoso
+    HeartOfThorns: Chronomancer
+    PathOfFire:    Mirage
+    EndOfDragons:  Virtuoso
 ELEMENTALIST:
   Core:
     - Fire
@@ -84,9 +84,9 @@ ELEMENTALIST:
     - Water
     - Arcane
   Elite:
-    - Tempest
-    - Weaver
-    - Catalyst
+    HeartOfThorns: Tempest
+    PathOfFire:    Weaver
+    EndOfDragons:  Catalyst
 NECROMANCER:
   Core:
     - Spite
@@ -95,6 +95,6 @@ NECROMANCER:
     - Blood Magic
     - Soul Reaping
   Elite:
-    - Reaper
-    - Scourge
-    - Harbinger
+    HeartOfThorns: Reaper
+    PathOfFire:    Scourge
+    EndOfDragons:  Harbinger

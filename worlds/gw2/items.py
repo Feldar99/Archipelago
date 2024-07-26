@@ -7,6 +7,8 @@ from Utils import parse_yaml
 from . import data
 from importlib.resources import files
 
+from .storylines import storyline_from_str, StorylineEnum
+
 
 class Gw2Item(Item):
     game: str = "Guild Wars 2"
@@ -69,15 +71,17 @@ class Gw2ItemData:
     quantity: int
     specs: Optional[Set[Spec]]
     race: Optional[Race]
+    storyline: Optional[StorylineEnum]
 
     next_id_val = 3_828_179_903_462_517  #selected at random between 0 and 2^53-1 to minimize chance of collision
 
-    def __init__(self, name: str, quantity=1):
+    def __init__(self, name: str, quantity=1, storyline=None):
         self.name = name
         self.code = Gw2ItemData.next_id_val
         self.quantity = quantity
         self.specs = set()
         self.race = None
+        self.storyline = storyline
         Gw2ItemData.next_id_val += 1
         item_data[self.code] = self
 
@@ -85,7 +89,7 @@ class Gw2ItemData:
 item_data: dict[int, Gw2ItemData] = {}
 weapons_by_slot: dict[str, [Gw2ItemData]] = {}
 item_groups: dict[str, [Gw2ItemData]] = {}
-elite_specs: set[str] = set()
+elite_specs: dict[str, StorylineEnum] = {}
 
 
 def load_weapons():
@@ -121,7 +125,9 @@ def load_weapons():
     return weapons_items
 
 
-def load_skill_group(skills_data, spec: Optional[Spec] = None, race: Optional[Race] = None):
+def load_skill_group(skills_data, spec: Optional[Spec] = None,
+                     race: Optional[Race] = None,
+                     storyline: Optional[StorylineEnum] = None):
     skills = []
     skill_types = ["Healing", "Utility", "Elite", "Legend"]
     for skill_type in skill_types:
@@ -130,7 +136,7 @@ def load_skill_group(skills_data, spec: Optional[Spec] = None, race: Optional[Ra
         if skill_type not in item_groups.keys():
             item_groups[skill_type] = []
         for skill_name in skills_data[skill_type]:
-            skill = Gw2ItemData(name=skill_name, quantity=1)
+            skill = Gw2ItemData(name=skill_name, quantity=1, storyline=storyline)
             if spec is not None:
                 skill.specs.add(spec)
             skill.race = race
@@ -151,12 +157,13 @@ def load_skills():
             for group in skill_data[profession.name].keys():
                 if group in elite_specs:
                     spec = Spec(profession=profession, elite_spec=group)
-                    skills.extend(load_skill_group(skill_data[profession.name][group], spec=spec))
+                    skills.extend(load_skill_group(skill_data[profession.name][group], spec=spec, storyline=elite_specs[group]))
 
         for race in Race:
             skills.extend(load_skill_group(skill_data[race.name], race=race))
 
     return skills
+
 
 
 def load_traits():
@@ -170,10 +177,13 @@ def load_traits():
         for profession_name in trait_data:
             profession_traits = trait_data[profession_name]
             traits = profession_traits["Core"]
-            elite_specs.update(profession_traits["Elite"])
             traits.extend(profession_traits["Elite"])
             for trait in traits:
-                item = Gw2ItemData(name="Progressive " + trait + " Trait", quantity=9)
+                storyline = storyline_from_str(trait)
+                if storyline is not None:
+                    trait = profession_traits["Elite"][trait]
+                    elite_specs[trait] = storyline
+                item = Gw2ItemData(name="Progressive " + trait + " Trait", quantity=9, storyline=storyline)
                 spec = Spec(Profession[profession_name.upper()])
                 item.specs.add(spec)
                 traits_items.append(item)

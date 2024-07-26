@@ -2,6 +2,7 @@ from dataclasses import dataclass
 
 from Options import Range, NamedRange, Toggle, Choice, OptionSet, PerGameCommonOptions, DeathLink, FreeText
 from .items import Profession as ProfessionEum, Race as RaceEnum
+from .storylines import StorylineEnum
 
 
 class CharacterProfession(Choice):
@@ -39,16 +40,18 @@ class CharacterRace(Choice):
 class Storyline(Choice):
     """Storyline to focus on for PvE content"""
 
-    option_core = 0
-    option_season_1 = 1
-    option_season_2 = 2
-    option_heart_of_thorns = 3
-    option_season_3 = 4
-    option_path_of_fire = 5
-    option_season_4 = 6
-    option_icebrood_saga = 7
-    option_end_of_dragons = 8
-    option_secrets_of_the_obscure = 9
+    option_core = StorylineEnum.CORE.value
+    option_season_1 = StorylineEnum.SEASON_1.value
+    option_season_2 = StorylineEnum.SEASON_2.value
+    option_heart_of_thorns = StorylineEnum.HEART_OF_THORNS.value
+    option_season_3 = StorylineEnum.SEASON_3.value
+    option_path_of_fire = StorylineEnum.PATH_OF_FIRE.value
+    option_season_4 = StorylineEnum.SEASON_4.value
+    option_icebrood_saga = StorylineEnum.ICEBROOD_SAGA.value
+    option_end_of_dragons = StorylineEnum.END_OF_DRAGONS.value
+    option_secrets_of_the_obscure = StorylineEnum.SECRETS_OF_THE_OBSCURE.value
+
+    default = option_core
 
 
 class StartingMainhandWeapon(Choice):
@@ -212,6 +215,7 @@ class Character(FreeText):
 
     default = "New Character"
 
+
 class HealSkill(Choice):
     """A random core heal skill could be placed early or given to the player as a starting skill"""
 
@@ -221,6 +225,7 @@ class HealSkill(Choice):
 
     default = option_starting
 
+
 class GearSlots(Choice):
     """Gear slots could be placed early or given to the player at the start"""
 
@@ -229,6 +234,24 @@ class GearSlots(Choice):
     option_starting = 2
 
     default = option_early
+
+
+class StorylineItems(Choice):
+    """
+    Which skills, traits, and weapons do you want shuffled into the item pool
+    all: all skills, traits, and weapons
+    core: only core skills, traits, and weapons
+    storyline: limit to core items plus those from the selected storyline. Living World storylines include the items
+        from their associated expansion
+    storyline_plus: all items from the selected storyline and all preceding storylines.
+    """
+
+    option_all = 0
+    option_core = 1
+    option_storyline = 2
+    option_storyline_plus = 3
+
+    default = option_storyline_plus
 
 
 @dataclass
@@ -250,3 +273,4 @@ class GuildWars2Options(PerGameCommonOptions):
     extra_mist_fragment_percent: ExtraMistFragmentPercent
     heal_skill: HealSkill
     gear_slots: GearSlots
+    storyline_items: StorylineItems
