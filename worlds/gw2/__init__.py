@@ -37,6 +37,10 @@ def item_is_usable(item: Gw2ItemData, profession: CharacterProfession,
         if not match:
             return False
 
+    # Revenants can't use racial skills
+    if item.race is not None and profession == CharacterProfession.option_revenant:
+        return False
+
     if item.race is not None and item.race.value != race.value:
         return False
 
