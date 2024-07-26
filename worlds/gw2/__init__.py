@@ -206,6 +206,9 @@ class Gw2World(World):
         self.precollect_starting_items()
 
         for item_name, item_data in item_table.items():
+            if item_name in {item.name for item in self.multiworld.precollected_items[self.player]}:
+                continue
+
             if not self.item_is_usable(item_data, True):
                 continue
 
