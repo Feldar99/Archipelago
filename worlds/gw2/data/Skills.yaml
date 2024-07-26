@@ -79,7 +79,7 @@ GUARDIAN:
     - "Save Yourselves!"
     - "Stand Your Ground!"
     - Bane Signet
-    - Signet of Judgement
+    - Signet of Judgment
     - Signet of Mercy
     - Signet of Wrath
     - Bow of Truth
@@ -117,7 +117,7 @@ GUARDIAN:
       - Flash Combo
       - Whirling Light
       - Heel Crack
-      - Rolling Light
+      - Roiling Light
     Elite:
       - Heaven's Palm
 REVENANT:
@@ -165,7 +165,7 @@ THIEF:
   Elite:
     - Thieves Guild
     - Basilisk Venom
-    - Daer Storm
+    - Dagger Storm
   Daredevil:
     Healing:
       - Channeled Vigor
@@ -173,7 +173,7 @@ THIEF:
       - Bandit's Defense
       - Distracting Daggers
       - Fist Flurry
-      - Impaling Daggers
+      - Impairing Daggers
     Elite:
       - Impact Strike
   Deadeye:
@@ -315,7 +315,7 @@ RANGER:
     Utility:
       - Exploding Spores
       - Mutate Conditions
-      - Unatural Traversal
+      - Unnatural Traversal
       - Nature's Binding
     Elite:
       - Forest's Fortification
