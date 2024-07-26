@@ -72,7 +72,7 @@ class Gw2World(World):
         mist_fragment_count = mist_fragments_required + bonus_mist_fragments
         item_table["Mist Fragment"].quantity = mist_fragment_count
 
-        self.multiworld.local_items[self.player].value.add("Mist Fragment")
+        self.options.local_items.value.add("Mist Fragment")
 
         if self.options.heal_skill.value == HealSkill.option_early:
             skill = None
