@@ -159,7 +159,7 @@ class Gw2World(World):
         #create a number of locations equal to the number of items that will be generated
 
         location_count = 0
-        max_counts = (item_count, self.options.max_quests.value, self.options.max_training, 0)
+        max_counts = (item_count, self.options.max_quests.value, 0, 0)
         weights = [self.options.achievement_weight.value,
                    self.options.quest_weight.value if max_counts[1] > 0 else 0,
                    self.options.training_weight.value if max_counts[2] > 0 else 0,
