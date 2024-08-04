@@ -183,6 +183,26 @@ class TrainingWeight(Range):
     default = 0
 
 
+class MaxTraining(Range):
+    """ The maximum number of training locations to generate. The number of training in each storyline are as follows:
+
+        Core => 49,
+        Season1 => 0,
+        Season2 => 0,
+        HeartOfThorns => 16,
+        Season3 => 0,
+        PathOfFire => 16,
+        Season4 => 0,
+        IcebroodSaga => 0,
+        EndOfDragons => 27,
+        SecretsOfTheObscure => 0,
+    """
+
+    range_start = 0
+    range_end = 100
+    default = 49
+
+
 class WorldBossWeight(Range):
     """The probability weight of any location being a world boss"""
 
@@ -267,6 +287,7 @@ class GuildWars2Options(PerGameCommonOptions):
     quest_weight: QuestWeight
     max_quests: MaxQuests
     training_weight: TrainingWeight
+    max_training: MaxTraining
     world_boss_weight: WorldBossWeight
     storyline: Storyline
     mist_fragments_required: MistFragmentsRequired
