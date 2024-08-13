@@ -3,15 +3,16 @@ import os
 from typing import Dict, Any, Iterable, Optional, Union, List, TextIO
 from copy import deepcopy
 
+from .storylines import StorylineEnum, storyline_from_str
 from BaseClasses import Region, Entrance, Location, Item, Tutorial, ItemClassification, MultiWorld
 from .Util import random_round
-from .locations import location_table, LocationType, location_groups, Gw2Location, LocationData
+from .locations import location_table, LocationType, location_groups, Gw2Location, LocationData, storyline_items, \
+    storyline_pois
 from .options import GuildWars2Options, GroupContent, StartingMainhandWeapon, CharacterProfession, CharacterRace, \
     StartingOffhandWeapon, Storyline, HealSkill, GearSlots, StorylineItems
 from worlds.AutoWorld import World, WebWorld
 from .items import item_table, Gw2ItemData, Gw2Item, weapons_by_slot, item_groups, item_data, elite_specs
 from .regions import RegionEnum, group_content, ten_man_content, competitive_content, get_region_rule
-from .storylines import StorylineEnum, storyline_from_str
 
 
 class Gw2Web(WebWorld):
@@ -99,7 +100,7 @@ class Gw2World(World):
         #Update Mist Fragment count
         mist_fragments_required = self.options.mist_fragments_required.value
         bonus_mist_fragments = random_round(self.random, mist_fragments_required * (
-                    self.options.extra_mist_fragment_percent / 100.0))
+                self.options.extra_mist_fragment_percent / 100.0))
         mist_fragment_count = mist_fragments_required + bonus_mist_fragments
         item_table["Mist Fragment"].quantity = mist_fragment_count
 
@@ -158,7 +159,7 @@ class Gw2World(World):
         item_count = 0
         for item_name, item in item_table.items():
             if not self.item_is_usable(item,
-                                  True):
+                                       True):
                 continue
 
             self.player_items.append(item)
@@ -176,17 +177,29 @@ class Gw2World(World):
         if self.starting_mainhand is not None:
             item_count -= 1
 
-
         #create a number of locations equal to the number of items that will be generated
 
         location_count = 0
-        max_counts = (item_count, self.options.max_quests.value, 0, 0)
+        unused_locations = deepcopy(location_groups)
+        unused_items = deepcopy(storyline_items[self.options.storyline.value]) if self.options.storyline in storyline_items else []
+        print(unused_items)
+        unused_pois = deepcopy(storyline_pois[self.options.storyline.value]) if self.options.storyline in storyline_pois else []
+        print(unused_pois)
+        max_counts = (item_count,
+                      self.options.max_quests.value,
+                      0,
+                      0,
+                      len(unused_items),
+                      len(unused_pois),
+                      )
         weights = [self.options.achievement_weight.value,
                    self.options.quest_weight.value if max_counts[1] > 0 else 0,
                    self.options.training_weight.value if max_counts[2] > 0 else 0,
-                   self.options.world_boss_weight.value if max_counts[3] > 0 else 0]
-        counts = [0, 0, 0, 0]
-        unused_locations = deepcopy(location_groups)
+                   self.options.world_boss_weight.value if max_counts[3] > 0 else 0,
+                   self.options.unique_item_weight.value if max_counts[4] > 0 else 0,
+                   self.options.poi_weight.value if max_counts[5] > 0 else 0,
+                   ]
+        counts = [0, 0, 0, 0, 0, 0]
         while location_count < item_count:
             location_type = self.random.choices([location for location in LocationType], weights=weights, k=1)[0]
 
@@ -204,8 +217,15 @@ class Gw2World(World):
                 if region_enum in self.region_table.keys():
                     region = self.region_table[region_enum]
 
-            location_data_objects = location_region_data[region_enum]
-            location_data = location_data_objects.pop(0)
+            if location_type == LocationType.UNIQUE_ITEM:
+                location_index = self.random.randint(0, len(unused_items))
+                location_data = unused_items.pop(location_index)
+            if location_type == LocationType.POINT_OF_INTEREST:
+                location_index = self.random.randint(0, len(unused_pois))
+                location_data = unused_pois.pop(location_index)
+            else:
+                location_data_objects = location_region_data[region_enum]
+                location_data = location_data_objects.pop(0)
 
             location = Gw2Location(self.player, location_data.name, location_data.code, region)
             region.locations.append(location)

@@ -1,0 +1,675 @@
+Core:
+  Plains of Ashford:
+    Iron Legion Primus Badge: 23496
+    Shortsword: 32141
+    Wooden Rod: 32138
+    Dull Dagger: 32132
+    Gargoyle Fossil: 23498
+    Latera's Light Gloves: 4248
+    Bottle of Barradin Family Wine: 8529
+    Flaming Effigy Piece: 8687
+    Champion's Mace: 30028
+    Blood Legion Axe: 30022
+    Ash Legion Spy Kit: 8686
+    Proton Torch: 30036
+    Harpy Feathers: 23504
+    Separatist Pistol: 30029
+    Grenade Pin: 23506
+    Skale Zapper: 30031
+    Shield of Ascalon: 30032
+    Ash Legion Scout Blade: 30023
+  Diessa Plateau:
+    Iron Band: 23495
+    Fire Bomb: 8685
+    Charr Mine: 8684
+    Oldgate Heavy Leggings:
+      - 4198
+      - 4162
+    Iron Legion Shield:
+      - 30017
+      - 30018
+    Dunrock Leather Boots:
+      - 4217
+      - 4190
+    Clean Refreshing Drink: 8683
+    Stonefall Garb: 
+      - 4220
+      - 4183
+    Redreave Heavy Helm:
+      - 4224
+      - 4185
+    Incendio Shoulderpads:
+      - 4229
+      - 4191
+    Bloodsaw Cleaver: 30019
+    Ghostly Scrap Metal:
+      - 23514
+      - 23515
+    Charr Meatoberfest Chalice: 30010
+    Cattle Prod: 8682
+  Fields of Ruin:
+    Worker's Sickle: 23036
+    Pick Axe: 23035
+    Bun Yan Axe: 23037
+    Flaying Razor:
+      - 30099
+      - 30123
+    Broken Flute:
+      - 23556
+      - 23572
+    Gearshot Pistol:
+      - 30096
+      - 30121
+    Sentinel's Perch Scout Medal:
+      - 23567
+      - 23585
+    Grind Mace:
+      - 30101
+      - 30126
+    Oil Funnel Warhorn:
+      - 30102
+      - 30128
+    Pit Fighter's Skirt: 4316
+    Silent Walker's Gloves:
+      - 4328
+      - 4321
+    Clockwork Scepter:
+      - 30105
+      - 30119
+    Silent Walker's Shoulder Guards:
+      - 4337
+      - 4312
+  Blazeridge Steppes:
+    Sneakpaw's Warhorn: 
+      - 30182
+      - 30183
+    Stone of Rinn: 23625
+    Scriptures of Dwayna: 23630
+    Tiny Crystal Shard: 23628
+    Flashing Mine Blinker: 23629
+    Sentinel's Cout Badge: 23632
+    Deno's Fish Hook: 23624
+    Iron Legion Badge of Bravery: 23626
+    Night Vision Enhancers: 23634
+    Scout Commendation Letter: 23636
+    Bomb Fuse: 23635
+    Harpy Love Memento: 23633
+    Sweptweave Schematic: 23637
+    Foewatch Shield:
+      - 30178
+      - 30180
+    Pressed Friendship Flower: 23631
+  Fireheart Rise:
+    Tar Removal Tool:
+      - 23589
+      - 23606
+    Severed Breach Sword:
+      - 30144
+      - 30145
+    Truyere Mace:
+      - 30134
+      - 30135
+    Flame Legion Carving:
+      - 23591
+      - 23607
+    Nrocroc Axe:
+      - 30154
+      - 30155
+    Tarstar Gauntlets:
+      - 4370
+      - 4364
+    Wupwup God Icon:
+      - 23592
+      - 23608
+    Ash Legion Covert Shield:
+      - 30157
+      - 30156
+    Kodan Enduring Scroll:
+      - 23596
+      - 23613
+    Tactical Torch:
+      - 30166
+      - 30167
+    Jug of Martini: 8598
+    Sava Quicksnarl:
+      - 30174
+      - 30175
+  Caledon Forest:
+    Wardenhurst Mace: 30549
+    Wardenlight Emblem: 23875
+    Jar of Ooze: 23868
+    Red-Capped Leather Gloves: 4912
+    Verdant Charm: 23878
+    Warden's Staff: 30556
+    Briarthorn Dager: 30543
+    Orewood Axe: 30546
+    Mossy Devout Shoes: 4917
+    Engraved Sea Shell: 23882
+    Silent Conch Shell: 23884
+    Painted Battle Jar: 23886
+    Hemlocked Sword: 30561
+    Krait Tooth Pendant: 23888
+    Fisher's Shield: 30560
+    Kraitbane Model I Pistol: 30547
+    Pungent Vial: 23891
+    Patrol Torch: 30544
+  Metrica Province:
+    Progeny Gloves: 5010
+    Golem Prototype Ankle Crystal: 23871
+    Opticalium Gauntlets: 4856
+    Drake Steak: 8521
+    PRT Boots: 4851
+    Incomp Leather Boots: 5014
+    Inquest Golem Arm: 8773
+    Skritt Poker: 30532
+    Model L-12 Dissection Tool: 30525
+    Force-Amplifying Impact Device: 30542
+    Dragonfly-Wing Earrings: 23864
+    Lionguard Warhorn: 30535
+    Charged Scepter: 30537
+    Deputy Peacemaker Badge: 23862
+    Fireman's Axe: 30527
+    Radiation Shield: 30533
+  Brisban Wildlands:
+    Woodsman's Axe:
+      - 30595
+      - 30596
+    Glaxx's Focus:
+      - 30597
+      - 30598
+    Seraph Sword:
+      - 30587
+      - 30588
+    Seraph Mace:
+      - 30589
+      - 30590
+    Waterproof Country Boots:
+      - 4902
+      - 4905
+    Terebinth Leaf:
+      - 23902
+      - 23903
+    Razor-Sharp Dagger:
+      - 30583
+      - 30584
+    Worm Rancher's Studded Gloves:
+      - 4879
+      - 4882
+    Twitchok's Trusty Pistol:
+      - 30573
+      - 30574
+    Stolen Bandit Button:
+      - 23920
+      - 23923
+    Vine-Covered Chain Pauldrons:
+      - 4895
+      - 4897
+    Seraph Warhorn:
+      - 30585
+      - 30586
+    Trade Agreement:
+      - 23932
+      - 23933
+    Aethervolt Pigmentation Reference Guide:
+      - 23894
+      - 23895
+    Shield:
+      - 30575
+      - 30576
+    Training Scale Helm:
+      - 4850
+      - 4855
+  Sparkfly Fen:
+    Vigil Badge:
+      - 23957
+      - 23970
+    Hylek Yellow Hue Potion: 8787
+    Hylek Green Hue Potion: 8786
+    Hylek Orange Hue Potion: 8789
+    Sun Bead: 19717
+    Hylek Blue Hue Potion: 8788
+    Wreckage Waders:
+      - 4937
+      - 4951
+    Chum Trispear: 30622
+    Rescuer's Shoulderpads:
+      - 4942
+      - 4957
+    Brackwater Scepter: 30615
+    Dried Poisonous Swamp Fungi:
+      - 23965
+      - 23978
+    Briar Sword: 30620
+    United Arcanist Lab's Metal Gauntlets:
+      - 4927
+      - 4964
+  Mount Maelstrom:
+    Bard's Valley Shield:
+      - 30657
+      - 30662
+    Quandry Torch:
+      - 30658
+      - 30664
+    Excavator's Metal Gauntlets:
+      - 5003
+      - 5006
+    Firebreak Shoulderpads:
+      - 4987
+      - 4990
+    Dysphoric Scepter:
+      - 30654
+      - 30669
+    Magmatic Helm:
+      - 4991
+      - 4994
+    Gallant's Mace:
+      - 30650
+      - 30674
+    Leather Oxbow Aquabreather:
+      - 4981
+      - 5015
+    Stychs Pistol:
+      - 30651
+      - 30672
+    Judgment Axe:
+      - 30656
+      - 30677
+    Whitland Boots:
+      - 4973
+      - 4976
+  Wayfarer Foothills:
+    Snow Leopard Totem:
+      - 23331
+      - 23400
+      - 23415
+    Hare Totem: 23334
+    Wurm Hunt Souvenir Stein: 23340
+    Carving Knife: 29392
+    Bear Totem: 23329
+    Fiendish Grawl Artwork: 23330
+    Tiny Dredge Tuning Fork: 23339
+    Surplus Lionguard Leather Boots: 3962
+    Charged Scepter: 29399
+    Twinspur Pistol: 29397
+    Ancient Jotun Runestone: 23336
+    Wolf Totem: 23332
+    Raven Totem: 23328
+    Lionguard-Issue Sword: 29403
+    Cleaver: 29391
+  Snowden Drifts:
+    Mortar and Pestle:
+      - 23302
+      - 23315
+      - 23352
+      - 23461
+    Priory Focus:
+      - 29389
+      - 29355
+    Dark Blade:
+      - 29388
+      - 29354
+    Heart-Shaped Cookie: 8500
+    Leika's Mace:
+      - 29387
+      - 29360
+    Hunter Boots:
+      - 3933
+      - 3906
+    Seraph Shoulderpads:
+      - 3941
+      - 3923
+    Ghost Owl Feather: 8639
+    Giant Wolf Tooth:
+      - 23301
+      - 23314
+    Lionguard Pistol (Lionguard Haral):
+      - 29372
+      - 29361
+    Sharp Sword:
+      - 29379
+      - 29368
+    Lionguard Gloves (medium):
+      - 3932
+      - 3920
+    Quaggan Friendship Bracelet:
+      - 23303
+      - 23318
+  Lornar's Pass:
+    Herding Horn:
+      - 29472
+      - 29483
+    Potion of Ettin Essence: 8656
+    Queldip Gauntlets:
+      - 4034
+      - 4051
+    Duidda's Leather Aquabreather:
+      - 4043
+      - 4046
+    Dredge Manifesto (Level 30):
+      - 23364
+      - 23381
+    Horned Focus:
+      - 29456
+      - 29484
+    Skritt Neutralizer:
+      - 29461
+      - 29475
+    Hidden Pistl (weapon):
+      - 29462
+      - 29480
+    Steam Sprocket:
+      - 23366
+      - 23383
+    Padded Pauldrons:
+      - 4019
+      - 4055
+    Mining Lantern:
+      - 23362
+      - 23379
+    Hune's Leather Work Gloves:
+      - 4028
+      - 4068
+    Hunting Trophy:
+      - 23375
+      - 23392
+    Trusty Blade:
+      - 29469
+      - 29486
+    Sturdy Shield:
+      - 29465
+      - 29487
+  Dredgehaunt Cliffs:
+    Dostoev Torch:
+      - 29516
+      - 29517
+    De Molish Mace:
+      - 29513
+      - 29515
+    Painted Mokooki Hunter's Pottery:
+      - 23402
+      - 23417
+    Ratatosk Pistol: 29492
+    Travelen's Lodge Commemorative Spoon:
+      - 23401
+      - 23416
+    Priory Granite Citadel History:
+      - 23405
+      - 23420
+    Leather Shelter Gloves:
+      - 4082
+      - 4085
+    Priory Wilderness Survival Guide:
+      - 23406
+      - 23422
+    Tribulation Focus:
+      - 29494
+      - 29496
+    Patient Shield: 29505
+    Wyrmblood Warhorn: 29520
+  Timberline Falls:
+    Whisper Model K Pistol: 29419
+    Explorer's Focus: 29429
+    Order Dagger: 29412
+    Acquired Shoes: 3973
+    Mountain Shield: 29443
+    Experimental Collection Staff: 29433
+    Crusader's Mace: 29422
+    Leather Excavator's Gloves: 4002
+    Caer Axe: 29418
+    Hunter's Speargun: 29432
+    Spleedoop Breather (light):
+      - 3995
+      - 3998
+  Frostgorge Sound:
+    Arundon Heavy Gloves:
+      - 4116
+      - 4119
+    Cloth Inka Boots:
+      - 4123
+      - 4126
+    Valoric Warhorn: 29553
+    Wayward Shield: 29561
+    Symbol of Balance:
+      - 23430
+      - 23441
+    Bore Heavy Helm:
+      - 4134
+      - 4137
+    Medium Blue Ice Shoulderguards:
+      - 4154
+      - 4157
+    Heavy Orsippus Aquabreather:
+      - 4140
+      - 4143
+    Shifting Dagger:
+      - 29530
+      - 29532
+    Blessing Of The Voice:
+      - 23431
+      - 23442
+    Drakkar Mace:
+      - 29540
+      - 29542
+  Queensdale:
+    Rusty Iron Key: 23734
+    Portal Shatterer: 30368
+    Monk's Beer Stein: 23731
+    Tamini Axe: 30360
+    Boar Tusk: 23730
+    Heavy Trading Stompers: 4670
+    Wurm Tooth: 23720
+    Drake Scale: 23721
+    Measuring Spoon: 23723
+    Moa Collar: 23724
+    Cloth Garrison Gloves: 4674
+    Fish Hook: 23732
+    Chewed Dog Whistle: 23733
+    Bone (consumable): 8743
+    Elmder's Mace: 30359
+    Militia Shield: 30357
+    Harpy Feather (level 3): 23722
+  Kessex Hills:
+    Tengu Feather Charm: 23745
+    Lion's Claw Model I: 30372
+    Matlal Enchanted Pig Truffle: 8748
+    Bowl of Overlake Soup: 8569
+    Seraph Scout Badge: 23749
+    Seraph-Issue Shield:
+      - 30388
+      - 30344
+    Researcher's Scepter: 30386
+    Seraph-Issue Shoulderpads:
+      - 4718
+      - 4715
+    Waldo's Torch: 30351
+    Seraph-Issue Gauntlets:
+      - 4686
+      - 4688
+    Miner's Mace Mark G: 30374
+    Triskellian Breather (medium): 4691
+    Ancient Shining Blade Emblem: 23752
+    Doolsileep's Seashell Charm: 23750
+  Gendarran Fields:
+    Vejj's Dusty Focus: 30452
+    Ascalonian Warhorn:
+      - 30449
+      - 30472
+    Broken Centaur Iron Shackles: 23813
+    Lionguard Iron Mace: 30459
+    Milton's Golden Apple Corer: 23795
+    Farmer's Rusty Axe:
+      - 30458
+      - 30479
+    Leather Lionguard Rebreather:
+      - 4801
+      - 4803
+    Lionguard Cloth Shoes:
+      - 4756
+      - 4752
+    Sheriff Kaargoth Bloodclaw:
+      - 30456
+      - 30476
+    Johan's Heavy Shoulderguard:
+      - 4741
+      - 4725
+    First Haven Cloth Gloves:
+      - 4743
+      - 4727
+  Harathi Hinterlands:
+    Dagger of Dubious Origin:
+      - 30497
+      - 30517
+    Seraph Assault Kit:
+      - 23834
+      - 23845
+    Seraph's Landing Mace:
+      - 30496
+      - 30515
+    Luke's Torch:
+      - 30492
+      - 30507
+    Modniir Effigy:
+      - 29228
+      - 29209
+    Mask of Nightguard:
+      - 4830
+      - 4836
+    Ancient Focus:
+      - 30489
+      - 30512
+    Cane's Justice:
+      - 30494
+      - 30514
+    Leather Modniir Kickers:
+      - 4822
+      - 4825
+    Warhorn of the Company: 30486
+    Private Felix's Leather Gloves:
+      - 4812
+      - 4818
+  Bloodtide Coast:
+    Lionguard Cloth Footguards: 4759
+    Durmand Priory Focus:
+      - 30417
+      - 30416
+    Pirate Hard Tack: 8634
+    Crab Food: 8633
+    Pirate Axe:
+      - 30424
+      - 30425
+    Magi's Soft Wood Scepter:
+      - 14029
+      - 14030
+    Fisherman Carter:
+      - 30426
+      - 30427
+    Vigil Shield:
+      - 30438
+      - 30439
+    Stylish Vigil Cloth Helm:
+      - 4783
+      - 4786
+    Medium Priory Shoulderguards:
+      - 4794
+      - 4797
+    Rusty Trident Tip:
+      - 23776
+      - 23777
+    Durmand Priory Mace:
+      - 30444
+      - 30445
+    Bottle of Spider Brew: 8602
+  Straits of Devastation:
+    Mangos in Bulk: 12772
+    Stentor Focus:
+      - 30248
+      - 30246
+    Thunderhead Axe:
+      - 30228
+      - 30229
+    Sarayi Gloves (light):
+      - 4443
+      - 4446
+    Orrian Pearl (accessory):
+      - 23709
+      - 23716
+    Lone Dagger:
+      - 30230
+      - 30233
+    Brassclaw Pistol:
+      - 30231
+      - 30234
+    Kamekeck War Paint:
+      - 23647
+      - 23657
+    Rally Greaves:
+      - 4448
+      - 4460
+  Malchor's Leap:
+    Bottle of Standard Research Issue Aged Wine: 8567
+    Orrian Mirror Shard:
+      - 23693
+      - 23699
+    Hidden Mace:
+      - 30312
+      - 30314
+    Chisel:
+      - 23692
+      - 23698
+    Wren Axe:
+      - 30304
+      - 30305
+    Intercepted Inquest Calculations:
+      - 23686
+      - 23700
+    Experimental Rifle: 8733
+    Doric Torch:
+      - 30300
+      - 30302
+    Pagga's Shield:
+      - 30320
+      - 30329
+    Colonnade Gloves (light):
+      - 4523
+      - 4544
+    Shelter Focus:
+      - 30316
+      - 30325
+    Murmur Dagger:
+      - 30306
+      - 30309
+  Cursed Shore:
+    Pact Medal Of Recognition:
+      - 23670
+      - 23681
+    Pact Medal of Accommodation:
+      - 23667
+      - 23678
+    Bottle of Putrid Wine: 8550
+    Meddler's Torch:
+      - 30262
+      - 30264
+    Shank Sword:
+      - 30275
+      - 30277
+    Jofast's Mace:
+      - 30274
+      - 30276
+    Shadowfain Greaves:
+      - 4490
+      - 4502
+    Penitent Scepter:
+      - 30281
+      - 30290
+    Shelter Axe:
+      - 30266
+      - 30267
+    Pact Medal of Valor:
+      - 23671
+      - 23682
+    Gavbeorn Breather (light):
+      - 4475
+      - 4481
+    Cachistic Handwraps:
+      - 4485
+      - 4488

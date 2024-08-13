@@ -1,5 +1,4 @@
 import enum
-import random
 
 from BaseClasses import Item, ItemClassification
 from typing import Dict, Set, NamedTuple, Optional

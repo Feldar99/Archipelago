@@ -17,19 +17,19 @@ class StorylineEnum(enum.Enum):
 
 def storyline_from_str(text) -> Optional[StorylineEnum]:
     text = text.lower()
-    if text is "core":
+    if text in ("core", "core tyria"):
         return StorylineEnum.CORE
-    if text in ("season 1", "season1", "s1"):
+    if text in ("season 1", "season1", "s1", "living world season 1"):
         return StorylineEnum.SEASON_1
-    if text in ("season 2", "season2", "s2"):
+    if text in ("season 2", "season2", "s2", "living world season 2"):
         return StorylineEnum.SEASON_2
     if text in ("heart of thorns", "heartofthorns", "hot"):
         return StorylineEnum.HEART_OF_THORNS
-    if text in ("season 3", "season3", "s3"):
+    if text in ("season 3", "season3", "s3", "living world season 3"):
         return StorylineEnum.SEASON_3
     if text in ("path of fire", "pathoffire", "pof"):
         return StorylineEnum.PATH_OF_FIRE
-    if text in ("season 4", "season4", "s4"):
+    if text in ("season 4", "season4", "s4", "living world season 4"):
         return StorylineEnum.SEASON_4
     if text in ("icebrood saga", "icebroodsaga", "ibs"):
         return StorylineEnum.ICEBROOD_SAGA

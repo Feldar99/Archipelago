@@ -210,6 +210,20 @@ class WorldBossWeight(Range):
     range_end = 1000
     default = 250
 
+class UniqueItemWeight(Range):
+    """The probability weight of any location being a purchase from a heart vendor (or similar for maps without hearts)"""
+
+    range_start = 0
+    range_end = 1000
+    default = 100
+
+class PoiWeight(Range):
+    """The probability weight of any location being a point of interest (includes waypoints, vistas, and hero points)"""
+
+    range_start = 0
+    range_end = 1000
+    default = 400
+
 
 class MistFragmentsRequired(Range):
     """The number of "Mist Fragment" items required to complete this world"""
@@ -289,6 +303,8 @@ class GuildWars2Options(PerGameCommonOptions):
     training_weight: TrainingWeight
     max_training: MaxTraining
     world_boss_weight: WorldBossWeight
+    unique_item_weight: UniqueItemWeight
+    poi_weight: PoiWeight
     storyline: Storyline
     mist_fragments_required: MistFragmentsRequired
     extra_mist_fragment_percent: ExtraMistFragmentPercent
