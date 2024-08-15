@@ -98,7 +98,7 @@ def create_locations():
             for map in storyline_data:
                 map_data = storyline_data[map]
                 for poi in map_data:
-                    location_data = LocationData(type=LocationType.UNIQUE_ITEM, region=RegionEnum.OPEN_WORLD,
+                    location_data = LocationData(type=LocationType.POINT_OF_INTEREST, region=RegionEnum.OPEN_WORLD,
                                                  name="POI: " + poi)
                     location_groups[LocationType.POINT_OF_INTEREST][RegionEnum.OPEN_WORLD].append(location_data)
                     storyline_pois[storyline.value].append(location_data)

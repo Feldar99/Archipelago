@@ -182,9 +182,7 @@ class Gw2World(World):
         location_count = 0
         unused_locations = deepcopy(location_groups)
         unused_items = deepcopy(storyline_items[self.options.storyline.value]) if self.options.storyline in storyline_items else []
-        print(unused_items)
         unused_pois = deepcopy(storyline_pois[self.options.storyline.value]) if self.options.storyline in storyline_pois else []
-        print(unused_pois)
         max_counts = (item_count,
                       self.options.max_quests.value,
                       0,
@@ -219,8 +217,9 @@ class Gw2World(World):
 
             if location_type == LocationType.UNIQUE_ITEM:
                 location_index = self.random.randint(0, len(unused_items))
+                print(location_index)
                 location_data = unused_items.pop(location_index)
-            if location_type == LocationType.POINT_OF_INTEREST:
+            elif location_type == LocationType.POINT_OF_INTEREST:
                 location_index = self.random.randint(0, len(unused_pois))
                 location_data = unused_pois.pop(location_index)
             else:
