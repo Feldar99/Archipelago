@@ -1,27 +1,48 @@
 Core:
   Plains of Ashford:
-    Iron Legion Primus Badge: 23496
-    Shortsword: 32141
-    Wooden Rod: 32138
-    Dull Dagger: 32132
-    Gargoyle Fossil: 23498
-    Latera's Light Gloves: 4248
-    Bottle of Barradin Family Wine: 8529
-    Flaming Effigy Piece: 8687
-    Champion's Mace: 30028
-    Blood Legion Axe: 30022
-    Ash Legion Spy Kit: 8686
-    Proton Torch: 30036
-    Harpy Feathers: 23504
-    Separatist Pistol: 30029
-    Grenade Pin: 23506
-    Skale Zapper: 30031
-    Shield of Ascalon: 30032
-    Ash Legion Scout Blade: 30023
+    Iron Legion Primus Badge:
+      - 23496
+    Shortsword:
+      - 32141
+    Wooden Rod:
+      - 32138
+    Dull Dagger:
+      - 32132
+    Gargoyle Fossil:
+      - 23498
+    Latera's Light Gloves:
+      - 4248
+    Bottle of Barradin Family Wine:
+      - 8529
+    Flaming Effigy Piece:
+      - 8687
+    Champion's Mace:
+      - 30028
+    Blood Legion Axe:
+      - 30022
+    Ash Legion Spy Kit:
+      - 8686
+    Proton Torch:
+      - 30036
+    Harpy Feathers:
+      - 23504
+    Separatist Pistol:
+      - 30029
+    Grenade Pin:
+      - 23506
+    Skale Zapper:
+      - 30031
+    Shield of Ascalon:
+      - 30032
+    Ash Legion Scout Blade:
+      - 30023
   Diessa Plateau:
-    Iron Band: 23495
-    Fire Bomb: 8685
-    Charr Mine: 8684
+    Iron Band:
+      - 23495
+    Fire Bomb:
+      - 8685
+    Charr Mine:
+      - 8684
     Oldgate Heavy Leggings:
       - 4198
       - 4162
@@ -31,8 +52,9 @@ Core:
     Dunrock Leather Boots:
       - 4217
       - 4190
-    Clean Refreshing Drink: 8683
-    Stonefall Garb: 
+    Clean Refreshing Drink:
+      - 8683
+    Stonefall Garb:
       - 4220
       - 4183
     Redreave Heavy Helm:
@@ -41,16 +63,22 @@ Core:
     Incendio Shoulderpads:
       - 4229
       - 4191
-    Bloodsaw Cleaver: 30019
+    Bloodsaw Cleaver:
+      - 30019
     Ghostly Scrap Metal:
       - 23514
       - 23515
-    Charr Meatoberfest Chalice: 30010
-    Cattle Prod: 8682
+    Charr Meatoberfest Chalice:
+      - 30010
+    Cattle Prod:
+      - 8682
   Fields of Ruin:
-    Worker's Sickle: 23036
-    Pick Axe: 23035
-    Bun Yan Axe: 23037
+    Worker's Sickle:
+      - 23036
+    Pick Axe:
+      - 23035
+    Bun Yan Axe:
+      - 23037
     Flaying Razor:
       - 30099
       - 30123
@@ -69,7 +97,8 @@ Core:
     Oil Funnel Warhorn:
       - 30102
       - 30128
-    Pit Fighter's Skirt: 4316
+    Pit Fighter's Skirt:
+      - 4316
     Silent Walker's Gloves:
       - 4328
       - 4321
@@ -80,25 +109,38 @@ Core:
       - 4337
       - 4312
   Blazeridge Steppes:
-    Sneakpaw's Warhorn: 
+    Sneakpaw's Warhorn:
       - 30182
       - 30183
-    Stone of Rinn: 23625
-    Scriptures of Dwayna: 23630
-    Tiny Crystal Shard: 23628
-    Flashing Mine Blinker: 23629
-    Sentinel's Cout Badge: 23632
-    Deno's Fish Hook: 23624
-    Iron Legion Badge of Bravery: 23626
-    Night Vision Enhancers: 23634
-    Scout Commendation Letter: 23636
-    Bomb Fuse: 23635
-    Harpy Love Memento: 23633
-    Sweptweave Schematic: 23637
+    Stone of Rinn:
+      - 23625
+    Scriptures of Dwayna:
+      - 23630
+    Tiny Crystal Shard:
+      - 23628
+    Flashing Mine Blinker:
+      - 23629
+    Sentinel's Cout Badge:
+      - 23632
+    Deno's Fish Hook:
+      - 23624
+    Iron Legion Badge of Bravery:
+      - 23626
+    Night Vision Enhancers:
+      - 23634
+    Scout Commendation Letter:
+      - 23636
+    Bomb Fuse:
+      - 23635
+    Harpy Love Memento:
+      - 23633
+    Sweptweave Schematic:
+      - 23637
     Foewatch Shield:
       - 30178
       - 30180
-    Pressed Friendship Flower: 23631
+    Pressed Friendship Flower:
+      - 23631
   Fireheart Rise:
     Tar Removal Tool:
       - 23589
@@ -130,46 +172,81 @@ Core:
     Tactical Torch:
       - 30166
       - 30167
-    Jug of Martini: 8598
+    Jug of Martini:
+      - 8598
     Sava Quicksnarl:
       - 30174
       - 30175
   Caledon Forest:
-    Wardenhurst Mace: 30549
-    Wardenlight Emblem: 23875
-    Jar of Ooze: 23868
-    Red-Capped Leather Gloves: 4912
-    Verdant Charm: 23878
-    Warden's Staff: 30556
-    Briarthorn Dager: 30543
-    Orewood Axe: 30546
-    Mossy Devout Shoes: 4917
-    Engraved Sea Shell: 23882
-    Silent Conch Shell: 23884
-    Painted Battle Jar: 23886
-    Hemlocked Sword: 30561
-    Krait Tooth Pendant: 23888
-    Fisher's Shield: 30560
-    Kraitbane Model I Pistol: 30547
-    Pungent Vial: 23891
-    Patrol Torch: 30544
+    Wardenhurst Mace:
+      - 30549
+    Wardenlight Emblem:
+      - 23875
+    Jar of Ooze:
+      - 23868
+    Red-Capped Leather Gloves:
+      - 4912
+    Verdant Charm:
+      - 23878
+    Warden's Staff:
+      - 30556
+    Briarthorn Dager:
+      - 30543
+    Orewood Axe:
+      - 30546
+    Mossy Devout Shoes:
+      - 4917
+    Engraved Sea Shell:
+      - 23882
+    Silent Conch Shell:
+      - 23884
+    Painted Battle Jar:
+      - 23886
+    Hemlocked Sword:
+      - 30561
+    Krait Tooth Pendant:
+      - 23888
+    Fisher's Shield:
+      - 30560
+    Kraitbane Model I Pistol:
+      - 30547
+    Pungent Vial:
+      - 23891
+    Patrol Torch:
+      - 30544
   Metrica Province:
-    Progeny Gloves: 5010
-    Golem Prototype Ankle Crystal: 23871
-    Opticalium Gauntlets: 4856
-    Drake Steak: 8521
-    PRT Boots: 4851
-    Incomp Leather Boots: 5014
-    Inquest Golem Arm: 8773
-    Skritt Poker: 30532
-    Model L-12 Dissection Tool: 30525
-    Force-Amplifying Impact Device: 30542
-    Dragonfly-Wing Earrings: 23864
-    Lionguard Warhorn: 30535
-    Charged Scepter: 30537
-    Deputy Peacemaker Badge: 23862
-    Fireman's Axe: 30527
-    Radiation Shield: 30533
+    Progeny Gloves:
+      - 5010
+    Golem Prototype Ankle Crystal:
+      - 23871
+    Opticalium Gauntlets:
+      - 4856
+    Drake Steak:
+      - 8521
+    PRT Boots:
+      - 4851
+    Incomp Leather Boots:
+      - 5014
+    Inquest Golem Arm:
+      - 8773
+    Skritt Poker:
+      - 30532
+    Model L-12 Dissection Tool:
+      - 30525
+    Force-Amplifying Impact Device:
+      - 30542
+    Dragonfly-Wing Earrings:
+      - 23864
+    Lionguard Warhorn:
+      - 30535
+    Charged Scepter (Researcher Ahjj):
+      - 30537
+    Deputy Peacemaker Badge:
+      - 23862
+    Fireman's Axe:
+      - 30527
+    Radiation Shield:
+      - 30533
   Brisban Wildlands:
     Woodsman's Axe:
       - 30595
@@ -223,23 +300,31 @@ Core:
     Vigil Badge:
       - 23957
       - 23970
-    Hylek Yellow Hue Potion: 8787
-    Hylek Green Hue Potion: 8786
-    Hylek Orange Hue Potion: 8789
-    Sun Bead: 19717
-    Hylek Blue Hue Potion: 8788
+    Hylek Yellow Hue Potion:
+      - 8787
+    Hylek Green Hue Potion:
+      - 8786
+    Hylek Orange Hue Potion:
+      - 8789
+    Sun Bead:
+      - 19717
+    Hylek Blue Hue Potion:
+      - 8788
     Wreckage Waders:
       - 4937
       - 4951
-    Chum Trispear: 30622
+    Chum Trispear:
+      - 30622
     Rescuer's Shoulderpads:
       - 4942
       - 4957
-    Brackwater Scepter: 30615
+    Brackwater Scepter:
+      - 30615
     Dried Poisonous Swamp Fungi:
       - 23965
       - 23978
-    Briar Sword: 30620
+    Briar Sword:
+      - 30620
     United Arcanist Lab's Metal Gauntlets:
       - 4927
       - 4964
@@ -282,20 +367,34 @@ Core:
       - 23331
       - 23400
       - 23415
-    Hare Totem: 23334
-    Wurm Hunt Souvenir Stein: 23340
-    Carving Knife: 29392
-    Bear Totem: 23329
-    Fiendish Grawl Artwork: 23330
-    Tiny Dredge Tuning Fork: 23339
-    Surplus Lionguard Leather Boots: 3962
-    Charged Scepter: 29399
-    Twinspur Pistol: 29397
-    Ancient Jotun Runestone: 23336
-    Wolf Totem: 23332
-    Raven Totem: 23328
-    Lionguard-Issue Sword: 29403
-    Cleaver: 29391
+    Hare Totem:
+      - 23334
+    Wurm Hunt Souvenir Stein:
+      - 23340
+    Carving Knife:
+      - 29392
+    Bear Totem:
+      - 23329
+    Fiendish Grawl Artwork:
+      - 23330
+    Tiny Dredge Tuning Fork:
+      - 23339
+    Surplus Lionguard Leather Boots:
+      - 3962
+    Charged Scepter:
+      - 29399
+    Twinspur Pistol:
+      - 29397
+    Ancient Jotun Runestone:
+      - 23336
+    Wolf Totem:
+      - 23332
+    Raven Totem:
+      - 23328
+    Lionguard-Issue Sword:
+      - 29403
+    Cleaver:
+      - 29391
   Snowden Drifts:
     Mortar and Pestle:
       - 23302
@@ -308,7 +407,8 @@ Core:
     Dark Blade:
       - 29388
       - 29354
-    Heart-Shaped Cookie: 8500
+    Heart-Shaped Cookie:
+      - 8500
     Leika's Mace:
       - 29387
       - 29360
@@ -318,7 +418,8 @@ Core:
     Seraph Shoulderpads:
       - 3941
       - 3923
-    Ghost Owl Feather: 8639
+    Ghost Owl Feather:
+      - 8639
     Giant Wolf Tooth:
       - 23301
       - 23314
@@ -338,7 +439,8 @@ Core:
     Herding Horn:
       - 29472
       - 29483
-    Potion of Ettin Essence: 8656
+    Potion of Ettin Essence:
+      - 8656
     Queldip Gauntlets:
       - 4034
       - 4051
@@ -388,7 +490,8 @@ Core:
     Painted Mokooki Hunter's Pottery:
       - 23402
       - 23417
-    Ratatosk Pistol: 29492
+    Ratatosk Pistol:
+      - 29492
     Travelen's Lodge Commemorative Spoon:
       - 23401
       - 23416
@@ -404,19 +507,31 @@ Core:
     Tribulation Focus:
       - 29494
       - 29496
-    Patient Shield: 29505
-    Wyrmblood Warhorn: 29520
+    Patient Shield:
+      - 29505
+    Wyrmblood Warhorn:
+      - 29520
   Timberline Falls:
-    Whisper Model K Pistol: 29419
-    Explorer's Focus: 29429
-    Order Dagger: 29412
-    Acquired Shoes: 3973
-    Mountain Shield: 29443
-    Experimental Collection Staff: 29433
-    Crusader's Mace: 29422
-    Leather Excavator's Gloves: 4002
-    Caer Axe: 29418
-    Hunter's Speargun: 29432
+    Whisper Model K Pistol:
+      - 29419
+    Explorer's Focus:
+      - 29429
+    Order Dagger:
+      - 29412
+    Acquired Shoes:
+      - 3973
+    Mountain Shield:
+      - 29443
+    Experimental Collection Staff:
+      - 29433
+    Crusader's Mace:
+      - 29422
+    Leather Excavator's Gloves:
+      - 4002
+    Caer Axe:
+      - 29418
+    Hunter's Speargun:
+      - 29432
     Spleedoop Breather (light):
       - 3995
       - 3998
@@ -427,8 +542,10 @@ Core:
     Cloth Inka Boots:
       - 4123
       - 4126
-    Valoric Warhorn: 29553
-    Wayward Shield: 29561
+    Valoric Warhorn:
+      - 29553
+    Wayward Shield:
+      - 29561
     Symbol of Balance:
       - 23430
       - 23441
@@ -451,52 +568,84 @@ Core:
       - 29540
       - 29542
   Queensdale:
-    Rusty Iron Key: 23734
-    Portal Shatterer: 30368
-    Monk's Beer Stein: 23731
-    Tamini Axe: 30360
-    Boar Tusk: 23730
-    Heavy Trading Stompers: 4670
-    Wurm Tooth: 23720
-    Drake Scale: 23721
-    Measuring Spoon: 23723
-    Moa Collar: 23724
-    Cloth Garrison Gloves: 4674
-    Fish Hook: 23732
-    Chewed Dog Whistle: 23733
-    Bone (consumable): 8743
-    Elmder's Mace: 30359
-    Militia Shield: 30357
-    Harpy Feather (level 3): 23722
+    Rusty Iron Key:
+      - 23734
+    Portal Shatterer:
+      - 30368
+    Monk's Beer Stein:
+      - 23731
+    Tamini Axe:
+      - 30360
+    Boar Tusk:
+      - 23730
+    Heavy Trading Stompers:
+      - 4670
+    Wurm Tooth:
+      - 23720
+    Drake Scale:
+      - 23721
+    Measuring Spoon:
+      - 23723
+    Moa Collar:
+      - 23724
+    Cloth Garrison Gloves:
+      - 4674
+    Fish Hook:
+      - 23732
+    Chewed Dog Whistle:
+      - 23733
+    Bone (consumable):
+      - 8743
+    Elmder's Mace:
+      - 30359
+    Militia Shield:
+      - 30357
+    Harpy Feather (level 3):
+      - 23722
   Kessex Hills:
-    Tengu Feather Charm: 23745
-    Lion's Claw Model I: 30372
-    Matlal Enchanted Pig Truffle: 8748
-    Bowl of Overlake Soup: 8569
-    Seraph Scout Badge: 23749
+    Tengu Feather Charm:
+      - 23745
+    Lion's Claw Model I:
+      - 30372
+    Matlal Enchanted Pig Truffle:
+      - 8748
+    Bowl of Overlake Soup:
+      - 8569
+    Seraph Scout Badge:
+      - 23749
     Seraph-Issue Shield:
       - 30388
       - 30344
-    Researcher's Scepter: 30386
+    Researcher's Scepter:
+      - 30386
     Seraph-Issue Shoulderpads:
       - 4718
       - 4715
-    Waldo's Torch: 30351
+    Waldo's Torch:
+      - 30351
     Seraph-Issue Gauntlets:
       - 4686
       - 4688
-    Miner's Mace Mark G: 30374
-    Triskellian Breather (medium): 4691
-    Ancient Shining Blade Emblem: 23752
-    Doolsileep's Seashell Charm: 23750
+    Miner's Mace Mark G:
+      - 30374
+    Triskellian Breather (medium):
+      - 4691
+    Ancient Shining Blade Emblem:
+      - 23752
+    Doolsileep's Seashell Charm:
+      - 23750
   Gendarran Fields:
-    Vejj's Dusty Focus: 30452
+    Vejj's Dusty Focus:
+      - 30452
     Ascalonian Warhorn:
       - 30449
       - 30472
-    Broken Centaur Iron Shackles: 23813
-    Lionguard Iron Mace: 30459
-    Milton's Golden Apple Corer: 23795
+    Broken Centaur Iron Shackles:
+      - 23813
+    Lionguard Iron Mace:
+      - 30459
+    Milton's Golden Apple Corer:
+      - 23795
     Farmer's Rusty Axe:
       - 30458
       - 30479
@@ -506,7 +655,7 @@ Core:
     Lionguard Cloth Shoes:
       - 4756
       - 4752
-    Junction Haven Shield:
+    Sheriff Kaargoth Bloodclaw:
       - 30456
       - 30476
     Johan's Heavy Shoulderguard:
@@ -543,17 +692,21 @@ Core:
     Leather Modniir Kickers:
       - 4822
       - 4825
-    Warhorn of the Company: 30486
+    Warhorn of the Company:
+      - 30486
     Private Felix's Leather Gloves:
       - 4812
       - 4818
   Bloodtide Coast:
-    Lionguard Cloth Footguards: 4759
+    Lionguard Cloth Footguards:
+      - 4759
     Durmand Priory Focus:
       - 30417
       - 30416
-    Pirate Hard Tack: 8634
-    Crab Food: 8633
+    Pirate Hard Tack:
+      - 8634
+    Crab Food:
+      - 8633
     Pirate Axe:
       - 30424
       - 30425
@@ -578,9 +731,11 @@ Core:
     Durmand Priory Mace:
       - 30444
       - 30445
-    Bottle of Spider Brew: 8602
+    Bottle of Spider Brew:
+      - 8602
   Straits of Devastation:
-    Mangos in Bulk: 12772
+    Mangos in Bulk:
+      - 12772
     Stentor Focus:
       - 30248
       - 30246
@@ -606,7 +761,8 @@ Core:
       - 4448
       - 4460
   Malchor's Leap:
-    Bottle of Standard Research Issue Aged Wine: 8567
+    Bottle of Standard Research Issue Aged Wine:
+      - 8567
     Orrian Mirror Shard:
       - 23693
       - 23699
@@ -622,7 +778,8 @@ Core:
     Intercepted Inquest Calculations:
       - 23686
       - 23700
-    Experimental Rifle: 8733
+    Experimental Rifle:
+      - 8733
     Doric Torch:
       - 30300
       - 30302
@@ -645,7 +802,8 @@ Core:
     Pact Medal of Accommodation:
       - 23667
       - 23678
-    Bottle of Putrid Wine: 8550
+    Bottle of Putrid Wine:
+      - 8550
     Meddler's Torch:
       - 30262
       - 30264
@@ -673,3 +831,439 @@ Core:
     Cachistic Handwraps:
       - 4485
       - 4488
+Living World Season 1:
+  Southsun Cove:
+    Consortium NDA:
+      - 37891
+      - 37892
+    Karka Egg Omelet:
+      - 36724
+    Potion Of Karka Slaying:
+      - 42427
+    Lionguard Assault Badge:
+      - 37890
+  The Tower of Nightmares:
+    Tricolor Key:
+      - 49132
+  The Battle For Lion's Arch:
+    Standard Citizen's Rescue Bag:
+      - 50073
+    Ultimate Citizen's Rescue Bag:
+      - 50071
+  The Twisted Marionette:
+    Hoard of the Marionette Warden I:
+      - 49657
+    Hoard of the Marionette Warden II:
+      - 49556
+    Hoard of the Marionette Warden III:
+      - 49655
+    Hoard of the Marionette Warden IV:
+      - 49654
+    Hoard of the Marionette Warden V:
+      - 49658
+Living World Season 2:
+  Dry Top:
+    Sandy Bag of Gear:
+      - 66399
+  The Silverwastes:
+    Experimental Mordrem Extraction Device:
+      - 67818
+    Pile of Silky Sand:
+      - 66608
+    Key of Greater Nightmares:
+      - 67979
+Heart of Thorns:
+  Verdant Brink:
+    Pruning Shear:
+      - 72802
+    "Verdant Brink: Hero's Choice Chest":
+      - 78171
+      - 78743
+    Mini Itzel Bladedancer:
+      - 75348
+  Auric Basin:
+    "Auric Basin: Hero's Choice Chest":
+      - 78650
+      - 78748
+    Pact Ration:
+      - 73570
+  Tangled Depths:
+    "Tangled Depths: Hero's Choice Chest":
+      - 78332
+      - 78751
+  Dragon's Stand:
+    "Dragon's Stand: Hero's Choice Chest":
+      - 78617
+      - 78783
+Living World Season 3:
+  Bloodstone Fen:
+    Blood Ruby Pendant:
+      - 79269
+  Ember Bay:
+    Pocket Jade Armor:
+      - 79424
+    Petrified Karka Egg:
+      - 79438
+      - 79559
+    Aqueous Amulet:
+      - 79495
+      - 79593
+    Circus Voucher:
+      - 79476
+    Skritt Worker Contract:
+      - 79528
+  Bitterfrost Frontier:
+    Steak with Winterberry Sauce:
+      - 79786
+    Grawl Firestone:
+      - 79733
+    Winterberry Pie:
+      - 79748
+  Lake Doric:
+    Key to Noran's Secret Chest:
+      - 80262
+    Seraph Pearl Carver:
+      - 80139
+  Draconis Mons:
+    Magic-Warped Bundle:
+      - 79186
+      - 79187
+    Ancient Asuran Power Source:
+      - 81183
+      - 81121
+      - 81082
+      - 81204
+      - 81205
+  Siren's Landing:
+    Orrian Coffer:
+      - 81782
+Path of Fire:
+  Crystal Oasis:
+    Handmade Crab-Catching Basket:
+      - 84547
+    Hamaseen Trophy Crate:
+      - 83462
+    Zephyrite Writings:
+      - 84238
+    Tale of Back Home:
+      - 82676
+  Desert Highlands:
+    Clump of Dirt:
+      - 83243
+    Cavalier Star:
+      - 83320
+    Mournstone Earring:
+      - 82478
+    Springer Carving:
+      - 83201
+  Elon Riverlands:
+    Forgotten Interference Pattern:
+      - 85207
+    Pile of Vlast Sliver Dust:
+      - 85243
+  The Desolation:
+    Handful of Portal Dust:
+      - 84219
+    Shadowy Secret:
+      - 83373
+  Domain of Vabbi:
+    Cache of the Traveler:
+      - 83610
+    Autographed Flyer:
+      - 83604
+    Funeary Incense:
+      - 86093
+    Formerly Priceless Heirloom:
+      - 84143
+    Wildly Inaccurate Textbook:
+      - 83225
+Living World Season 4:
+  Domain of Istan:
+    Trophy Shipment:
+      - 85725
+    Confiscated Food:
+      - 86371
+    Pillaged Goods:
+      - 86369
+    "Ancient Weapons: Bronze":
+      - 86046
+    "Ancient Weapons: Silver":
+      - 86284
+    "Ancient Weapons: Gold":
+      - 85719
+    "Istan Griffon Master: Bronze":
+      - 86375
+    "Istan Griffon Master: Silver":
+      - 85965
+    "Istan Griffon Master: Gold":
+      - 85659
+    "Istan Griffon Expert: Bronze":
+      - 86342
+    "Istan Griffon Expert: Silver":
+      - 85793
+    "Istan Griffon Expert: Gold":
+      - 86023
+    Rose Quartz:
+      - 86316
+  Sandswept Isles:
+    Bottle of Coconut Milk:
+      - 87289
+    "Sandswept Isles Griffon Expert: Bronze":
+      - 87228
+    "Sandswept Isles Griffon Expert: Silver":
+      - 87095
+    "Sandswept Isles Griffon Expert: Gold":
+      - 87067
+    "Crystal Corral: Bronze":
+      - 87077
+    "Crystal Corral: Silver":
+      - 87253
+    "Crystal Corral: Gold":
+      - 87045
+  Domain of Kourna:
+    Roller Beetle Treat:
+      - 87689
+    Debbie's Cake:
+      - 88101
+    Firefly Bits:
+      - 87658
+    Cannon in a Box:
+      - 87996
+    Golem Swarm Potion:
+      - 87631
+    "Kourna Roller Beetle Training: Bronze":
+      - 87825
+    "Kourna Roller Beetle Training: Silver":
+      - 88087
+    "Kourna Roller Beetle Training: Gold":
+      - 87833
+    "Domain of Kourna Griffon Master: Bronze":
+      - 87594
+    "Domain of Kourna Griffon Master: Silver":
+      - 87637
+    "Domain of Kourna Griffon Master: Gold":
+      - 87639
+    "Domain of Kourna Griffon Expert: Bronze":
+      - 87593
+    "Domain of Kourna Griffon Expert: Silver":
+      - 87621
+    "Domain of Kourna Griffon Expert: Gold":
+      - 87587
+    Plaguedoctor's Orichalcum-Imbued Inscription:
+      - 87809
+  Jahai Bluffs:
+    "Jahai Bluffs Griffon Master: Bronze":
+      - 88930
+    "Jahai Bluffs Griffon Master: Silver":
+      - 88742
+    "Jahai Bluffs Griffon Master: Gold":
+      - 88964
+    "Jahai Bluffs Griffon Expert: Bronze":
+      - 88792
+    "Jahai Bluffs Griffon Expert: Silver":
+      - 88541
+    "Jahai Bluffs Griffon Expert: Gold":
+      - 88894
+    Volatile Harvesting Sickle:
+      - 85733
+    Slightly Smelly Slab of Steak:
+      - 88781
+    Unstable Branded Awakened Wind-Up:
+      - 88573
+    "Run Around: Bronze":
+      - 88745
+    "Run Around: Silver":
+      - 88784
+    "Run Around: Gold":
+      - 88672
+  Thunderhead Peaks:
+    Volatile Mining Pick:
+      - 86087
+    Large Fragile Artifact:
+      - 89748
+    "Volatile Delivery Run: Bronze":
+      - 89654
+    "Volatile Delivery Run: Silver":
+      - 89928
+    "Volatile Delivery Run: Gold":
+      - 89673
+    "Ice Floe Magnet Run: Bronze":
+      - 89641
+    "Ice Floe Magnet Run: Silver":
+      - 89564
+    "Ice Floe Magnet Run: Gold":
+      - 89606
+    Forge Supplies:
+      - 89870
+    Diviner's Orichalcum-Imbued Inscription:
+      - 89735
+  Dragonfall:
+    Volatile Logging Axe:
+      - 86193
+The Icebrood Saga:
+  Grothmar Valley:
+    "Grothmar Grand Tour: Bronze":
+      - 92067
+    "Grothmar Grand Tour: Silver":
+      - 92041
+    "Grothmar Grand Tour: Gold":
+      - 91979
+    "Grothmar Skyscale Challenge: Bronze":
+      - 92016
+    "Grothmar Skyscale Challenge: Silver":
+      - 91909
+    "Grothmar Skyscale Challenge: Gold":
+      - 92044
+    "Grothmar Crater Circuit: Bronze":
+      - 92083
+    "Grothmar Crater Circuit: Silver":
+      - 92011
+    "Grothmar Crater Circuit: Gold":
+      - 91947
+    "Ash Stealth: Bronze":
+      - 91908
+    "Ash Stealth: Silver":
+      - 91928
+    "Ash Stealth: Gold":
+      - 91990
+    Plate of Spicy Moa Wings:
+      - 91917
+  Bjora Marches:
+    Boneskinner Tonic:
+      - 92302
+    Raven Statue (decoration):
+      - 92344
+  Drizzlewood Coast:
+    "Arena of the Wolverine: Bronze":
+      - 93884
+    "Arena of the Wolverine: Silver":
+      - 93764
+    "Arena of the Wolverine: Gold":
+      - 93762
+    "Flight of the Eagle Spirit: Bronze":
+      - 93890
+    "Flight of the Eagle Spirit: Silver":
+      - 93867
+    "Flight of the Eagle Spirit: Gold":
+      - 93756
+    "The Ox's Yoke: Bronze":
+      - 93921
+    "The Ox's Yoke: Silver":
+      - 93922
+    "The Ox's Yoke: Gold":
+      - 93732
+    Cache Key:
+      - 93468
+    Shard of Crystallized Blood of Jormag:
+      - 93734
+  The Eye of the North:
+    Olmakhan Supply Box:
+      - 94860
+End of Dragons:
+  Seitung Province:
+    Jaiju Minnow:
+      - 96117
+    "Siege Stampede: Bronze":
+      - 99668
+    "Siege Stampede: Silver":
+      - 99661
+    "Siege Stampede: Gold":
+      - 99663
+    Writ of Seitung Province:
+      - 96680
+    "Swift Skiffs: Bronze":
+      - 99691
+    "Swift Skiffs: Silver":
+      - 99662
+    "Swift Skiffs: Gold":
+      - 99736
+    "Seitung Province: Hero's Choice Chest":
+      - 97895
+  New Kaineng City:
+    Writ of New Kaineng City:
+      - 96533
+    "Jade Bot Rally: Bronze":
+      - 99768
+    "Jade Bot Rally: Silver":
+      - 99696
+    "Jade Bot Rally: Gold":
+      - 99657
+    "New Kaineng City: Hero's Choice Chest":
+      - 97901
+  The Echovald Wilds:
+    Writ of Echovald Wilds:
+      - 96561
+    "The Echovald Wilds: Hero's Choice Chest":
+      - 97894
+  Dragon's End:
+    Writ of Dragon's End:
+      - 95692
+    "Dragon's End: Hero's Choice Chest":
+      - 97896
+  Gyala Delve:
+    "Gyala Delve: Hero's Choice Chest":
+      - 99704
+    "Rolling into the Deep: Bronze":
+      - 99676
+    "Rolling into the Deep: Silver":
+      - 99694
+    "Rolling into the Deep: Gold":
+      - 99769
+    "Silent Sands: Bronze":
+      - 99688
+    "Silent Sands: Silver":
+      - 99714
+    "Silent Sands: Gold":
+      - 99673
+Secrets of the Obscure:
+  Skywatch Archipelago:
+    "Skyscale Target Practice: Bronze":
+      - 100195
+      - 100826
+      - 100826
+    "Skyscale Target Practice: Silver":
+      - 100853
+      - 100902
+    "Skyscale Target Practice: Gold":
+      - 100022
+      - 100324
+    "Skywatch Archipelago: Hero's Choice Chest":
+      - 100547
+  Amnytas:
+    "Amnytas: Hero's Choice Chest":
+      - 100193
+  Inner Nayos:
+    "Nayos Recon Run: Bronze":
+      - 101712
+    "Nayos Recon Run: Silver":
+      - 101796
+    "Nayos Recon Run: Gold":
+      - 101906
+    "Free Kryptis Essence: Bronze":
+      - 101784
+    "Free Kryptis Essence: Silver":
+      - 101905
+    "Free Kryptis Essence: Gold":
+      - 101813
+    "Reuniting Lost Kryptis: Bronze":
+      - 101858
+    "Reuniting Lost Kryptis: Silver":
+      - 101958
+    "Reuniting Lost Kryptis: Gold":
+      - 101839
+    "Inner Nayos: Hero's Choice Chest":
+      - 101195
+    "Inner Nayos: Hero's Chest":
+      - 101482
+    "Citadel of Zakiros: Hero's Choice Chest":
+      - 101748
+  The Wizard's Tower:
+    "Fly-by-Night: Bronze":
+      - 100670
+      - 100690
+    "Fly-by-Night: Silver":
+      - 100296
+      - 100464
+    "Fly-by-Night: Gold":
+      - 100037
+      - 100943
