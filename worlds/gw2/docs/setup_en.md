@@ -27,7 +27,8 @@ These triggers will set the profession and race to match the character and updat
 of quests that character has remaining in the storyline.
 
 ### Generating a multi-world
-1. Unzip the gw2_world.zip and place the gw2 folder from it in your Archipelago/lib/worlds folder
+1. Unzip the gw2_world.zip and place the apworld from it in your Archipelago/lib/worlds folder. Note: If you have an 
+old version, you may also have to remove a gw2 folder from Archipelago/lib/words.
 2. Follow the [standard instructions](https://archipelago.gg/tutorial/Archipelago/setup/en) for generating a 
 game locally 
 
