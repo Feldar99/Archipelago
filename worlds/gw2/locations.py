@@ -79,6 +79,7 @@ def create_locations():
         item_data = parse_yaml(f.read())
         for storyline_name in item_data:
             storyline = storyline_from_str(storyline_name)
+            print(storyline_name, ": ", storyline)
             storyline_items[storyline.value] = []
             storyline_data = item_data[storyline_name]
             for map in storyline_data:

@@ -3,7 +3,7 @@ from typing import Optional
 
 
 class StorylineEnum(enum.Enum):
-    CORE = enum.auto()
+    CORE = enum.auto(value=0)
     SEASON_1 = enum.auto()
     SEASON_2 = enum.auto()
     HEART_OF_THORNS = enum.auto()
@@ -31,7 +31,7 @@ def storyline_from_str(text) -> Optional[StorylineEnum]:
         return StorylineEnum.PATH_OF_FIRE
     if text in ("season 4", "season4", "s4", "living world season 4"):
         return StorylineEnum.SEASON_4
-    if text in ("icebrood saga", "icebroodsaga", "ibs"):
+    if text in ("icebrood saga", "icebroodsaga", "ibs", "the icebrood saga"):
         return StorylineEnum.ICEBROOD_SAGA
     if text in ("end of dragons", "endofdragons", "eod"):
         return StorylineEnum.END_OF_DRAGONS
