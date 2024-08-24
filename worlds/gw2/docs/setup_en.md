@@ -1,9 +1,10 @@
 # Guild Wars 2 for Archipelago Setup Guide
 
 ## Required Software
-* Download and unzip the [BlishHUD](https://blishhud.com/).
+* [BlishHUD](https://blishhud.com/).
 * A free or paid version of [Guild Wars 2](https://www.guildwars2.com/en/)
 * This [Gw2 Archipelago](https://github.com/Feldar99/Archipelago/releases) release
+* The [Archipelago Launcher](https://archipelago.gg/tutorial/Archipelago/setup/en)
 
 ## Installing the Archipelago Mod using BlishHUD
 1. Move BlishHUD to a convenient location. You will need to open it manually.
@@ -21,10 +22,11 @@ An YAML file is the way that you provide your player options to Archipelago.
 See the [basic multiworld setup guide](/tutorial/Archipelago/setup/en) here on the Archipelago website to learn more.
 
 ### Where do I get a YAML?
-Until this world is released you will have to edit your YAML manually. You can either modify the provided template,
-or generate one using the provided gw2YamlGenerator.exe to create one with triggers for using your existing characters.
-These triggers will set the profession and race to match the character and update the max_quests value to be the number
-of quests that character has remaining in the storyline.
+Until this world is released you will have to edit your YAML manually. You can modify the provided template, but
+it is recommended that you generate one using the provided gw2YamlGenerator.exe to create one with triggers for 
+using your existing characters. These triggers will set the profession and race to match the character and 
+update the max_quests value to be the number of quests that character has remaining in the storyline.  You may
+modify the generated yaml how you like as well.
 
 ### Generating a multi-world
 1. Unzip the gw2_world.zip and place the apworld from it in your Archipelago/lib/worlds folder. Note: If you have an 
