@@ -50,23 +50,21 @@ class Gw2World(World):
     def includes_storyline(self, storyline: StorylineEnum):
         if storyline is StorylineEnum.CORE:
             return True
-        match self.options.storyline_items.value:
-            case StorylineItems.option_all:
-                return True
-            case StorylineItems.option_storyline_plus:
-                return storyline.value <= self.options.storyline.value
-            case StorylineItems.option_storyline:
-                match self.options.storyline.value:
-                    case Storyline.option_season_3:
-                        return storyline == StorylineEnum.HEART_OF_THORNS
-                    case Storyline.option_season_4:
-                        return storyline == StorylineEnum.PATH_OF_FIRE
-                    case Storyline.option_icebrood_saga:
-                        return storyline == StorylineEnum.PATH_OF_FIRE
-                    case _:
-                        return storyline == self.options.storyline
-            case _:
-                return False
+        if self.options.storyline_items.value == StorylineItems.option_all:
+            return True
+        elif self.options.storyline_items.value == StorylineItems.option_storyline_plus:
+            return storyline.value <= self.options.storyline.value
+        elif self.options.storyline_items.value == StorylineItems.option_storyline:
+            if self.options.storyline.value == Storyline.option_season_3:
+                return storyline == StorylineEnum.HEART_OF_THORNS
+            elif self.options.storyline.value == Storyline.option_season_4:
+                return storyline == StorylineEnum.PATH_OF_FIRE
+            elif self.options.storyline.value == Storyline.option_icebrood_saga:
+                return storyline == StorylineEnum.PATH_OF_FIRE
+            else:
+                return storyline == self.options.storyline
+        else:
+            return False
 
     def item_is_usable(self, item: Gw2ItemData, allow_elite_spec: bool) -> bool:
         if item.storyline is not None and not self.includes_storyline(item.storyline):
