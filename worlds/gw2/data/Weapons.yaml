@@ -187,6 +187,25 @@ HarpoonGun:
     - Ranger
     - Thief
 Spear:
+  TwoHanded:
+    - Guardian:
+        JanthirWilds
+    - Warrior:
+        JanthirWilds
+    - Revenant:
+        JanthirWilds
+    - Ranger:
+        JanthirWilds
+    - Thief:
+        JanthirWilds
+    - Engineer:
+        JanthirWilds
+    - Elementalist:
+        JanthirWilds
+    - Mesmer:
+        JanthirWilds
+    - Necromancer:
+        JanthirWilds
   Aquatic:
     - Guardian
     - Revenant
