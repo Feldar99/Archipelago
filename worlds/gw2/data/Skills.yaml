@@ -1,7 +1,7 @@
 WARRIOR:
   Healing:
     - Mending
-    - "To the Limit!"
+    - '"To the Limit!"'
     - Healing Signet
     - Defiant Stance
   Utility:
@@ -13,10 +13,10 @@ WARRIOR:
     - Kick
     - Stomp
     - Throw Bolas
-    - "Fear Me!"
-    - "For Great Justice!"
-    - "On My Mark!"
-    - "Shake it Off!"
+    - '"Fear Me!"'
+    - '"For Great Justice!"'
+    - '"On My Mark!"'
+    - '"Shake it Off!"'
     - Dolyak Signet
     - Signet of Fury
     - Signet of Might
@@ -61,7 +61,7 @@ WARRIOR:
       - Tactical Reload
 GUARDIAN:
   Healing:
-    - "Receive the Light!"
+    - '"Receive the Light!"'
     - Litany of Wrath
     - Shelter
     - Signet of Resolve
@@ -74,10 +74,10 @@ GUARDIAN:
     - Judge's Intervention
     - Merciful Intervention
     - Smite Condition
-    - "Hold the Line!"
-    - "Advance!"
-    - "Save Yourselves!"
-    - "Stand Your Ground!"
+    - '"Hold the Line!"'
+    - '"Advance!"'
+    - '"Save Yourselves!"'
+    - '"Stand Your Ground!"'
     - Bane Signet
     - Signet of Judgment
     - Signet of Mercy
@@ -87,7 +87,7 @@ GUARDIAN:
     - Shield of the Avenger
     - Sword of Justice
   Elite:
-    - "Feel My Wrath!"
+    - '"Feel My Wrath!"'
     - Renewed Focus
     - Signet of Courage
   Dragonhunter:
@@ -221,7 +221,6 @@ ENGINEER:
     - Flame Turret
     - Net Turret
     - Rifle Turret
-    - Harpoon Turret
     - Rocket Turret
     - Thumper Turret
   Elite:
@@ -260,15 +259,15 @@ ENGINEER:
       - Overclock Signet
 RANGER:
   Healing:
-    - "We Heal as One!"
+    - '"We Heal as One!"'
     - Water Spirit
     - Troll Unguent
     - Healing Spring
   Utility:
-    - "Guard!"
-    - "Protect Me!"
-    - "Search and Rescue!"
-    - "Sic 'Em!"
+    - '"Guard!"'
+    - '"Protect Me!"'
+    - '"Search and Rescue!"'
+    - '"Sic ''Em!"'
     - Signet of Renewal
     - Signet of Stone
     - Signet of the Hunt
@@ -286,7 +285,7 @@ RANGER:
     - Spike Trap
     - Viper's Nest
   Elite:
-    - "Strength of the Pack!"
+    - '"Strength of the Pack!"'
     - Spirit of Nature
     - Entangle
   Druid:
@@ -414,14 +413,14 @@ ELEMENTALIST:
     - Whirlpool
   Tempest:
     Healing:
-      - "Wash the Pain Away!"
+      - '"Wash the Pain Away!"'
     Utility:
-      - "Feel the Burn!"
-      - "Eye of the Storm!"
-      - "Aftershock!"
-      - "Flash-Freeze!"
+      - '"Feel the Burn!"'
+      - '"Eye of the Storm!"''
+      - '"Aftershock!"'
+      - '"Flash-Freeze!"''
     Elite:
-      - "Rebound!"
+      - '"Rebound!"'
   Weaver:
     Healing:
       - Aquatic Stance
@@ -475,14 +474,14 @@ NECROMANCER:
     - Lich Form
   Reaper:
     Healing:
-      - "Your Soul is Mine!"
+      - '"Your Soul is Mine!"'
     Utility:
-      - "Nothing Can Save You!"
-      - "Rise!"
-      - "Suffer!"
-      - "You Are All Weaklings!"
+      - '"Nothing Can Save You!"''
+      - '"Rise!"'
+      - '"Suffer!"''
+      - '"You Are All Weaklings!"'
     Elite:
-      - "Chilled to the Bone!"
+      - '"Chilled to the Bone!"''
   Scourge:
     Healing:
       - Sand Flare
