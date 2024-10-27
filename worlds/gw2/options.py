@@ -50,6 +50,7 @@ class Storyline(Choice):
     option_icebrood_saga = StorylineEnum.ICEBROOD_SAGA.value
     option_end_of_dragons = StorylineEnum.END_OF_DRAGONS.value
     option_secrets_of_the_obscure = StorylineEnum.SECRETS_OF_THE_OBSCURE.value
+    option_janthir_wilds = StorylineEnum.JANTHIR_WILDS.value
 
     default = option_core
 
@@ -78,9 +79,10 @@ class StartingMainhandWeapon(Choice):
     option_rifle = 14
     option_short_bow = 15
     option_staff = 16
-    option_random_proficient = 17
-    option_random_proficient_one_handed = 18
-    option_random_proficient_two_handed = 19
+    option_spear = 17
+    option_random_proficient = 18
+    option_random_proficient_one_handed = 19
+    option_random_proficient_two_handed = 20
 
     default = option_random_proficient
 

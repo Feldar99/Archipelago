@@ -328,6 +328,8 @@ class Gw2World(World):
             return item_table["TwoHanded ShortBow"]
         elif self.options.starting_mainhand_weapon == StartingMainhandWeapon.option_staff:
             return item_table["TwoHanded Staff"]
+        elif self.options.starting_mainhand_weapon == StartingMainhandWeapon.option_spear:
+            return item_table["TwoHanded Spear"]
         return None
 
     def fill_slot_data(self) -> Dict[str, Any]:

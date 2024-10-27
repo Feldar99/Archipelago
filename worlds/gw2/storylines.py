@@ -13,6 +13,7 @@ class StorylineEnum(enum.Enum):
     ICEBROOD_SAGA = enum.auto()
     END_OF_DRAGONS = enum.auto()
     SECRETS_OF_THE_OBSCURE = enum.auto()
+    JANTHIR_WILDS = enum.auto()
 
 
 def storyline_from_str(text) -> Optional[StorylineEnum]:
@@ -37,4 +38,6 @@ def storyline_from_str(text) -> Optional[StorylineEnum]:
         return StorylineEnum.END_OF_DRAGONS
     if text in ("secrets of the obscure", "secretsoftheobscure", "soto"):
         return StorylineEnum.SECRETS_OF_THE_OBSCURE
+    if text in ("janthir wilds", "janthirwilds", "janthir", "jw"):
+        return StorylineEnum.JANTHIR_WILDS
     return None
