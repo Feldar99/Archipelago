@@ -135,7 +135,7 @@ def load_skill_group(skills_data, spec: Optional[Spec] = None,
         if skill_type not in item_groups.keys():
             item_groups[skill_type] = []
         for skill_name in skills_data[skill_type]:
-            skill = Gw2ItemData(name=skill_name, quantity=1, storyline=storyline)
+            skill = Gw2ItemData(name=skill_name + " " + skill_type + " Skill", quantity=1, storyline=storyline)
             if spec is not None:
                 skill.specs.add(spec)
             skill.race = race
@@ -174,22 +174,39 @@ def load_traits():
     with files(data).joinpath("Traits.yaml").open() as f:
         trait_data = parse_yaml(f.read())
         for profession_name in trait_data:
-            profession_traits = trait_data[profession_name]
-            traits = profession_traits["Core"]
-            traits.extend(profession_traits["Elite"])
-            for trait in traits:
-                storyline = storyline_from_str(trait)
-                if storyline is not None:
-                    trait = profession_traits["Elite"][trait]
-                    elite_specs[trait] = storyline
-                item = Gw2ItemData(name="Progressive " + trait + " Trait", quantity=9, storyline=storyline)
-                spec = Spec(Profession[profession_name.upper()])
-                item.specs.add(spec)
-                traits_items.append(item)
-                if trait in elite_specs:
-                    item_groups["Elite Spec Traits"].append(item)
-                else:
-                    item_groups["Core Traits"].append(item)
+            profession_data = trait_data[profession_name]
+            for spec_name in profession_data:
+                spec_data = profession_data[spec_name]
+                storyline = None
+                if "storyline" in spec_data:
+                    storyline = storyline_from_str(spec_data["storyline"])
+                    elite_specs[spec_name] = storyline
+                traits = spec_data["traits"]
+                for trait in traits:
+                    item = Gw2ItemData(name=trait + " " + spec_name + " Trait", quantity=1, storyline=storyline)
+                    spec = Spec(Profession[profession_name.upper()])
+                    item.specs.add(spec)
+                    traits_items.append(item)
+                    if storyline is None:
+                        item_groups["Core Traits"].append(item)
+                    else:
+                        item_groups["Elite Spec Traits"].append(item)
+
+            # traits = profession_traits["Core"]
+            # traits.extend(profession_traits["Elite"])
+            # for trait in traits:
+            #     storyline = storyline_from_str(trait)
+            #     if storyline is not None:
+            #         trait = profession_traits["Elite"][trait]
+            #         elite_specs[trait] = storyline
+            #     item = Gw2ItemData(name="Progressive " + trait + " Trait", quantity=9, storyline=storyline)
+            #     spec = Spec(Profession[profession_name.upper()])
+            #     item.specs.add(spec)
+            #     traits_items.append(item)
+            #     if trait in elite_specs:
+            #         item_groups["Elite Spec Traits"].append(item)
+            #     else:
+            #         item_groups["Core Traits"].append(item)
 
     item_groups["Traits"].extend(traits_items)
     return traits_items

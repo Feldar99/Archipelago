@@ -41,7 +41,6 @@ class LocationData:
     name: str
 
     next_id_val = 3_828_179_903_462_517  #selected at random between 0 and 2^53-1 to minimize chance of collision
-
     def __init__(self, type: LocationType, region: RegionEnum, name_index: int = 0, name: Optional[str] = None):
         self.type = type
         self.region = region
