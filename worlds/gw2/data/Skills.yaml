@@ -416,9 +416,9 @@ ELEMENTALIST:
       - '"Wash the Pain Away!"'
     Utility:
       - '"Feel the Burn!"'
-      - '"Eye of the Storm!"''
+      - '"Eye of the Storm!"'
       - '"Aftershock!"'
-      - '"Flash-Freeze!"''
+      - '"Flash-Freeze!"'
     Elite:
       - '"Rebound!"'
   Weaver:
@@ -476,12 +476,12 @@ NECROMANCER:
     Healing:
       - '"Your Soul is Mine!"'
     Utility:
-      - '"Nothing Can Save You!"''
+      - '"Nothing Can Save You!"'
       - '"Rise!"'
-      - '"Suffer!"''
+      - '"Suffer!"'
       - '"You Are All Weaklings!"'
     Elite:
-      - '"Chilled to the Bone!"''
+      - '"Chilled to the Bone!"'
   Scourge:
     Healing:
       - Sand Flare
