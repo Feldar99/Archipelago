@@ -21264,3 +21264,930 @@ Living World Season 2:
       ypos: 432.666
       zpos: -307.969
       guid: A7IwwPmPzkiMpgPMwxJTww==
+Janthir Wilds:
+  Janthir Syntri:
+    Janthir Syntri -- Sanguine Crater Waypoint:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_janthirsyntri_waypoints.tw_mc_jw_janthirsyntri_waypoints_waypoint03
+      mapid: 1554
+      xpos: -361.661
+      ypos: 83.1198
+      zpos: 56.7079
+      guid: 11v5TDWtvUmwplxPXwEbtQ==
+    Janthir Syntri -- Mountain Pass Lookout:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_janthirsyntri_pointsofinterest.tw_mc_jw_janthirsyntri_pointsofinterest_pointsofinterest17
+      mapid: 1554
+      xpos: -546.741
+      ypos: 118.602
+      zpos: -66.3305
+      guid: iDDX6q6WREuEUohHdXlOLQ==
+    Janthir Syntri -- The Fourth Bloodtree:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_janthirsyntri_pointsofinterest.tw_mc_jw_janthirsyntri_pointsofinterest_pointsofinterest35
+      mapid: 1554
+      xpos: 486.044
+      ypos: 18.846
+      zpos: 201.489
+      guid: dZNeKVgiz0y2VkOIQHbhjg==
+    Janthir Syntri -- Athenaeum of Miracles:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_janthirsyntri_pointsofinterest.tw_mc_jw_janthirsyntri_pointsofinterest_pointsofinterest01
+      mapid: 1554
+      xpos: -236.909
+      ypos: 30.8389
+      zpos: 5.90556
+      guid: wGo4fxriikqQoCfodwDyuA==
+    Janthir Syntri -- Tumultuous Sea Vista:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_janthirsyntri_vistas.tw_mc_jw_janthirsyntri_vistas_vista08
+      mapid: 1554
+      xpos: 468.422
+      ypos: 77.8956
+      zpos: 597.079
+      guid: BOaNOJyui0KO/05xzE5Idg==
+    Janthir Syntri -- The Cathedral of Blood:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_janthirsyntri_pointsofinterest.tw_mc_jw_janthirsyntri_pointsofinterest_pointsofinterest31
+      mapid: 1554
+      xpos: -538.716
+      ypos: 95.6412
+      zpos: -105.548
+      guid: oHwURJj9xkaNlJT+fBesBQ==
+    Janthir Syntri -- Kindle Barrens:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_janthirsyntri_pointsofinterest.tw_mc_jw_janthirsyntri_pointsofinterest_pointsofinterest14
+      mapid: 1554
+      xpos: 362.622
+      ypos: 20.0263
+      zpos: 333.778
+      guid: zILtuSUX0ESXNIhGNAqH9A==
+    Janthir Syntri -- Forager's Hunt:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_janthirsyntri_pointsofinterest.tw_mc_jw_janthirsyntri_pointsofinterest_pointsofinterest11
+      mapid: 1554
+      xpos: 648.583
+      ypos: 1.55439
+      zpos: -662.597
+      guid: GAcCRk81S0SUmopFKRgZ3Q==
+    Janthir Syntri -- The Atrium:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_janthirsyntri_pointsofinterest.tw_mc_jw_janthirsyntri_pointsofinterest_pointsofinterest30
+      mapid: 1554
+      xpos: -10.2661
+      ypos: 12.745
+      zpos: -96.8021
+      guid: KedrzH0DbUGkStgAdIJ5fw==
+    Janthir Syntri -- Rhea's Perch:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_janthirsyntri_pointsofinterest.tw_mc_jw_janthirsyntri_pointsofinterest_pointsofinterest23
+      mapid: 1554
+      xpos: -373.236
+      ypos: 53.9857
+      zpos: -494.844
+      guid: UocDy5Mr9UWfiZlYQ5+h9Q==
+    Janthir Syntri -- Battledance Beach:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_janthirsyntri_pointsofinterest.tw_mc_jw_janthirsyntri_pointsofinterest_pointsofinterest02
+      mapid: 1554
+      xpos: 788.031
+      ypos: 0.181531
+      zpos: -354.274
+      guid: 7co573I6gEq/C9CLYRuOBA==
+    Janthir Syntri -- The Infested Quag:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_janthirsyntri_pointsofinterest.tw_mc_jw_janthirsyntri_pointsofinterest_pointsofinterest37
+      mapid: 1554
+      xpos: -648.853
+      ypos: 19.3304
+      zpos: -713.699
+      guid: FYTsnj4y+023BqrVbl4xgg==
+    Janthir Syntri -- Cliffside Lookout:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_janthirsyntri_pointsofinterest.tw_mc_jw_janthirsyntri_pointsofinterest_pointsofinterest06
+      mapid: 1554
+      xpos: 603.344
+      ypos: 71.8482
+      zpos: -793.368
+      guid: fKJeThll40GskPjseCbIMg==
+    Janthir Syntri -- Cathedral of the Blessed:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_janthirsyntri_pointsofinterest.tw_mc_jw_janthirsyntri_pointsofinterest_pointsofinterest05
+      mapid: 1554
+      xpos: 600.823
+      ypos: 9.91395
+      zpos: 74.0263
+      guid: DwLJBl9Uh0SVs/4GbPzFcA==
+    Janthir Syntri -- Old Gavril Plaza:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_janthirsyntri_pointsofinterest.tw_mc_jw_janthirsyntri_pointsofinterest_pointsofinterest19
+      mapid: 1554
+      xpos: -255.894
+      ypos: 51.933
+      zpos: -574.579
+      guid: 4jBBBcenFkKfsnTaE9JWtw==
+    Janthir Syntri -- The Second Bloodtree:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_janthirsyntri_pointsofinterest.tw_mc_jw_janthirsyntri_pointsofinterest_pointsofinterest43
+      mapid: 1554
+      xpos: -31.7854
+      ypos: 35.7372
+      zpos: -672.519
+      guid: myTtUPo/ZUSfJDhTWDNZDw==
+    Janthir Syntri -- Bloodstone Research Camp:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_janthirsyntri_pointsofinterest.tw_mc_jw_janthirsyntri_pointsofinterest_pointsofinterest03
+      mapid: 1554
+      xpos: -307.737
+      ypos: 28.5889
+      zpos: -199.841
+      guid: sQnReHXfGUaE45vhtrzgJg==
+    Janthir Syntri -- Sulfurous Springs Vista:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_janthirsyntri_vistas.tw_mc_jw_janthirsyntri_vistas_vista07
+      mapid: 1554
+      xpos: -447.916
+      ypos: 114.039
+      zpos: 579.286
+      guid: 8CqlzSjH+0C3rpCuyt3sNQ==
+    Janthir Syntri -- Thunder Bay:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_janthirsyntri_pointsofinterest.tw_mc_jw_janthirsyntri_pointsofinterest_pointsofinterest47
+      mapid: 1554
+      xpos: 730.966
+      ypos: -1.05411
+      zpos: 612.099
+      guid: cCJ62IgsJ0KPOcHOfpfNEA==
+    Janthir Syntri -- Stricken Plains Waypoint:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_janthirsyntri_waypoints.tw_mc_jw_janthirsyntri_waypoints_waypoint04
+      mapid: 1554
+      xpos: 181.53
+      ypos: 2.69908
+      zpos: 584.663
+      guid: L1dEqq7sB0eT8xzEtMZh1A==
+    Janthir Syntri -- Sacrifical Grounds:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_janthirsyntri_pointsofinterest.tw_mc_jw_janthirsyntri_pointsofinterest_pointsofinterest25
+      mapid: 1554
+      xpos: -144.079
+      ypos: 27.9439
+      zpos: -27.2105
+      guid: f91PoJYZ0Emi9BY3zD+7oQ==
+    Janthir Syntri -- The Lurking Spring:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_janthirsyntri_pointsofinterest.tw_mc_jw_janthirsyntri_pointsofinterest_pointsofinterest39
+      mapid: 1554
+      xpos: -636.008
+      ypos: -1.04944
+      zpos: -381.054
+      guid: Zg/eJLDzbkC8t2ppPosaUQ==
+    Janthir Syntri -- Slithering Outskirts Vista:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_janthirsyntri_vistas.tw_mc_jw_janthirsyntri_vistas_vista06
+      mapid: 1554
+      xpos: 109.563
+      ypos: 46.896
+      zpos: -388.255
+      guid: 2frQ4HsH+Uyi7O/ui4EvSA==
+    Janthir Syntri -- The Foaming Mire:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_janthirsyntri_pointsofinterest.tw_mc_jw_janthirsyntri_pointsofinterest_pointsofinterest34
+      mapid: 1554
+      xpos: -316.859
+      ypos: 49.4747
+      zpos: 484.377
+      guid: AdVcV5IegEm43L1O9pI0Eg==
+    Janthir Syntri -- Forager's Hunt Waypoint:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_janthirsyntri_waypoints.tw_mc_jw_janthirsyntri_waypoints_waypoint02
+      mapid: 1554
+      xpos: 606.517
+      ypos: 1.11942
+      zpos: -622.344
+      guid: y06St3bfAEGwdxg419kKKA==
+    Janthir Syntri -- Storm Research Camp:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_janthirsyntri_pointsofinterest.tw_mc_jw_janthirsyntri_pointsofinterest_pointsofinterest28
+      mapid: 1554
+      xpos: 473.807
+      ypos: 33.7944
+      zpos: 0.608455
+      guid: LYyPzOe/Q0WvN7ypLiBy8w==
+    Janthir Syntri -- Eroded Notch:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_janthirsyntri_pointsofinterest.tw_mc_jw_janthirsyntri_pointsofinterest_pointsofinterest10
+      mapid: 1554
+      xpos: -374.891
+      ypos: 103.307
+      zpos: 164.703
+      guid: isnYp7N270KR4t95yWmrXA==
+    Janthir Syntri -- The Twin's Table:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_janthirsyntri_pointsofinterest.tw_mc_jw_janthirsyntri_pointsofinterest_pointsofinterest45
+      mapid: 1554
+      xpos: 55.9981
+      ypos: 30.9987
+      zpos: -521.117
+      guid: frL7xelLDkS23GfXtREV4w==
+    Janthir Syntri -- Nivermer Rill:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_janthirsyntri_pointsofinterest.tw_mc_jw_janthirsyntri_pointsofinterest_pointsofinterest18
+      mapid: 1554
+      xpos: -677.087
+      ypos: 63.2038
+      zpos: -89.8617
+      guid: 6/hOXJYtskuMDzSnGD4UEg==
+    Janthir Syntri -- Whispering Hollows:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_janthirsyntri_pointsofinterest.tw_mc_jw_janthirsyntri_pointsofinterest_pointsofinterest50
+      mapid: 1554
+      xpos: 399.996
+      ypos: -1.0564
+      zpos: 709.684
+      guid: C1ht6vPkakaYAZcWku+3Bg==
+    Janthir Syntri -- Dead Lovers Rock:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_janthirsyntri_pointsofinterest.tw_mc_jw_janthirsyntri_pointsofinterest_pointsofinterest08
+      mapid: 1554
+      xpos: 834.852
+      ypos: -1.05627
+      zpos: 400.691
+      guid: 8ny48AzpQUCqG0tEFy52aQ==
+    Janthir Syntri -- Maghead Beach:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_janthirsyntri_pointsofinterest.tw_mc_jw_janthirsyntri_pointsofinterest_pointsofinterest15
+      mapid: 1554
+      xpos: 581.244
+      ypos: 0.66598
+      zpos: 325.509
+      guid: 4qIGcA1SZUWfKBNboyn7Eg==
+    Janthir Syntri -- Moldering Greenwood Vista:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_janthirsyntri_vistas.tw_mc_jw_janthirsyntri_vistas_vista03
+      mapid: 1554
+      xpos: -738.559
+      ypos: 91.7024
+      zpos: -186.486
+      guid: fXHgdZr6xUCIZ65jRAIagQ==
+    Janthir Syntri -- Old Hutment Site North Vista:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_janthirsyntri_vistas.tw_mc_jw_janthirsyntri_vistas_vista04
+      mapid: 1554
+      xpos: 759.081
+      ypos: 59.6466
+      zpos: -445.309
+      guid: BQHcux5tVUmR77+IUrdotQ==
+    Janthir Syntri -- The Reaping Stones:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_janthirsyntri_pointsofinterest.tw_mc_jw_janthirsyntri_pointsofinterest_pointsofinterest42
+      mapid: 1554
+      xpos: -71.0506
+      ypos: 51.9063
+      zpos: 120.188
+      guid: pv830G3c8E22RgeIBhhdKw==
+    Janthir Syntri -- Old Hutment Site South Vista:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_janthirsyntri_vistas.tw_mc_jw_janthirsyntri_vistas_vista05
+      mapid: 1554
+      xpos: 655.898
+      ypos: 60.677
+      zpos: -741.131
+      guid: vjw2V7llE0ywA6E7OHfJMQ==
+    Janthir Syntri -- The Wrinkled Wetlands:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_janthirsyntri_pointsofinterest.tw_mc_jw_janthirsyntri_pointsofinterest_pointsofinterest46
+      mapid: 1554
+      xpos: 529.9
+      ypos: -0.202122
+      zpos: -592.347
+      guid: Xk5TAg+yPk260G/EdNWuzw==
+    Janthir Syntri -- Festering Basin Waypoint:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_janthirsyntri_waypoints.tw_mc_jw_janthirsyntri_waypoints_waypoint01
+      mapid: 1554
+      xpos: -318.968
+      ypos: 7.93293
+      zpos: -466.485
+      guid: lm9rAY0eRkeWFk0ffJQtjw==
+    Janthir Syntri -- Blood Hill Vista:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_janthirsyntri_vistas.tw_mc_jw_janthirsyntri_vistas_vista01
+      mapid: 1554
+      xpos: -14.7028
+      ypos: 12.913
+      zpos: -97.0619
+      guid: Tu+99ejjY0qOPVhP1p9Rpg==
+    Janthir Syntri -- Dellam's Cove:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_janthirsyntri_pointsofinterest.tw_mc_jw_janthirsyntri_pointsofinterest_pointsofinterest09
+      mapid: 1554
+      xpos: 874.778
+      ypos: 0.0982917
+      zpos: -212.142
+      guid: WfXZmqK1o0GR+jm3gD/vJw==
+    Janthir Syntri -- Corpse of the Deep Crawler:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_janthirsyntri_pointsofinterest.tw_mc_jw_janthirsyntri_pointsofinterest_pointsofinterest07
+      mapid: 1554
+      xpos: 681.496
+      ypos: 0.600784
+      zpos: 385.62
+      guid: vHzXyMcy9UOVUhZMpjuQLw==
+    Janthir Syntri -- Path to Balrior:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_janthirsyntri_pointsofinterest.tw_mc_jw_janthirsyntri_pointsofinterest_pointsofinterest20
+      mapid: 1554
+      xpos: -726.899
+      ypos: 78.1242
+      zpos: 702.007
+      guid: 95hXZpfzIEu9Aw0qKXY19A==
+    Janthir Syntri -- Thunder Bay Point:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_janthirsyntri_pointsofinterest.tw_mc_jw_janthirsyntri_pointsofinterest_pointsofinterest48
+      mapid: 1554
+      xpos: 290.334
+      ypos: 0.0883962
+      zpos: 649.005
+      guid: n7/+omnwJky5nD8Zgw4i+g==
+    Janthir Syntri -- The Observation Post:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_janthirsyntri_pointsofinterest.tw_mc_jw_janthirsyntri_pointsofinterest_pointsofinterest41
+      mapid: 1554
+      xpos: 202.559
+      ypos: 12.5917
+      zpos: -418.431
+      guid: fySpp2tM80Wa3XX+t3BLPA==
+    Janthir Syntri -- Scarwood Depths:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_janthirsyntri_pointsofinterest.tw_mc_jw_janthirsyntri_pointsofinterest_pointsofinterest26
+      mapid: 1554
+      xpos: -695.667
+      ypos: 1.10552
+      zpos: -499.085
+      guid: fhDe5ZdXu0GWtG+fWaCluA==
+    Janthir Syntri -- The First Bloodtree:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_janthirsyntri_pointsofinterest.tw_mc_jw_janthirsyntri_pointsofinterest_pointsofinterest33
+      mapid: 1554
+      xpos: 49.5994
+      ypos: 82.6746
+      zpos: -751.621
+      guid: RlBLhf5Ta0qd3XlabHB+mQ==
+    Janthir Syntri -- The Inn:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_janthirsyntri_pointsofinterest.tw_mc_jw_janthirsyntri_pointsofinterest_pointsofinterest38
+      mapid: 1554
+      xpos: 523.299
+      ypos: 10.8835
+      zpos: -279.457
+      guid: Xfpgt2nI20GoL1gpRbvveA==
+    Janthir Syntri -- Pathway to Redemption:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_janthirsyntri_pointsofinterest.tw_mc_jw_janthirsyntri_pointsofinterest_pointsofinterest21
+      mapid: 1554
+      xpos: -615.718
+      ypos: 56.8594
+      zpos: -228.192
+      guid: qL7aHJx5yU2nvwIEf5bvUA==
+    Janthir Syntri -- The Molded Lands:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_janthirsyntri_pointsofinterest.tw_mc_jw_janthirsyntri_pointsofinterest_pointsofinterest40
+      mapid: 1554
+      xpos: -554.191
+      ypos: 35.2976
+      zpos: 563.063
+      guid: 55lDFWfmeE2pLGGNPZqgqA==
+    Janthir Syntri -- The Faded Neck:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_janthirsyntri_pointsofinterest.tw_mc_jw_janthirsyntri_pointsofinterest_pointsofinterest32
+      mapid: 1554
+      xpos: 102.573
+      ypos: -1.10049
+      zpos: 369.015
+      guid: hJMAKKfgYEyn9PQVCIx/Dw==
+    Janthir Syntri -- Buried Sacrament:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_janthirsyntri_pointsofinterest.tw_mc_jw_janthirsyntri_pointsofinterest_pointsofinterest04
+      mapid: 1554
+      xpos: -551.168
+      ypos: 12.9726
+      zpos: -194.148
+      guid: D770TQrmTE2prHHoLPYUVQ==
+    Janthir Syntri -- Quiet Escape:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_janthirsyntri_pointsofinterest.tw_mc_jw_janthirsyntri_pointsofinterest_pointsofinterest22
+      mapid: 1554
+      xpos: -771.722
+      ypos: 51.9694
+      zpos: -328.865
+      guid: 1ylPT9ccfkeFx9J62VJ2oA==
+    Janthir Syntri -- Echoing Hills Vista:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_janthirsyntri_vistas.tw_mc_jw_janthirsyntri_vistas_vista02
+      mapid: 1554
+      xpos: 503.843
+      ypos: 35.7873
+      zpos: 44.1261
+      guid: ycoFSKVPAkO1En3n5r5YMQ==
+    Janthir Syntri -- Shallow Tributary:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_janthirsyntri_pointsofinterest.tw_mc_jw_janthirsyntri_pointsofinterest_pointsofinterest27
+      mapid: 1554
+      xpos: 358.344
+      ypos: -1.06055
+      zpos: -749.876
+      guid: loQUOubuZkCI13sdnSmYVA==
+    Janthir Syntri -- Summerstorm Watch:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_janthirsyntri_pointsofinterest.tw_mc_jw_janthirsyntri_pointsofinterest_pointsofinterest29
+      mapid: 1554
+      xpos: 492.291
+      ypos: 53.3956
+      zpos: 548.163
+      guid: sVjhTXV5eE6hQ/VeIH0Nhw==
+    Janthir Syntri -- The Immortal Oak:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_janthirsyntri_pointsofinterest.tw_mc_jw_janthirsyntri_pointsofinterest_pointsofinterest36
+      mapid: 1554
+      xpos: -11.7613
+      ypos: 49.8649
+      zpos: -370.21
+      guid: 4VPLqD2l9USqFWQzcMcnbQ==
+    Janthir Syntri -- The Third Bloodtree:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_janthirsyntri_pointsofinterest.tw_mc_jw_janthirsyntri_pointsofinterest_pointsofinterest44
+      mapid: 1554
+      xpos: -182.081
+      ypos: 26.7326
+      zpos: -287.602
+      guid: L/jtq85ipk6+juTpWGR16A==
+    Janthir Syntri -- Wasted Shallows:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_janthirsyntri_pointsofinterest.tw_mc_jw_janthirsyntri_pointsofinterest_pointsofinterest49
+      mapid: 1554
+      xpos: -451.241
+      ypos: 11.0281
+      zpos: -612.835
+      guid: Lacz0t42OUGUzCrXAWJOZQ==
+    Janthir Syntri -- Garden of Loetor:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_janthirsyntri_pointsofinterest.tw_mc_jw_janthirsyntri_pointsofinterest_pointsofinterest12
+      mapid: 1554
+      xpos: 230.481
+      ypos: 20.5436
+      zpos: -374.369
+      guid: xa9xpaGYYEyzszULiG4n+Q==
+    Janthir Syntri -- Manor of the Cruel Hound:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_janthirsyntri_pointsofinterest.tw_mc_jw_janthirsyntri_pointsofinterest_pointsofinterest16
+      mapid: 1554
+      xpos: -130.811
+      ypos: 43.9505
+      zpos: -684.046
+      guid: blju6PnLJ0Os9kfJEQHCXQ==
+    Janthir Syntri -- Hunting Grounds:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_janthirsyntri_pointsofinterest.tw_mc_jw_janthirsyntri_pointsofinterest_pointsofinterest13
+      mapid: 1554
+      xpos: 859.328
+      ypos: 31.4946
+      zpos: -486.057
+      guid: 5hp56NxH+Emhh9wrivKL8A==
+    Janthir Syntri -- Ruinous Divide:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_janthirsyntri_pointsofinterest.tw_mc_jw_janthirsyntri_pointsofinterest_pointsofinterest24
+      mapid: 1554
+      xpos: -483.16
+      ypos: 38.4284
+      zpos: 605.566
+      guid: b7evOd+7UUOZx2GICjlYNw==
+  Lowland Shore:
+    Lowland Shore -- Wry Lichen's House:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_pointsofinterest.tw_mc_jw_lowlandshore_pointsofinterest_pointsofinterest56
+      mapid: 1550
+      xpos: 371.542
+      ypos: 150.168
+      zpos: 289.698
+      guid: /+EpG0B4EkGGiNPX8hyhcg==
+    Lowland Shore -- Deft Lahar's Abode:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_pointsofinterest.tw_mc_jw_lowlandshore_pointsofinterest_pointsofinterest12
+      mapid: 1550
+      xpos: -276.766
+      ypos: 137.548
+      zpos: 174.387
+      guid: uy7yS3ZLuEOTAoBxEEawhA==
+    Lowland Shore -- Fungal Woodland:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_pointsofinterest.tw_mc_jw_lowlandshore_pointsofinterest_pointsofinterest20
+      mapid: 1550
+      xpos: 838.768
+      ypos: 341.469
+      zpos: -373.226
+      guid: x/DYJZWE2UebHDRFxxy9OA==
+    Lowland Shore -- Iboga Burrows:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_pointsofinterest.tw_mc_jw_lowlandshore_pointsofinterest_pointsofinterest25
+      mapid: 1550
+      xpos: 900.595
+      ypos: 393.838
+      zpos: -559.246
+      guid: Z/kRPHiZxkyUfmoP5TrUbw==
+    Lowland Shore -- Scalding Geyser:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_pointsofinterest.tw_mc_jw_lowlandshore_pointsofinterest_pointsofinterest38
+      mapid: 1550
+      xpos: -448.106
+      ypos: 211.789
+      zpos: -411.168
+      guid: kwJmMCeXD0agupVmdVh5hw==
+    Lowland Shore -- Valravn's Perch:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_pointsofinterest.tw_mc_jw_lowlandshore_pointsofinterest_pointsofinterest52
+      mapid: 1550
+      xpos: -75.8466
+      ypos: 216.838
+      zpos: -108.235
+      guid: iu/Tw+qfvU6HhVO8AJrjYQ==
+    Lowland Shore -- Fishing Village Aquarium:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_pointsofinterest.tw_mc_jw_lowlandshore_pointsofinterest_pointsofinterest19
+      mapid: 1550
+      xpos: -150.352
+      ypos: 44.8611
+      zpos: 104.699
+      guid: XmqLPEtP00+Mu7uvRD7+XQ==
+    Lowland Shore -- Journeykin Pens:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_pointsofinterest.tw_mc_jw_lowlandshore_pointsofinterest_pointsofinterest27
+      mapid: 1550
+      xpos: 515.352
+      ypos: 212.971
+      zpos: -84.1625
+      guid: jDEYTujNy0ui6GEonu4CQw==
+    Lowland Shore -- Mire Switchback:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_pointsofinterest.tw_mc_jw_lowlandshore_pointsofinterest_pointsofinterest32
+      mapid: 1550
+      xpos: -429.192
+      ypos: 11.8906
+      zpos: 54.2317
+      guid: 6Qo6cMz5y0ex1blCyH0Xrg==
+    Lowland Shore -- Hibernation Grotto:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_pointsofinterest.tw_mc_jw_lowlandshore_pointsofinterest_pointsofinterest23
+      mapid: 1550
+      xpos: 468.819
+      ypos: 62.4238
+      zpos: 257.363
+      guid: gVcshFY2D0eEIxSYEeGeTg==
+    Lowland Shore -- Loch Lucent:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_pointsofinterest.tw_mc_jw_lowlandshore_pointsofinterest_pointsofinterest29
+      mapid: 1550
+      xpos: -98.6425
+      ypos: 111.95
+      zpos: 381.468
+      guid: QjJtPSUwg0OlR4/AWeuhzA==
+    Lowland Shore -- Reptilia Pools:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_pointsofinterest.tw_mc_jw_lowlandshore_pointsofinterest_pointsofinterest34
+      mapid: 1550
+      xpos: -213.879
+      ypos: -0.208794
+      zpos: 534.707
+      guid: oKyUCSv9N0yc4/p/inWPlw==
+    Lowland Shore -- Timber Cave:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_pointsofinterest.tw_mc_jw_lowlandshore_pointsofinterest_pointsofinterest46
+      mapid: 1550
+      xpos: 427.052
+      ypos: 333.891
+      zpos: -636.777
+      guid: GqNEKjLY/kW2BybAaLHzKw==
+    Lowland Shore -- Harvest Shore Waypoint:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_waypoints.tw_mc_jw_lowlandshore_waypoints_waypoint04
+      mapid: 1550
+      xpos: 699.51
+      ypos: 2.52607
+      zpos: 563.93
+      guid: V3pFNaTwAEyuG096dUGqfQ==
+    Lowland Shore -- Autumn's Vale Waypoint:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_waypoints.tw_mc_jw_lowlandshore_waypoints_waypoint02
+      mapid: 1550
+      xpos: -106.426
+      ypos: 43.9488
+      zpos: 91.6265
+      guid: EtBK6OpKqUG1J9P1y85qZQ==
+    Lowland Shore -- Boathouse:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_pointsofinterest.tw_mc_jw_lowlandshore_pointsofinterest_pointsofinterest09
+      mapid: 1550
+      xpos: 556.819
+      ypos: 3.93736
+      zpos: 510.441
+      guid: PHPVVuiqx0ibSEBctoVu3w==
+    Lowland Shore -- Stoic Alder's House:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_pointsofinterest.tw_mc_jw_lowlandshore_pointsofinterest_pointsofinterest44
+      mapid: 1550
+      xpos: 497.883
+      ypos: 215.608
+      zpos: -23.8771
+      guid: 3lWnkcNhAECAUzLcx6h0Qw==
+    Lowland Shore -- Tundra Steppe:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_pointsofinterest.tw_mc_jw_lowlandshore_pointsofinterest_pointsofinterest50
+      mapid: 1550
+      xpos: 38.518
+      ypos: 305.562
+      zpos: -349.285
+      guid: geAwsIlJeUGoc2GF2z+C1Q==
+    Lowland Shore -- Coursing Upland Southeast Vista:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_vistas.tw_mc_jw_lowlandshore_vistas_vista03
+      mapid: 1550
+      xpos: -854.438
+      ypos: 338.855
+      zpos: -190.943
+      guid: hftha5AMiUiXm9Ge+wWmGw==
+    Lowland Shore -- Springer's Base:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_pointsofinterest.tw_mc_jw_lowlandshore_pointsofinterest_pointsofinterest41
+      mapid: 1550
+      xpos: -507.438
+      ypos: 2.04073
+      zpos: -89.817
+      guid: solK75sr90+2xXJb2spMIg==
+    Lowland Shore -- Torpor Tavern:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_pointsofinterest.tw_mc_jw_lowlandshore_pointsofinterest_pointsofinterest48
+      mapid: 1550
+      xpos: 415.414
+      ypos: 149.191
+      zpos: 334.896
+      guid: UMnUiOx18UKnYtevqNg8jA==
+    Lowland Shore -- Warg Den:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_pointsofinterest.tw_mc_jw_lowlandshore_pointsofinterest_pointsofinterest55
+      mapid: 1550
+      xpos: 929.388
+      ypos: 332.857
+      zpos: 56.0288
+      guid: 6MLzNUd1EUqlqCtni+R1/g==
+    Lowland Shore -- Haar Clearing:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_pointsofinterest.tw_mc_jw_lowlandshore_pointsofinterest_pointsofinterest21
+      mapid: 1550
+      xpos: -722.529
+      ypos: 45.7926
+      zpos: 261.614
+      guid: ft0hNPwuYk2gS46Pyjfy5Q==
+    Lowland Shore -- Harvest Plots:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_pointsofinterest.tw_mc_jw_lowlandshore_pointsofinterest_pointsofinterest22
+      mapid: 1550
+      xpos: 178.306
+      ypos: 300.71
+      zpos: -20.7982
+      guid: VArya7QMjEGz+zXcbXduxQ==
+    Lowland Shore -- Fading Aurora's House:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_pointsofinterest.tw_mc_jw_lowlandshore_pointsofinterest_pointsofinterest17
+      mapid: 1550
+      xpos: 434.258
+      ypos: 187.541
+      zpos: 12.7873
+      guid: PBMNLW5nsEWj6Mf3NjOtTQ==
+    Lowland Shore -- Harvest Den East Vista:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_vistas.tw_mc_jw_lowlandshore_vistas_vista05
+      mapid: 1550
+      xpos: 466.536
+      ypos: 161.586
+      zpos: 226.554
+      guid: 97gXRzXxDk2kuhgfvQO/UQ==
+    Lowland Shore -- Lamplighter's Perch:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_pointsofinterest.tw_mc_jw_lowlandshore_pointsofinterest_pointsofinterest28
+      mapid: 1550
+      xpos: 11.4817
+      ypos: 313.485
+      zpos: -294.297
+      guid: aCDal62dW0OvF0bUzm3/qA==
+    Lowland Shore -- Maul Boneyards:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_pointsofinterest.tw_mc_jw_lowlandshore_pointsofinterest_pointsofinterest31
+      mapid: 1550
+      xpos: -328.162
+      ypos: 204.19
+      zpos: 368.483
+      guid: GmjrPjpKs0OlZqVKELAQmw==
+    Lowland Shore -- Vast Caldera's Room:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_pointsofinterest.tw_mc_jw_lowlandshore_pointsofinterest_pointsofinterest54
+      mapid: 1550
+      xpos: -769.571
+      ypos: 217.579
+      zpos: -17.6807
+      guid: yVy7YtU5aUqDwnzCf3R9HA==
+    Lowland Shore -- Harvest Den Waypoint:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_waypoints.tw_mc_jw_lowlandshore_waypoints_waypoint03
+      mapid: 1550
+      xpos: 539.723
+      ypos: 218.932
+      zpos: 41.5986
+      guid: 4Zry+wVuUk+WWXFbG2+3yw==
+    Lowland Shore -- Harvest Shore Vista:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_vistas.tw_mc_jw_lowlandshore_vistas_vista07
+      mapid: 1550
+      xpos: 243.275
+      ypos: 149.016
+      zpos: 385.78
+      guid: S/+J0VAJPkaHJt379hS6MQ==
+    Lowland Shore -- Basilisk Falls:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_pointsofinterest.tw_mc_jw_lowlandshore_pointsofinterest_pointsofinterest07
+      mapid: 1550
+      xpos: -203.488
+      ypos: 1.66613
+      zpos: 378.8
+      guid: EPlA/v1xgUm+YbzxEWW1Hg==
+    Lowland Shore -- Runoff Taint:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_pointsofinterest.tw_mc_jw_lowlandshore_pointsofinterest_pointsofinterest36
+      mapid: 1550
+      xpos: -59.0923
+      ypos: 154.215
+      zpos: -17.7314
+      guid: oRyJcb0ZS0yfn/vbiVBfoQ==
+    Lowland Shore -- Apiary Holt:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_pointsofinterest.tw_mc_jw_lowlandshore_pointsofinterest_pointsofinterest03
+      mapid: 1550
+      xpos: 867.264
+      ypos: 336.047
+      zpos: -141.504
+      guid: 3sL5m4YQSEqNMqA7/l4c8Q==
+    Lowland Shore -- Hunter's Mesa:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_pointsofinterest.tw_mc_jw_lowlandshore_pointsofinterest_pointsofinterest24
+      mapid: 1550
+      xpos: -169.066
+      ypos: 310.478
+      zpos: -611.939
+      guid: jwyezjjgOEC7NBxC1maUDg==
+    Lowland Shore -- Cragged Steps:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_pointsofinterest.tw_mc_jw_lowlandshore_pointsofinterest_pointsofinterest11
+      mapid: 1550
+      xpos: -461.349
+      ypos: 190.418
+      zpos: 290.375
+      guid: QtIsq+1f5EuyCqM8RivC+w==
+    Lowland Shore -- Rotting Tides:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_pointsofinterest.tw_mc_jw_lowlandshore_pointsofinterest_pointsofinterest35
+      mapid: 1550
+      xpos: -554.639
+      ypos: 0.471247
+      zpos: 417.139
+      guid: 0L6xyJvtp06BICtIDnkLVQ==
+    Lowland Shore -- Queen's Confidence:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_pointsofinterest.tw_mc_jw_lowlandshore_pointsofinterest_pointsofinterest33
+      mapid: 1550
+      xpos: -152.058
+      ypos: 118.266
+      zpos: -104.926
+      guid: 7XclPy8IP0CPaWcHldLghg==
+    Lowland Shore -- Salmon's Fluttering:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_pointsofinterest.tw_mc_jw_lowlandshore_pointsofinterest_pointsofinterest37
+      mapid: 1550
+      xpos: -77.2432
+      ypos: 6.05484
+      zpos: 186.1
+      guid: xrsIzVt0+kKJOs3IB4gQQg==
+    Lowland Shore -- Valravn's Post:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_pointsofinterest.tw_mc_jw_lowlandshore_pointsofinterest_pointsofinterest53
+      mapid: 1550
+      xpos: 930.848
+      ypos: 327.785
+      zpos: 281.552
+      guid: 30ula4H8FkuwIMe8FoF0tA==
+    Lowland Shore -- Coursing Upland Northwest Vista:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_vistas.tw_mc_jw_lowlandshore_vistas_vista02
+      mapid: 1550
+      xpos: -943.61
+      ypos: 211.816
+      zpos: -101.117
+      guid: 0+AHZweFxka4liSV+/43Ew==
+    Lowland Shore -- Springer's Peak:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_pointsofinterest.tw_mc_jw_lowlandshore_pointsofinterest_pointsofinterest42
+      mapid: 1550
+      xpos: -440.76
+      ypos: 207.987
+      zpos: -233.27
+      guid: ZkAhRcXMhkiAqO/KJFd4cw==
+    Lowland Shore -- Astral Ward Moon Camp Waypoint:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_waypoints.tw_mc_jw_lowlandshore_waypoints_waypoint01
+      mapid: 1550
+      xpos: 556.526
+      ypos: 423.099
+      zpos: -564.277
+      guid: iW5E9U6F8ESAJDSx4nm6FQ==
+    Lowland Shore -- Lowland Hot Springs:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_pointsofinterest.tw_mc_jw_lowlandshore_pointsofinterest_pointsofinterest30
+      mapid: 1550
+      xpos: -352.087
+      ypos: 211.813
+      zpos: -481.927
+      guid: cgtDowtL5EKQHABkWUDdeg==
+    Lowland Shore -- Amphibian's Knot:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_pointsofinterest.tw_mc_jw_lowlandshore_pointsofinterest_pointsofinterest02
+      mapid: 1550
+      xpos: -185.697
+      ypos: 149.345
+      zpos: -249.314
+      guid: xthxQ9grO0+UPKzcONxDdg==
+    Lowland Shore -- Sleuth Brawlfields:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_pointsofinterest.tw_mc_jw_lowlandshore_pointsofinterest_pointsofinterest39
+      mapid: 1550
+      xpos: 767.581
+      ypos: 102.928
+      zpos: 310.252
+      guid: E/9N8P2vu0SbgsMo/Tfxcg==
+    Lowland Shore -- Soaring Crest's House:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_pointsofinterest.tw_mc_jw_lowlandshore_pointsofinterest_pointsofinterest40
+      mapid: 1550
+      xpos: 305.9
+      ypos: 216.17
+      zpos: 199.054
+      guid: ZiUAEnuJMU2ge+M1o1pumA==
+    Lowland Shore -- Barbed Vale's House:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_pointsofinterest.tw_mc_jw_lowlandshore_pointsofinterest_pointsofinterest06
+      mapid: 1550
+      xpos: 637.094
+      ypos: 116.155
+      zpos: 217.574
+      guid: Ysmb/3AD7EqEzFoGSg0yJw==
+    Lowland Shore -- Bonfire Lodge:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_pointsofinterest.tw_mc_jw_lowlandshore_pointsofinterest_pointsofinterest10
+      mapid: 1550
+      xpos: 513.76
+      ypos: 217.575
+      zpos: 45.672
+      guid: 13d77HJM9kOK0zkpVmKYdw==
+    Lowland Shore -- Fisher's Spread:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_pointsofinterest.tw_mc_jw_lowlandshore_pointsofinterest_pointsofinterest18
+      mapid: 1550
+      xpos: 240.609
+      ypos: 14.4519
+      zpos: 493.084
+      guid: afVIx/Tfb0CsT3+DE2lUBQ==
+    Lowland Shore -- Troll's Tailgate:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_pointsofinterest.tw_mc_jw_lowlandshore_pointsofinterest_pointsofinterest49
+      mapid: 1550
+      xpos: -703.588
+      ypos: 277.033
+      zpos: -486.05
+      guid: pNQFiK0qGkKpXgDOw/Zpmg==
+    Lowland Shore -- Alder Cove:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_pointsofinterest.tw_mc_jw_lowlandshore_pointsofinterest_pointsofinterest01
+      mapid: 1550
+      xpos: 780.642
+      ypos: 0.921347
+      zpos: 422.879
+      guid: wDVWHdmBtUi5iQANKeej7g==
+    Lowland Shore -- Divinity's Falls:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_pointsofinterest.tw_mc_jw_lowlandshore_pointsofinterest_pointsofinterest16
+      mapid: 1550
+      xpos: 629.489
+      ypos: 309.9
+      zpos: -661.508
+      guid: yOpwBt0P+ESS+nxzogHzqg==
+    Lowland Shore -- Autumn's Vale Vista:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_vistas.tw_mc_jw_lowlandshore_vistas_vista01
+      mapid: 1550
+      xpos: -186.763
+      ypos: 228.311
+      zpos: -3.38095
+      guid: VSxk1xwr7E+CoPaq5VCATQ==
+    Lowland Shore -- Harvest Den West Vista:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_vistas.tw_mc_jw_lowlandshore_vistas_vista06
+      mapid: 1550
+      xpos: 305.303
+      ypos: 224.881
+      zpos: 181.557
+      guid: I9PM8SSGA0ilTEGHV/RGmQ==
+    Lowland Shore -- Haar Mire Vista:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_vistas.tw_mc_jw_lowlandshore_vistas_vista04
+      mapid: 1550
+      xpos: -663.557
+      ypos: 62.5276
+      zpos: 188.86
+      guid: anOXjPoOaEGgjVbTfKv3iQ==
+    Lowland Shore -- Delta Bifurcation:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_pointsofinterest.tw_mc_jw_lowlandshore_pointsofinterest_pointsofinterest13
+      mapid: 1550
+      xpos: 150.206
+      ypos: 309.263
+      zpos: -254.499
+      guid: FnkeoVhIsUe82W+7PhULDw==
+    Lowland Shore -- Vale Gazebo:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_pointsofinterest.tw_mc_jw_lowlandshore_pointsofinterest_pointsofinterest51
+      mapid: 1550
+      xpos: -74.0285
+      ypos: 36.9591
+      zpos: 65.6986
+      guid: NCwjfRk2UEKGdlvuLDC+Iw==
+    Lowland Shore -- Astral Ward Moon Camp:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_pointsofinterest.tw_mc_jw_lowlandshore_pointsofinterest_pointsofinterest04
+      mapid: 1550
+      xpos: 555.972
+      ypos: 422.416
+      zpos: -535.674
+      guid: xAFh64qH3EOvUMxJXOO1Mg==
+    Lowland Shore -- Journeykin Outpost:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_pointsofinterest.tw_mc_jw_lowlandshore_pointsofinterest_pointsofinterest26
+      mapid: 1550
+      xpos: -710.285
+      ypos: 209.471
+      zpos: -101.673
+      guid: W0i7xL8MT0aKZa51Vn9ODQ==
+    Lowland Shore -- Denning Forge:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_pointsofinterest.tw_mc_jw_lowlandshore_pointsofinterest_pointsofinterest14
+      mapid: 1550
+      xpos: 559.143
+      ypos: 150.087
+      zpos: 174.763
+      guid: F6TwZQ57sUanWbFAXzNTbQ==
+    Lowland Shore -- Springer's Retreat:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_pointsofinterest.tw_mc_jw_lowlandshore_pointsofinterest_pointsofinterest43
+      mapid: 1550
+      xpos: 436.835
+      ypos: 95.9669
+      zpos: 456.303
+      guid: c0L1Zv1NbESKDP0UZtlntA==
+    Lowland Shore -- Tidal Tailgate:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_pointsofinterest.tw_mc_jw_lowlandshore_pointsofinterest_pointsofinterest45
+      mapid: 1550
+      xpos: -126.774
+      ypos: 1.63346
+      zpos: 585.409
+      guid: U5/M0PEaCEmznLbIOiXjVg==
+    Lowland Shore -- Derby Grounds:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_pointsofinterest.tw_mc_jw_lowlandshore_pointsofinterest_pointsofinterest15
+      mapid: 1550
+      xpos: -863.457
+      ypos: 264.186
+      zpos: -283.515
+      guid: wPpF8uEu4kSLm0xk+0CzbQ==
+    Lowland Shore -- Bearpaw Fields:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_pointsofinterest.tw_mc_jw_lowlandshore_pointsofinterest_pointsofinterest08
+      mapid: 1550
+      xpos: 311.261
+      ypos: 213.805
+      zpos: 132.259
+      guid: gb6JuYdHG0qMKXb25nZH3Q==
+    Lowland Shore -- Moon Camp Covert Vista:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_vistas.tw_mc_jw_lowlandshore_vistas_vista08
+      mapid: 1550
+      xpos: 503.803
+      ypos: 462.706
+      zpos: -530.79
+      guid: 5U2ENUU4eUu3loqi+fplQw==
+    Lowland Shore -- Hot Springs Waypoint:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_waypoints.tw_mc_jw_lowlandshore_waypoints_waypoint05
+      mapid: 1550
+      xpos: -343.884
+      ypos: 213.135
+      zpos: -485.44
+      guid: fKltPSuynECUbUgA7oSFyw==
+    Lowland Shore -- Timberland Holt:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_pointsofinterest.tw_mc_jw_lowlandshore_pointsofinterest_pointsofinterest47
+      mapid: 1550
+      xpos: 749.52
+      ypos: 308.319
+      zpos: -62.3676
+      guid: 922tVNUblEqBSmQ9ez17ZQ==
+    Lowland Shore -- Journeykin Outpost Waypoint:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_waypoints.tw_mc_jw_lowlandshore_waypoints_waypoint06
+      mapid: 1550
+      xpos: -718.6
+      ypos: 210.569
+      zpos: -62.8316
+      guid: qDH7V3V3rUGNFWIQeepwUQ==
+    Lowland Shore -- Bagoo Cave:
+      type: tw_guides.tw_mc_jw.tw_mc_jw_lowlandshore_pointsofinterest.tw_mc_jw_lowlandshore_pointsofinterest_pointsofinterest05
+      mapid: 1550
+      xpos: -752.005
+      ypos: 302.028
+      zpos: -535.456
+      guid: 2mmXc5PtSUCMlsQLVdOwMg==
