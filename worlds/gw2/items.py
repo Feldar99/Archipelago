@@ -85,10 +85,21 @@ class Gw2ItemData:
         item_data[self.code] = self
 
 
+class TraitData(Gw2ItemData):
+    tier: int
+    spec_name: str
+
+    def __init__(self, name: str, tier: int, spec_name: str, quantity=1, storyline=None):
+        Gw2ItemData.__init__(self, name, quantity, storyline)
+        self.tier = tier
+        self.spec_name = spec_name
+
+
 item_data: dict[int, Gw2ItemData] = {}
 weapons_by_slot: dict[str, [Gw2ItemData]] = {}
 item_groups: dict[str, [Gw2ItemData]] = {}
 elite_specs: dict[str, StorylineEnum] = {}
+core_specs: set[str] = set()
 
 
 def load_weapons():
@@ -156,13 +167,13 @@ def load_skills():
             for group in skill_data[profession.name].keys():
                 if group in elite_specs:
                     spec = Spec(profession=profession, elite_spec=group)
-                    skills.extend(load_skill_group(skill_data[profession.name][group], spec=spec, storyline=elite_specs[group]))
+                    skills.extend(
+                        load_skill_group(skill_data[profession.name][group], spec=spec, storyline=elite_specs[group]))
 
         for race in Race:
             skills.extend(load_skill_group(skill_data[race.name], race=race))
 
     return skills
-
 
 
 def load_traits():
@@ -181,9 +192,14 @@ def load_traits():
                 if "storyline" in spec_data:
                     storyline = storyline_from_str(spec_data["storyline"])
                     elite_specs[spec_name] = storyline
+                else:
+                    core_specs.add(spec_name)
                 traits = spec_data["traits"]
-                for trait in traits:
-                    item = Gw2ItemData(name=trait + " " + spec_name + " Trait", quantity=1, storyline=storyline)
+                for index, trait in enumerate(traits):
+                    item = TraitData(name=trait + " " + spec_name + " Trait",
+                                     tier=index//3,
+                                     spec_name=spec_name,
+                                     storyline=storyline)
                     spec = Spec(Profession[profession_name.upper()])
                     item.specs.add(spec)
                     traits_items.append(item)
