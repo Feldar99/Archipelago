@@ -50,6 +50,7 @@ game locally
 in the archipelago window
 12. In your Hero panel, clear an equipment template and a build template and activate the empty templates
 13. Equip gear, skills, and traits that the Archipelago module says you are allowed to use.
+    * If you created a new character, feel free to continue using the starting weapon until you finish the tutorial zone
 
    
 ## Hints and other commands
