@@ -215,7 +215,7 @@ class Gw2World(World):
 
             if location_type == LocationType.UNIQUE_ITEM:
                 location_index = self.random.randint(0, len(unused_items) - 1)
-                print(location_index, " / ", len(unused_items))
+                # print(location_index, " / ", len(unused_items))
                 location_data = unused_items.pop(location_index)
             elif location_type == LocationType.POINT_OF_INTEREST:
                 location_index = self.random.randint(0, len(unused_pois) - 1)
