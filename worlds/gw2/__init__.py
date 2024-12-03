@@ -62,7 +62,7 @@ class Gw2World(World):
             elif self.options.storyline.value == Storyline.option_icebrood_saga:
                 return storyline == StorylineEnum.PATH_OF_FIRE
             else:
-                return storyline == self.options.storyline
+                return storyline.value == self.options.storyline.value
         else:
             return False
 
