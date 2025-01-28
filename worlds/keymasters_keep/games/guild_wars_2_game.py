@@ -371,10 +371,9 @@ class GuildWars2Game(Game):
         categories = ["Wizard's Vault"]
 
         if "Open World" in self.game_modes_played:
-            categories += [
-                "Blood in the Water",
-                "Daily Portal Closer",
-            ]
+            categories += ["Blood in the Water"]
+            if "Season 1" in self.storylines_owned:
+                categories += ["Daily Portal Closer"]
         if "PvP" in self.game_modes_played:
             categories += ["League Participator"]
         if "Strikes" in self.game_modes_played:
