@@ -487,9 +487,9 @@ class StellarisGame(Game):
                 weight=100,
             ),
             GameObjectiveTemplate(
-                label="Participate in a 'OPERATION' Operation with your Federation",
+                label="Participate in a 'JOINT_OPERATION' Operation with your Federation",
                 data={
-                    "OPERATION": (self.operations, 1),
+                    "JOINT_OPERATION": (self.joint_operations, 1),
                 },
                 is_time_consuming=True,
                 is_difficult=False,
