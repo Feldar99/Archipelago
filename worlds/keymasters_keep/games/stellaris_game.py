@@ -3610,21 +3610,15 @@ class StellarisGame(Game):
         ]
 
     @functools.cached_property
-    def planet_designations_synthetic_dawn_or_the_machine_age(self) -> List[str]:
-        return [
-            "Machine",
-        ]
-
-    @functools.cached_property
     def planet_designations_the_machine_age(self) -> List[str]:
         return [
             "Nanotech",
         ]
 
     @functools.cached_property
-    def planet_designations_utopia(self) -> List[str]:
+    def planet_designation_ascended_planets(self) -> List[str]:
         return [
-            "Hive",
+            "Machine/Hive/Ecumenopolis",
         ]
 
     def planet_designations(self) -> List[str]:
@@ -3632,12 +3626,10 @@ class StellarisGame(Game):
 
         if self.has_dlc_synthetic_dawn:
             planet_designations.extend(self.planet_designations_synthetic_dawn)
-        if self.has_dlc_synthetic_dawn or self.has_dlc_the_machine_age:
-            planet_designations.extend(self.planet_designations_synthetic_dawn_or_the_machine_age)
+        if self.has_dlc_synthetic_dawn or self.has_dlc_the_machine_age or self.has_dlc_utopia or self.has_dlc_megacorp:
+            planet_designations.extend(self.planet_designation_ascended_planets)
         if self.has_dlc_the_machine_age:
             planet_designations.extend(self.planet_designations_the_machine_age)
-        if self.has_dlc_utopia:
-            planet_designations.extend(self.planet_designations_utopia)
 
         return sorted(planet_designations)
 
