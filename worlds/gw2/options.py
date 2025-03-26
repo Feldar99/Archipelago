@@ -1,8 +1,8 @@
 from dataclasses import dataclass
 
 from Options import Range, NamedRange, Toggle, Choice, OptionSet, PerGameCommonOptions, DeathLink, FreeText
-from .items import Profession as ProfessionEum, Race as RaceEnum
 from .storylines import StorylineEnum
+from .types import Profession as ProfessionEnum, Race as RaceEnum
 
 
 class CharacterProfession(Choice):
@@ -10,15 +10,15 @@ class CharacterProfession(Choice):
 
     internal_name = "profession"
     display_name = "Profession"
-    option_warrior = ProfessionEum.WARRIOR.value
-    option_guardian = ProfessionEum.GUARDIAN.value
-    option_revenant = ProfessionEum.REVENANT.value
-    option_thief = ProfessionEum.THIEF.value
-    option_engineer = ProfessionEum.ENGINEER.value
-    option_ranger = ProfessionEum.RANGER.value
-    option_mesmer = ProfessionEum.MESMER.value
-    option_elementalist = ProfessionEum.ELEMENTALIST.value
-    option_necromancer = ProfessionEum.NECROMANCER.value
+    option_warrior = ProfessionEnum.WARRIOR.value
+    option_guardian = ProfessionEnum.GUARDIAN.value
+    option_revenant = ProfessionEnum.REVENANT.value
+    option_thief = ProfessionEnum.THIEF.value
+    option_engineer = ProfessionEnum.ENGINEER.value
+    option_ranger = ProfessionEnum.RANGER.value
+    option_mesmer = ProfessionEnum.MESMER.value
+    option_elementalist = ProfessionEnum.ELEMENTALIST.value
+    option_necromancer = ProfessionEnum.NECROMANCER.value
 
     default = "random"
 

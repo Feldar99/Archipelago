@@ -1,0 +1,1588 @@
+- id: 15
+  name: Queensdale
+  type: Open World
+  entrances:
+    - Gendarran Fields
+    - Divinity's Reach
+    - Kessex Hills
+  storylines:
+    - Core
+  start:
+    Core: HUMAN
+- id: 17
+  name: Harathi Hinterlands
+  type: Open World
+  entrances:
+    - Gendarran Fields
+    - Lake Doric
+  storylines:
+    - Core
+- id: 18
+  name: Divinity's Reach
+  type: City
+  entrances:
+    - Lion's Arch
+    - Fields of Ruin
+    - Lowland Shore
+    - Lake Doric
+    - Queensdale
+  storylines:
+    - Core
+    - Season 1
+    - Season 2
+    - Season 3
+    - End of Dragons
+    - Secrets of the Obscure
+    - Janthir Wilds
+  start:
+    Secrets of the Obscure: HUMAN
+    Janthir Wilds: HUMAN
+- id: 19
+  name: Plains of Ashford
+  type: Open World
+  entrances:
+    - Blazeridge Steppes
+    - Diessa Plateau
+    - Iron Marches
+    - Black Citadel
+  storylines:
+    - Core
+  start:
+    Core: CHARR
+- id: 20
+  name: Blazeridge Steppes
+  type: Open World
+  entrances:
+    - Iron Marches
+    - Fields of Ruin
+    - Plains of Ashford
+  storylines:
+    - Core
+- id: 21
+  name: Fields of Ruin
+  type: Open World
+  entrances:
+    - Blazeridge Steppes
+    - Divinity's Reach
+  storylines:
+    - Core
+- id: 22
+  name: Fireheart Rise
+  type: Open World
+  entrances:
+    - Iron Marches
+    - Frostgorge Sound
+  storylines:
+    - Core
+- id: 23
+  name: Kessex Hills
+  type: Open World
+  entrances:
+    - Caledon Forest
+    - Queensdale
+    - Brisban Wildlands
+    - Gendarran Fields
+  storylines:
+    - Core
+    - Season 1
+    - Secrets of the Obscure
+- id: 24
+  name: Gendarran Fields
+  type: Open World
+  entrances:
+    - Lornar's Pass
+    - Harathi Hinterlands
+    - Snowden Drifts
+    - Queensdale
+    - Lion's Arch
+    - Kessex Hills
+  storylines:
+    - Core
+    - Season 1
+    - Secrets of the Obscure
+- id: 25
+  name: Iron Marches
+  type: Open World
+  entrances:
+    - Plains of Ashford
+    - Blazeridge Steppes
+    - Fireheart Rise
+  storylines:
+    - Core
+    - Season 2
+- id: 26
+  name: Dredgehaunt Cliffs
+  type: Open World
+  entrances:
+    - Hoelbrak
+    - Timberline Falls
+    - Lornar's Pass
+  storylines:
+    - Core
+- id: 27
+  name: Lornar's Pass
+  type: Open World
+  entrances:
+    - Dredgehaunt Cliffs
+    - Snowden Drifts
+    - Gendarran Fields
+    - Timberline Falls
+    - Lion's Arch
+    - Bloodtide Coast
+  storylines:
+    - Core
+    - Season 1
+- id: 28
+  name: Wayfarer Foothills
+  type: Open World
+  entrances:
+    - Diessa Plateau
+    - Frostgorge Sound
+    - Snowden Drifts
+    - Hoelbrak
+  storylines:
+    - Core
+    - Season 1
+  start:
+    Core: NORN
+- id: 29
+  name: Timberline Falls
+  type: Open World
+  entrances:
+    - Dredgehaunt Cliffs
+    - Lornar's Pass
+    - Mount Maelstrom
+  storylines:
+    - Core
+- id: 30
+  name: Frostgorge Sound
+  type: Open World
+  entrances:
+    - Fireheart Rise
+    - Bitterfrost Frontier
+    - Wayfarer Foothills
+    - Snowden Drifts
+  storylines:
+    - Core
+- id: 31
+  name: Snowden Drifts
+  type: Open World
+  entrances:
+    - Frostgorge Sound
+    - Wayfarer Foothills
+    - Lornar's Pass
+    - Gendarran Fields
+  storylines:
+    - Core
+    - Season 1
+- id: 32
+  name: Diessa Plateau
+  type: Open World
+  entrances:
+    - Wayfarer Foothills
+    - Plains of Ashford
+    - Black Citadel
+  storylines:
+    - Core
+    - Season 1
+- id: 33
+  name: Ascalonian Catacombs (story)
+  type: Dungeon
+  entrances:
+    - Plains of Ashford
+  storylines:
+    - Core
+- id: 34
+  name: Caledon Forest
+  type: Open World
+  entrances:
+    - Kessex Hills
+    - Brisban Wildlands
+    - The Grove
+    - Metrica Province
+  storylines:
+    - Core
+    - Season 1
+  start:
+    Core: SYLVARI
+- id: 35
+  name: Metrica Province
+  type: Open World
+  entrances:
+    - Brisban Wildlands
+    - Caledon Forest
+    - Rata Sum
+  storylines:
+    - Core
+  start:
+    Core: ASURA
+- id: 36
+  name: Ascalonian Catacombs (explorable)
+  type: Dungeon
+  entrances:
+    - Ascalonian Catacombs (story)
+  storylines:
+    - Core
+- id: 38
+  name: Eternal Battlegrounds
+  type: WvW
+  entrances:
+    - Lion's Arch
+    - Green Alpine Borderlands
+    - Red Desert Borderlands
+    - Blue Alpine Borderlands
+    - Obsidian Sanctum
+  storylines: Core
+- id: 39
+  name: Mount Maelstrom
+  type: Open World
+  entrances:
+    - Timberline Falls
+    - Sparkfly Fen
+    - Straits of Devastation
+  storylines:
+    - Core
+- id: 50
+  name: Lion's Arch
+  type: City
+  entrances:
+    - Lornar's Pass
+    - Gendarran Fields
+    - Bloodtide Coast
+    - Lion's Arch Aerodrome
+    - Black Citadel
+    - Divinity's Reach
+    - Hoelbrak
+    - The Grove
+    - Rata Sum
+    - Southsun Cove
+    - Arborstone
+    - The Wizard's Tower
+    - Eternal Battlegrounds
+    - Edge of the Mists
+    - Mistlock Observatory
+    - Crystal Oasis
+    - Eye of the North
+  storylines:
+    - Core
+    - Season 1
+    - Season 2
+    - Season 3
+    - Path of Fire
+    - Season 4
+    - End of Dragons
+    - Janthir Wilds
+  start:
+    Season 1: ANY
+    Path of Fire: ANY
+    End of Dragons: ANY
+- id: 51
+  name: Straits of Devastation
+  type: Open World
+  entrances:
+    - Mount Maelstrom
+    - Sparkfly Fen
+    - Malchor's Leap
+  storylines:
+    - Core
+- id: 53
+  name: Sparkfly Fen
+  type: Open World
+  entrances:
+    - Bloodtide Coast
+    - Straits of Devastation
+    - Mount Maelstrom
+  storylines:
+    - Core
+- id: 54
+  name: Brisban Wildlands
+  type: Open World
+  entrances:
+    - Caledon Forest
+    - Kessex Hills
+    - Metrica Province
+    - Dry Top
+    - The Silverwastes
+  storylines:
+    - Core
+    - Season 2
+  start:
+    Season 2: ANY
+- id: 62
+  name: Cursed Shore
+  type: Open World
+  entrances:
+    - Malchor's Leap
+  storylines:
+    - Core
+- id: 63
+  name: Sorrow's Embrace (story)
+  type: Dungeon
+  entrances:
+    - Dredgehaunt Cliffs
+  storylines:
+    - Core
+- id: 64
+  name: Sorrow's Embrace (explorable)
+  type: Dungeon
+  entrances:
+    - Sorrow's Embrace (story)
+  storylines:
+    - Core
+- id: 65
+  name: Malchor's Leap
+  type: Open World
+  entrances:
+    - Cursed Shore
+    - Straits of Devastation
+  storylines:
+    - Core
+- id: 66
+  name: Citadel of Flame (story)
+  type: Dungeon
+  entrances:
+    - Fireheart Rise
+  storylines:
+    - Core
+- id: 67
+  name: Twilight Arbor (story)
+  type: Dungeon
+  entrances:
+    - Caledon Forest
+  storylines:
+    - Core
+- id: 68
+  name: Twilight Arbor (explorable)
+  type: Dungeon
+  entrances:
+    - Twilight Arbor (story)
+  storylines:
+    - Core
+- id: 69
+  name: Citadel of Flame (explorable)
+  type: Dungeon
+  entrances:
+    - Citadel of Flame (story)
+  storylines:
+    - Core
+- id: 70
+  name: Honor of the Waves (story)
+  type: Dungeon
+  entrances:
+    - Frostgorge Sound
+  storylines:
+    - Core
+- id: 71
+  name: Honor of the Waves (explorable)
+  type: Dungeon
+  entrances:
+    - Honor of the Waves (story)
+  storylines:
+    - Core
+- id: 73
+  name: Bloodtide Coast
+  type: Open World
+  entrances:
+    - Lornar's Pass
+    - Lion's Arch
+    - Sparkfly Fen
+  storylines:
+    - Core
+    - Season 1
+- id: 75
+  name: Caudecus's Manor (story)
+  type: Dungeon
+  entrances:
+    - Queensdale
+  storylines:
+    - Core
+- id: 76
+  name: Caudecus's Manor (explorable)
+  type: Dungeon
+  entrances:
+    - Caudecus's Manor (story)
+  storylines:
+    - Core
+- id: 81
+  name: Crucible of Eternity (story)
+  type: Dungeon
+  entrances:
+    - Mount Maelstrom
+  storylines:
+    - Core
+- id: 82
+  name: Crucible of Eternity (explorable)
+  type: Dungeon
+  entrances:
+    - Crucible of Eternity (story)
+  storylines:
+    - Core
+- id: 91
+  name: The Grove
+  type: City
+  entrances:
+    - Caledon Forest
+    - Lion's Arch
+  storylines:
+    - Core
+    - Secrets of the Obscure
+    - Janthir Wilds
+  start:
+    Secrets of the Obscure: SYLVARI
+    Janthir Wilds: SYLVARI
+- id: 95
+  name: Green Alpine Borderlands
+  type: WvW
+  entrances:
+    - Eternal Battlegrounds
+    - Lion's Arch
+    - Blue Alpine Borderlands
+    - Red Desert Borderlands
+  storylines:
+    - Core
+- id: 96
+  name: Blue Alpine Borderlands
+  type: WvW
+  entrances:
+    - Eternal Battlegrounds
+    - Lion's Arch
+    - Green Alpine Borderlands
+    - Red Desert Borderlands
+  storylines:
+    - Core
+- id: 112
+  name: The Ruined City of Arah (explorable)
+  type: Dungeon
+  entrances:
+    - Cursed Shore
+  storylines:
+    - Core
+- id: 139
+  name: Rata Sum
+  type: City
+  entrances:
+    - Metrica Province
+    - Lion's Arch
+  storylines:
+    - Core
+    - Secrets of the Obscure
+    - Janthir Wilds
+  start:
+    Secrets of the Obscure: ASURA
+    Janthir Wilds: ASURA
+- id: 218
+  name: Black Citadel
+  type: City
+  entrances:
+    - Plains of Ashford
+    - Diessa Plateau
+    - Lion's Arch
+  storylines:
+    - Core
+    - Season 1
+    - Secrets of the Obscure
+    - Janthir Wilds
+    - Icebrood Saga
+  start:
+    Icebrood Saga: ANY
+    Secrets of the Obscure: CHARR
+    Janthir Wilds: CHARR
+- id: 326
+  name: Hoelbrak
+  type: City
+  entrances:
+    - Wayfarer Foothills
+    - Dredgehaunt Cliffs
+    - Lion's Arch
+  storylines:
+    - Core
+    - Season 1
+    - Secrets of the Obscure
+    - Janthir Wilds
+    - Season 3
+  start:
+    Season 3: ANY
+    Secrets of the Obscure: NORN
+    Janthir Wilds: NORN
+- id: 350
+  name: Heart of the Mists
+  type: Pvp
+  entrances:
+    - Lion's Arch
+  storylines:
+    - Core
+- id: 549
+  name: Battle of Kyhlo
+  type: Pvp
+  entrances:
+    - Heart of the Mists
+  storylines:
+    - Core
+- id: 795
+  name: Legacy of the Foefire
+  type: Pvp
+  entrances:
+    - Heart of the Mists
+  storylines:
+    - Core
+- id: 872
+  name: Mistlock Observatory
+  type: Fractal
+  entrances:
+    - Lion's Arch
+  storylines:
+    - Season 1
+- id: 873
+  name: Southsun Cove
+  type: Open World
+  entrances:
+    - Lion's Arch
+  storylines:
+    - Season 1
+- id: 875
+  name: Temple of the Silent Storm
+  type: Pvp
+  entrances:
+    - Heart of the Mists
+  storylines:
+    - Core
+- id: 877
+  name: Snowball Mayhem
+  type: Pvp
+  entrances:
+    - Heart of the Mists
+  storylines:
+    - Core
+- id: 899
+  name: Obsidian Sanctum
+  type: WvW
+  entrances:
+    - Eternal Battlegrounds
+  storylines:
+    - Core
+- id: 900
+  name: Skyhammer
+  type: Pvp
+  entrances:
+    - Heart of the Mists
+  storylines:
+    - Core
+- id: 943
+  name: The Tower of Nightmares
+  type: Dungeon
+  entrances:
+    - Kessex Hills
+  storylines:
+    - Season 1
+- id: 947
+  name: Uncategorized Fractal
+  type: Fractal
+  entrances:
+    - Volcanic Fractal
+  storylines:
+    - Season 1
+- id: 948
+  name: Snowblind Fractal
+  type: Fractal
+  entrances:
+    - Uncategorized Fractal
+  storylines:
+    - Season 1
+- id: 949
+  name: Swampland Fractal
+  type: Fractal
+  entrances:
+    - Urban Battleground Fractal
+  storylines:
+    - Season 1
+- id: 950
+  name: Urban Battleground Fractal
+  type: Fractal
+  entrances:
+    - Snowblind Fractal
+  storylines:
+    - Season 1
+- id: 951
+  name: Aquatic Ruins Fractal
+  type: Fractal
+  entrances:
+    - Cliffside Fractal
+  storylines:
+    - Season 1
+- id: 952
+  name: Cliffside Fractal
+  type: Fractal
+  entrances:
+    - Swampland Fractal
+  storylines:
+    - Season 1
+- id: 953
+  name: Underground Facility Fractal
+  type: Fractal
+  entrances:
+    - Aquatic Ruins Fractal
+  storylines:
+    - Season 1
+- id: 954
+  name: Volcanic Fractal
+  type: Fractal
+  entrances:
+    - Mistlock Observatory
+  storylines:
+    - Season 1
+- id: 955
+  name: Molten Furnace Fractal
+  type: Fractal
+  entrances:
+    - Underground Facility Fractal
+  storylines:
+    - Season 1
+- id: 956
+  name: Aetherblade Fractal
+  type: Fractal
+  entrances:
+    - Chaos Fractal
+  storylines:
+    - Season 1
+- id: 957
+  name: Thaumanova Reactor Fractal
+  type: Fractal
+  entrances:
+    - Aetherblade Fractal
+  storylines:
+    - Season 1
+- id: 958
+  name: Solid Ocean Fractal
+  type: Fractal
+  entrances:
+    - Captain Mai Trin Boss Fractal
+  storylines:
+    - Season 1
+- id: 959
+  name: Molten Boss Fractal
+  type: Fractal
+  entrances:
+    - Molten Furnace Fractal
+  storylines:
+    - Season 1
+- id: 960
+  name: Captain Mai Trin Boss Fractal
+  type: Fractal
+  entrances:
+    - Twilight Oasis Fractal
+    - Thaumanova Reactor Fractal
+  storylines:
+    - Season 1
+- id: 968
+  name: Edge of the Mists
+  type: WvW
+  entrances:
+    - Lion's Arch
+    - Eternal Battlegrounds
+  storylines:
+    - Season 1
+- id: 984
+  name: Courtyard
+  type: Pvp
+  entrances:
+    - Heart of the Mists
+  storylines:
+    - Core
+- id: 988
+  name: Dry Top
+  type: Open World
+  entrances:
+    - Brisban Wildlands
+  storylines:
+    - Season 2
+- id: 1011
+  name: Battle of Champion's Dusk
+  type: Pvp
+  entrances:
+    - Heart of the Mists
+  storylines:
+    - Core
+- id: 1015
+  name: The Silverwastes
+  type: Open World
+  entrances:
+    - Brisban Wildlands
+    - Verdant Brink
+  storylines:
+    - Season 2
+    - Heart of Thorns
+  start:
+    Heart of Thorns: ANY
+- id: 1041
+  name: Dragon's Stand
+  type: Open World
+  entrances:
+    - Tangled Depths
+  storylines:
+    - Heart of Thorns
+- id: 1043
+  name: Auric Basin
+  type: Open World
+  entrances:
+    - Tangled Depths
+    - Verdant Brink
+  storylines:
+    - Heart of Thorns
+- id: 1045
+  name: Tangled Depths
+  type: Open World
+  entrances:
+    - Auric Basin
+    - Dragon's Stand
+  storylines:
+    - Heart of Thorns
+- id: 1052
+  name: Verdant Brink
+  type: Open World
+  entrances:
+    - The Silverwastes
+    - Auric Basin
+    - Spirit Vale
+  storylines:
+    - Heart of Thorns
+- id: 1062
+  name: Spirit Vale
+  type: Raid
+  entrances:
+    - Lion's Arch Aerodrome
+    - Domain of Vabbi
+  storylines:
+    - Heart of Thorns
+- id: 1099
+  name: Red Desert Borderlands
+  type: WvW
+  entrances:
+    - Eternal Battlegrounds
+    - Green Alpine Borderlands
+    - Blue Alpine Borderlands
+    - Lion's Arch
+  storylines:
+    - Core
+- id: 1149
+  name: Salvation Pass
+  type: Raid
+  entrances:
+    - Spirit Vale
+    - Verdant Brink
+    - Lion's Arch Aerodrome
+  storylines:
+    - Heart of Thorns
+- id: 1155
+  name: Lion's Arch Aerodrome
+  type: City
+  entrances:
+    - Lion's Arch
+  storylines:
+    - Heart of Thorns
+- id: 1156
+  name: Stronghold of the Faithful
+  type: Raid
+  entrances:
+    - Verdant Brink
+    - Salvation Pass
+    - Lion's Arch Aerodrome
+  storylines:
+    - Heart of Thorns
+- id: 1163
+  name: Revenge of the Capricorn
+  type: Pvp
+  entrances:
+    - Heart of the Mists
+  storylines:
+    - Core
+- id: 1164
+  name: Chaos Fractal
+  type: Fractal
+  entrances:
+    - Siren's Reef Fractal
+  storylines:
+    - Heart of Thorns
+- id: 1165
+  name: Bloodstone Fen
+  type: Open World
+  entrances:
+    - Rata Sum
+  storylines:
+    - Season 3
+- id: 1171
+  name: Eternal Coliseum
+  type: Pvp
+  entrances:
+    - Heart of the Mists
+  storylines:
+    - Core
+- id: 1175
+  name: Ember Bay
+  type: Open World
+  entrances:
+    - Rata Sum
+  storylines:
+    - Season 3
+- id: 1177
+  name: Nightmare Fractal
+  type: Fractal
+  entrances:
+    - Silent Surf Fractal
+  storylines:
+    - Season 3
+- id: 1178
+  name: Bitterfrost Frontier
+  type: Open World
+  entrances:
+    - Frostgorge Sound
+  storylines:
+    - Season 3
+- id: 1185
+  name: Lake Doric
+  type: Open World
+  entrances:
+    - Divinity's Reach
+    - Harathi Hinterlands
+  storylines:
+    - Season 3
+- id: 1188
+  name: Bastion of the Penitent
+  type: Raid
+  entrances:
+    - Bloodstone Fen
+    - Lion's Arch Aerodrome
+  storylines:
+    - Heart of Thorns
+- id: 1195
+  name: Draconis Mons
+  type: Open World
+  entrances:
+    - Rata Sum
+  storylines:
+    - Season 3
+- id: 1200
+  name: Hall of the Mists
+  type: Pvp
+  entrances:
+    - Heart of the Mists
+  storylines:
+    - Core
+- id: 1201
+  name: Asura Arena
+  type: Pvp
+  entrances:
+    - Heart of the Mists
+  storylines:
+    - Core
+- id: 1203
+  name: Siren's Landing
+  type: Open World
+  entrances:
+    - Lion's Arch
+  storylines:
+    - Season 3
+- id: 1205
+  name: Shattered Observatory Fractal
+  type: Fractal
+  entrances:
+    - Nightmare Fractal
+  storylines:
+    - Season 3
+- id: 1210
+  name: Crystal Oasis
+  type: Open World
+  entrances:
+    - Desert Highlands
+    - Elon Riverlands
+    - Lion's Arch
+  storylines:
+    - Path of Fire
+    - Season 4
+  start:
+    Season 4: ANY
+- id: 1211
+  name: Desert Highlands
+  type: Open World
+  entrances:
+    - Crystal Oasis
+  storylines:
+    - Path of Fire
+- id: 1226
+  name: The Desolation
+  type: Open World
+  entrances:
+    - Elon Riverlands
+    - Domain of Vabbi
+  storylines:
+    - Path of Fire
+- id: 1228
+  name: Elon Riverlands
+  type: Open World
+  entrances:
+    - Crystal Oasis
+    - The Desolation
+  storylines:
+    - Path of Fire
+- id: 1248
+  name: Domain of Vabbi
+  type: Open World
+  entrances:
+    - Jahai Bluffs
+    - The Desolation
+  storylines:
+    - Path of Fire
+- id: 1263
+  name: Domain of Istan
+  type: Open World
+  entrances:
+    - Crystal Oasis
+  storylines:
+    - Season 4
+- id: 1264
+  name: Hall of Chains
+  type: Raid
+  entrances:
+    - Lornar's Pass
+    - Lion's Arch Aerodrome
+  storylines:
+    - Season 4
+- id: 1267
+  name: Twilight Oasis Fractal
+  type: Fractal
+  entrances:
+    - Thaumanova Reactor Fractal
+  storylines:
+    - Season 4
+- id: 1271
+  name: Sandswept Isles
+  type: Open World
+  entrances:
+    - Desert Highlands
+  storylines:
+    - Season 4
+- id: 1275
+  name: Courtyard
+  type: Pvp
+  entrances:
+    - Heart of the Mists
+  storylines:
+    - Core
+- id: 1288
+  name: Domain of Kourna
+  type: Open World
+  entrances:
+    - Desert Highlands
+    - Jahai Bluffs
+  storylines:
+    - Season 4
+- id: 1290
+  name: Deepstone Fractal
+  type: Fractal
+  entrances:
+    - Molten Boss Fractal
+  storylines:
+    - Season 4
+- id: 1301
+  name: Jahai Bluffs
+  type: Open World
+  entrances:
+    - Domain of Vabbi
+    - Domain of Kourna
+  storylines:
+    - Season 4
+- id: 1303
+  name: Mythwright Gambit
+  type: Raid
+  entrances:
+    - Lion's Arch Aerodrome
+  storylines:
+    - Season 4
+- id: 1305
+  name: Djinn's Dominion
+  type: Pvp
+  entrances:
+    - Heart of the Mists
+  storylines:
+    - Core
+- id: 1309
+  name: Siren's Reef Fractal
+  type: Fractal
+  entrances:
+    - Deepstone Fractal
+  storylines:
+    - Season 4
+- id: 1310
+  name: Thunderhead Peaks
+  type: Open World
+  entrances:
+    - Lornar's Pass
+    - "Thunderhead Peaks (Public)"
+    - "Thunderhead Peaks (Private)"
+  storylines:
+    - Season 4
+- id: 1316
+  name: Mists Rift
+  type: Open World
+  entrances:
+    - Diessa Plateau
+    - Iron Marches
+    - Kessex Hills
+    - Brisban Wildlands
+    - Snowden Drifts
+    - Lornar's Pass
+    - Dredgehaunt Cliffs
+  storylines:
+    - Season 4
+- id: 1317
+  name: Dragonfall
+  type: Open World
+  entrances:
+    - Lion's Arch
+    - Thunderhead Peaks
+  storylines:
+    - Season 4
+- id: 1323
+  name: The Key of Ahdashim
+  type: Raid
+  entrances:
+    - Lion's Arch Aerodrome
+    - Domain of Vabbi
+  storylines:
+    - Season 4
+- id: 1328
+  name: Auric Span
+  type: Pvp
+  entrances:
+    - Heart of the Mists
+  storylines:
+    - Core
+- id: 1330
+  name: Grothmar Valley
+  type: Open World
+  entrances:
+    - Black Citadel
+    - Bjora Marches
+    - "Strike Mission: Shiverpeaks Pass "
+    - "Strike Mission: Shiverpeaks Pass (Squad)"
+  storylines:
+    - Icebrood Saga
+- id: 1331
+  name: 'Strike Mission: Shiverpeaks Pass '
+  type: Strike Mission
+  entrances:
+    - Grothmar Valley
+    - Eye of the North
+  storylines:
+    - Icebrood Saga
+- id: 1332
+  name: 'Strike Mission: Shiverpeaks Pass (Squad)'
+  type: Strike Mission
+  entrances:
+    - Grothmar Valley
+    - Eye of the North
+  storylines:
+    - Icebrood Saga
+- id: 1339
+  name: 'Weekly Strike Mission: Boneskinner (Squad)'
+  type: Strike Mission
+  entrances:
+    - Bjora Marches
+    - Eye of the North
+  storylines:
+    - Icebrood Saga
+- id: 1340
+  name: 'Weekly Strike Mission: Voice of the Fallen and Claw of the Fallen '
+  type: Strike Mission
+  entrances:
+    - Bjora Marches
+    - Eye of the North
+  storylines:
+    - Icebrood Saga
+- id: 1341
+  name: 'Weekly Strike Mission: Fraenir of Jormag (Squad)'
+  type: Strike Mission
+  entrances:
+    - Bjora Marches
+    - Eye of the North
+  storylines:
+    - Icebrood Saga
+- id: 1343
+  name: Bjora Marches
+  type: Open World
+  entrances:
+    - Black Citadel
+    - Grothmar Valley
+    - "Weekly Strike Mission: Voice of the Fallen and Claw of the Fallen "
+    - "Weekly Strike Mission: Voice of the Fallen and Claw of the Fallen (Squad)"
+    - "Weekly Strike Mission: Fraenir of Jormag "
+    - "Weekly Strike Mission: Fraenir of Jormag (Squad)"
+    - "Weekly Strike Mission: Boneskinner "
+    - "Weekly Strike Mission: Boneskinner (Squad)"
+    - "Strike Mission: Whisper of Jormag "
+    - "Strike Mission: Whisper of Jormag (Squad)"
+  storylines:
+    - Icebrood Saga
+- id: 1344
+  name: 'Weekly Strike Mission: Fraenir of Jormag '
+  type: Strike Mission
+  entrances:
+    - Bjora Marches
+    - Eye of the North
+  storylines:
+    - Icebrood Saga
+- id: 1346
+  name: 'Weekly Strike Mission: Voice of the Fallen and Claw of the Fallen (Squad)'
+  type: Strike Mission
+  entrances:
+    - Bjora Marches
+    - Eye of the North
+  storylines:
+    - Icebrood Saga
+- id: 1351
+  name: 'Weekly Strike Mission: Boneskinner '
+  type: Strike Mission
+  entrances:
+    - Bjora Marches
+    - Eye of the North
+  storylines:
+    - Icebrood Saga
+- id: 1357
+  name: 'Strike Mission: Whisper of Jormag '
+  type: Strike Mission
+  entrances:
+    - Bjora Marches
+    - Eye of the North
+  storylines:
+    - Icebrood Saga
+- id: 1359
+  name: 'Strike Mission: Whisper of Jormag (Squad)'
+  type: Strike Mission
+  entrances:
+    - Bjora Marches
+    - Eye of the North
+  storylines:
+    - Icebrood Saga
+- id: 1362
+  name: Forging Steel
+  type: Strike Mission
+  entrances:
+    - Eye of the North
+  storylines:
+    - Icebrood Saga
+- id: 1368
+  name: Forging Steel (Squad)
+  type: Strike Mission
+  entrances:
+    - Eye of the North
+  storylines:
+    - Icebrood Saga
+- id: 1370
+  name: Eye of the North
+  type: City
+  entrances:
+    - Bjora Marches
+    - Lion's Arch
+  storylines:
+    - Icebrood Saga
+    - End of Dragons
+- id: 1371
+  name: Drizzlewood Coast
+  type: Open World
+  entrances:
+    - Eye of the North
+    - "Strike Mission: Cold War (Squad)"
+    - "Strike Mission: Cold War "
+  storylines:
+    - Icebrood Saga
+- id: 1374
+  name: 'Strike Mission: Cold War (Squad)'
+  type: Strike Mission
+  entrances:
+    - Eye of the North
+    - Drizzlewood Coast
+  storylines:
+    - Icebrood Saga
+- id: 1376
+  name: 'Strike Mission: Cold War '
+  type: Strike Mission
+  entrances:
+    - Eye of the North
+    - Drizzlewood Coast
+  storylines:
+    - Icebrood Saga
+- id: 1384
+  name: Sunqua Peak Fractal
+  type: Fractal
+  entrances:
+    - Shattered Observatory Fractal
+  storylines:
+    - Icebrood Saga
+- id: 1385
+  name: Caledon Forest (Private)
+  type: Dragon Response Mission
+  entrances:
+    - Eye of the North
+  storylines:
+    - Icebrood Saga
+- id: 1386
+  name: Thunderhead Peaks (Private)
+  type: Dragon Response Mission
+  entrances:
+    - Eye of the North
+  storylines:
+    - Icebrood Saga
+- id: 1387
+  name: Bloodtide Coast (Public)
+  type: Dragon Response Mission
+  entrances:
+    - Eye of the North
+  storylines:
+    - Icebrood Saga
+- id: 1388
+  name: Snowden Drifts (Private)
+  type: Dragon Response Mission
+  entrances:
+    - Eye of the North
+  storylines:
+    - Icebrood Saga
+- id: 1389
+  name: Snowden Drifts (Public)
+  type: Dragon Response Mission
+  entrances:
+    - Eye of the North
+  storylines:
+    - Icebrood Saga
+- id: 1390
+  name: Fireheart Rise (Public)
+  type: Dragon Response Mission
+  entrances:
+    - Eye of the North
+  storylines:
+    - Icebrood Saga
+- id: 1391
+  name: Brisban Wildlands (Private)
+  type: Dragon Response Mission
+  entrances:
+    - Eye of the North
+  storylines:
+    - Icebrood Saga
+- id: 1393
+  name: Lake Doric (Public)
+  type: Dragon Response Mission
+  entrances:
+    - Eye of the North
+  storylines:
+    - Icebrood Saga
+- id: 1394
+  name: Bloodtide Coast (Private)
+  type: Dragon Response Mission
+  entrances:
+    - Eye of the North
+  storylines:
+    - Icebrood Saga
+- id: 1395
+  name: Thunderhead Peaks (Public)
+  type: Dragon Response Mission
+  entrances:
+    - Eye of the North
+  storylines:
+    - Icebrood Saga
+- id: 1396
+  name: Gendarran Fields (Public)
+  type: Dragon Response Mission
+  entrances:
+    - Eye of the North
+  storylines:
+    - Icebrood Saga
+- id: 1397
+  name: Metrica Province (Public)
+  type: Dragon Response Mission
+  entrances:
+    - Eye of the North
+  storylines:
+    - Icebrood Saga
+- id: 1398
+  name: Fields of Ruin (Public)
+  type: Dragon Response Mission
+  entrances:
+    - Eye of the North
+  storylines:
+    - Icebrood Saga
+- id: 1399
+  name: Brisban Wildlands (Public)
+  type: Dragon Response Mission
+  entrances:
+    - Eye of the North
+  storylines:
+    - Icebrood Saga
+- id: 1400
+  name: Fields of Ruin (Private)
+  type: Dragon Response Mission
+  entrances:
+    - Eye of the North
+  storylines:
+    - Icebrood Saga
+- id: 1401
+  name: Metrica Province (Private)
+  type: Dragon Response Mission
+  entrances:
+    - Eye of the North
+  storylines:
+    - Icebrood Saga
+- id: 1402
+  name: Lake Doric (Private)
+  type: Dragon Response Mission
+  entrances:
+    - Eye of the North
+  storylines:
+    - Icebrood Saga
+- id: 1403
+  name: Caledon Forest (Public)
+  type: Dragon Response Mission
+  entrances:
+    - Eye of the North
+  storylines:
+    - Icebrood Saga
+- id: 1404
+  name: Fireheart Rise (Private)
+  type: Dragon Response Mission
+  entrances:
+    - Eye of the North
+  storylines:
+    - Icebrood Saga
+- id: 1405
+  name: Gendarran Fields (Private)
+  type: Dragon Response Mission
+  entrances:
+    - Eye of the North
+  storylines:
+    - Icebrood Saga
+- id: 1409
+  name: Dragonstorm (Private Squad)
+  type: Dragon Response Mission
+  entrances:
+    - Eye of the North
+  storylines:
+    - Icebrood Saga
+- id: 1411
+  name: Dragonstorm (Public)
+  type: Dragon Response Mission
+  entrances:
+    - Eye of the North
+  storylines:
+    - Icebrood Saga
+- id: 1422
+  name: Dragon's End
+  type: Open World
+  entrances:
+    - The Echovald Wilds
+  storylines:
+    - End of Dragons
+- id: 1428
+  name: Arborstone
+  type: City
+  entrances:
+    - The Echovald Wilds
+    - New Kaineng City
+    - Lion's Arch
+  storylines:
+    - End of Dragons
+- id: 1432
+  name: 'Strike Mission: Aetherblade Hideout'
+  type: Strike Mission
+  entrances:
+    - Seitung Province
+    - Arborstone
+  storylines:
+    - End of Dragons
+- id: 1437
+  name: 'Strike Mission: Harvest Temple'
+  type: Strike Mission
+  entrances:
+    - Dragon's End
+    - Arborstone
+  storylines:
+    - End of Dragons
+- id: 1438
+  name: New Kaineng City
+  type: Open World
+  entrances:
+    - Seitung Province
+    - Arborstone
+    - Gyala Delve
+    - The Echovald Wilds
+  storylines:
+    - End of Dragons
+- id: 1442
+  name: Seitung Province
+  type: Open World
+  entrances:
+    - New Kaineng City
+    - Lornar's Pass
+  storylines:
+    - End of Dragons
+- id: 1450
+  name: 'Strike Mission: Xunlai Jade Junkyard'
+  type: Strike Mission
+  entrances:
+    - The Echovald Wilds
+    - Arborstone
+  storylines:
+    - End of Dragons
+- id: 1451
+  name: 'Strike Mission: Kaineng Overlook'
+  type: Strike Mission
+  entrances:
+    - New Kaineng City
+    - Arborstone
+  storylines:
+    - End of Dragons
+- id: 1452
+  name: The Echovald Wilds
+  type: Open World
+  entrances:
+    - Arborstone
+    - New Kaineng City
+  storylines:
+    - End of Dragons
+- id: 1480
+  name: The Twisted Marionette
+  type: Convergence
+  entrances:
+    - Eye of the North
+    - Lornar's Pass
+  storylines:
+    - Season 1
+- id: 1482
+  name: The Battle For Lion's Arch
+  type: Open World
+  entrances:
+    - Gendarran Fields
+    - Eye of the North
+  storylines:
+    - Season 1
+- id: 1485
+  name: 'Strike Mission: Old Lion''s Court'
+  type: Strike Mission
+  entrances:
+    - Lion's Arch
+    - Eye of the North
+  storylines:
+    - Season 1
+- id: 1490
+  name: Gyala Delve
+  type: Open World
+  entrances:
+    - New Kaineng City
+  storylines:
+    - End of Dragons
+- id: 1500
+  name: Silent Surf Fractal
+  type: Fractal
+  entrances:
+    - Solid Ocean Fractal
+  storylines:
+    - End of Dragons
+- id: 1509
+  name: The Wizard's Tower
+  type: City
+  entrances:
+    - Lion's Arch
+    - Amnytas
+    - Skywatch Archipelago
+  storylines:
+    - Secrets of the Obscure
+- id: 1510
+  name: Skywatch Archipelago
+  type: Open World
+  entrances:
+    - The Wizard's Tower
+    - Gendarran Fields
+  storylines:
+    - Secrets of the Obscure
+- id: 1515
+  name: 'Strike Mission: Cosmic Observatory'
+  type: Strike Mission
+  entrances:
+    - The Wizard's Tower
+  storylines:
+    - Secrets of the Obscure
+- id: 1517
+  name: Amnytas
+  type: Open World
+  entrances:
+    - The Wizard's Tower
+  storylines:
+    - Secrets of the Obscure
+- id: 1520
+  name: 'Strike Mission: Temple of Febe'
+  type: Strike Mission
+  entrances:
+    - The Wizard's Tower
+  storylines:
+    - Secrets of the Obscure
+- id: 1523
+  name: Convergences (Public)
+  type: Convergence
+  entrances:
+    - The Wizard's Tower
+  storylines:
+    - Secrets of the Obscure
+- id: 1526
+  name: Inner Nayos
+  type: Open World
+  entrances:
+    - The Wizard's Tower
+  storylines:
+    - Secrets of the Obscure
+- id: 1527
+  name: Convergences (Private Squad)
+  type: Convergence
+  entrances:
+    - The Wizard's Tower
+  storylines:
+    - Secrets of the Obscure
+- id: 1538
+  name: Lonely Tower Fractal
+  type: Fractal
+  entrances:
+    - Sunqua Peak Fractal
+  storylines:
+    - Secrets of the Obscure
+- id: 1550
+  name: Lowland Shore
+  type: Open World
+  entrances:
+    - Divinity's Reach
+    - Janthir Syntri
+  storylines:
+    - Janthir Wilds
+- id: 1554
+  name: Janthir Syntri
+  type: Open World
+  entrances:
+    - Lowland Shore
+  storylines:
+    - Janthir Wilds
+- id: 1562
+  name: 'Convergence: Mount Balrior (Private Squad)'
+  type: Convergence
+  entrances:
+    - Lowland Shore
+  storylines:
+    - Janthir Wilds
+- id: 1564
+  name: Mount Balrior
+  type: Raid
+  entrances:
+    - Janthir Syntri
+    - Lion's Arch Aerodrome
+  storylines:
+    - Janthir Wilds
+- id: 1571
+  name: 'Convergence: Mount Balrior (Public)'
+  type: Convergence
+  entrances:
+    - Lowland Shore
+  storylines:
+    - Janthir Wilds

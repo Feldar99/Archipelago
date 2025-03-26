@@ -1,19 +1,7 @@
 import enum
 from typing import Optional
 
-
-class StorylineEnum(enum.Enum):
-    CORE = enum.auto(value=0)
-    SEASON_1 = enum.auto()
-    SEASON_2 = enum.auto()
-    HEART_OF_THORNS = enum.auto()
-    SEASON_3 = enum.auto()
-    PATH_OF_FIRE = enum.auto()
-    SEASON_4 = enum.auto()
-    ICEBROOD_SAGA = enum.auto()
-    END_OF_DRAGONS = enum.auto()
-    SECRETS_OF_THE_OBSCURE = enum.auto()
-    JANTHIR_WILDS = enum.auto()
+from .types import StorylineEnum
 
 
 def storyline_from_str(text) -> Optional[StorylineEnum]:
@@ -41,3 +29,20 @@ def storyline_from_str(text) -> Optional[StorylineEnum]:
     if text in ("janthir wilds", "janthirwilds", "janthir", "jw"):
         return StorylineEnum.JANTHIR_WILDS
     return None
+
+
+def get_owned_storylines(storyline) -> list[StorylineEnum]:
+    storylines = [storyline]
+
+    if storyline is not StorylineEnum.CORE:
+        storylines.append(StorylineEnum.CORE)
+    if storyline.value > StorylineEnum.SEASON_1.value:
+        storylines.append(StorylineEnum.SEASON_1)
+    if storyline.value > StorylineEnum.SEASON_2.value:
+        storylines.append(StorylineEnum.SEASON_2)
+    if storyline is StorylineEnum.SEASON_3:
+        storylines.append(StorylineEnum.HEART_OF_THORNS)
+    if storyline is StorylineEnum.SEASON_4 or storyline is StorylineEnum.ICEBROOD_SAGA:
+        storylines.append(StorylineEnum.PATH_OF_FIRE)
+
+    return storylines

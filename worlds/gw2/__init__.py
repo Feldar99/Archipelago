@@ -1,18 +1,18 @@
-import json
-import os
-from typing import Dict, Any, Iterable, Optional, Union, List, TextIO
+from typing import Dict, Any, Optional, List
 from copy import deepcopy
 
-from .storylines import StorylineEnum, storyline_from_str
-from BaseClasses import Region, Entrance, Location, Item, Tutorial, ItemClassification, MultiWorld
+from .types import Race, StorylineEnum
+from .storylines import storyline_from_str, get_owned_storylines
+from .rules import get_map_rule, get_region_rule
+from BaseClasses import Region, Tutorial, ItemClassification
 from .Util import random_round
-from .locations import location_table, LocationType, location_groups, Gw2Location, LocationData, storyline_items, \
-    storyline_pois
 from .options import GuildWars2Options, GroupContent, StartingMainhandWeapon, CharacterProfession, CharacterRace, \
     StartingOffhandWeapon, Storyline, HealSkill, GearSlots, StorylineItems
 from worlds.AutoWorld import World, WebWorld
 from .items import item_table, Gw2ItemData, Gw2Item, weapons_by_slot, item_groups, item_data, elite_specs
-from .regions import RegionEnum, group_content, ten_man_content, competitive_content, get_region_rule
+from .regions import MapType, group_content, ten_man_content, competitive_content, map_data
+from .locations import location_table, LocationType, location_groups, Gw2Location, LocationData, storyline_items, \
+    storyline_pois
 
 
 class Gw2Web(WebWorld):
@@ -33,7 +33,7 @@ class Gw2World(World):
     options_dataclass = GuildWars2Options
     options: GuildWars2Options
 
-    region_table: dict[RegionEnum, Region]
+    region_table: dict[str, Region]
     player_items: List[Gw2ItemData]
 
     web = Gw2Web()
@@ -46,6 +46,7 @@ class Gw2World(World):
 
     starting_mainhand: Optional[Gw2ItemData]
     starting_offhand: Optional[Gw2ItemData]
+    starting_map: Gw2ItemData
 
     def includes_storyline(self, storyline: StorylineEnum):
         if storyline is StorylineEnum.CORE:
@@ -66,7 +67,36 @@ class Gw2World(World):
         else:
             return False
 
+    def includes_map_type(self, map_type: MapType):
+        if map_type in group_content and self.options.group_content == GroupContent.option_none:
+            return False
+        if map_type in ten_man_content and self.options.group_content != GroupContent.option_ten_man:
+            return False
+        if map_type in competitive_content and not self.options.include_competitive:
+            return False
+
+        return True
+
     def item_is_usable(self, item: Gw2ItemData, allow_elite_spec: bool) -> bool:
+        #Map Items
+        if item.name in map_data:
+            gw2_map = map_data[item.name]
+
+            if not self.includes_map_type(gw2_map.type):
+                # print(item.name + " not usable: Map Type")
+                return False
+
+            storyline = StorylineEnum(self.options.storyline.value)
+            for owned_storyline in get_owned_storylines(storyline):
+                if owned_storyline in gw2_map.storylines:
+                    # print(item.name)
+                    return True
+
+
+            # print(item.name + " not usable: Storyline")
+            return False
+
+
         if item.storyline is not None and not self.includes_storyline(item.storyline):
             return False
 
@@ -133,24 +163,44 @@ class Gw2World(World):
         menu = Region(name="Menu", player=self.player, multiworld=self.multiworld)
         self.multiworld.regions.append(menu)
         open_world = None
-        for region_enum in RegionEnum:
-            if region_enum in group_content and self.options.group_content == GroupContent.option_none:
-                continue
-            if region_enum in ten_man_content and self.options.group_content != GroupContent.option_ten_man:
-                continue
-            if region_enum in competitive_content and not self.options.include_competitive:
+
+        # Create map regions
+        map_connections = []
+        start_map = None
+        for gw2_map in map_data.values():
+            region = Region(name=gw2_map.name, player=self.player, multiworld=self.multiworld)
+            self.region_table[gw2_map.name] = region
+            for entrance_map_name in gw2_map.entrances:
+                map_connections.append((entrance_map_name, region, get_map_rule(gw2_map, self.player, self.options.character_profession)))
+            storyline = StorylineEnum(self.options.storyline.value)
+            # if len(gw2_map.start) > 0:
+            #     print(storyline, gw2_map.start)
+            if storyline in gw2_map.start:
+                race = gw2_map.start[storyline]
+                # print(race, Race(self.options.character_race.value))
+                if race == "ANY" or Race[race] == Race(self.options.character_race.value):
+                    # print(region)
+                    start_map = region
+
+        # print(menu.name, start_map.name)
+        menu.connect(start_map)
+
+        for map_connection in map_connections:
+            self.region_table[map_connection[0]].connect(map_connection[1], rule=map_connection[2])
+
+        # Generic Regions for achievements and quests until I can get those fully cataloged
+        for region_enum in MapType:
+            if not self.includes_map_type(region_enum):
                 continue
 
             region = Region(name=region_enum.name, player=self.player, multiworld=self.multiworld)
-            if region_enum == RegionEnum.OPEN_WORLD:
-                open_world = region
-                menu.connect(open_world)
-            else:
-                open_world.connect(region,
-                                   rule=get_region_rule(region_enum, self.player, self.options.character_profession))
-                region.connect(open_world)
+            start_map.connect(region,
+                              rule=get_region_rule(region_enum,
+                                                   self.player,
+                                                   StorylineEnum(self.options.storyline.value),
+                                                   self.options.character_profession))
 
-            self.region_table[region_enum] = region
+            self.region_table[region_enum.name] = region
 
         #determine which items will be generated by logic
         self.player_items = []
@@ -160,8 +210,15 @@ class Gw2World(World):
                                        True):
                 continue
 
+            # print(item_name)
             self.player_items.append(item)
             item_count += item.quantity
+
+        # need a location for every map except the starting map
+        item_count -= 1
+        # self.player_items.extend(item_groups["Maps"])
+        self.starting_map = map_data[start_map.name].item
+
 
         if self.options.gear_slots.value == GearSlots.option_starting:
             item_count -= len(item_groups["Gear"])
@@ -206,12 +263,12 @@ class Gw2World(World):
 
                 # Core story has no achievements
                 if (self.options.storyline == Storyline.option_core
-                        and region_enum == RegionEnum.STORY
+                        and region_enum == MapType.STORY
                         and location_type == LocationType.ACHIEVEMENT):
                     continue
 
-                if region_enum in self.region_table.keys():
-                    region = self.region_table[region_enum]
+                if region_enum.name in self.region_table.keys():
+                    region = self.region_table[region_enum.name]
 
             if location_type == LocationType.UNIQUE_ITEM:
                 location_index = self.random.randint(0, len(unused_items) - 1)
@@ -224,15 +281,28 @@ class Gw2World(World):
                 location_data_objects = location_region_data[region_enum]
                 location_data = location_data_objects.pop(0)
 
+            if location_data.map is not None:
+                region = self.region_table[location_data.map.name]
+
             location = Gw2Location(self.player, location_data.name, location_data.code, region)
             region.locations.append(location)
 
             counts[location_type.value] += 1
             location_count += 1
             if counts[location_type.value] >= max_counts[location_type.value]:
+                # print("No more ", location_type)
                 weights[location_type.value] = 0
 
         self.multiworld.regions.extend(self.region_table.values())
+        # for name in self.region_table:
+        #     region = self.region_table[name]
+        #     print("Region: ", name)
+        #     print("Locations: ")
+        #     for location in region.locations:
+        #         print("  ", location)
+        #     print("Exits: ")
+        #     for exit in region.exits:
+        #         print("  ", exit.name)
 
     def create_item(self, item_name: str) -> Gw2Item:
         return Gw2Item(item_name, ItemClassification.progression, self.item_name_to_id[item_name], self.player)
@@ -255,6 +325,7 @@ class Gw2World(World):
                 self.multiworld.itempool.append(self.create_item_from_data(item_data))
 
     def precollect_starting_items(self) -> None:
+        self.multiworld.push_precollected(self.create_item_from_data(self.starting_map))
         if self.starting_mainhand is not None:
             self.multiworld.push_precollected(self.create_item_from_data(self.starting_mainhand))
         if self.starting_offhand is not None:

@@ -1,8 +1,11 @@
 from typing import Callable, Optional
 
 from BaseClasses import CollectionState
+from .storylines import get_owned_storylines
+from .types import MapType, StorylineEnum
 from .options import CharacterProfession
-from .items import item_groups, elite_specs, TraitData, core_specs
+from .items import item_groups, elite_specs, core_specs
+from .regions import Map, group_content, map_data
 
 
 class Rule:
@@ -20,6 +23,22 @@ class Rule:
 
     def __call__(self, state: CollectionState) -> bool:
         return self.func(state, self.player, self.profession)
+
+
+class MapRule(Rule):
+
+    def __init__(self, map_name: str, map_type: MapType, player: int, profession: Optional[CharacterProfession] = None):
+        Rule.__init__(self, player,
+                      lambda state, player, profession: has_map(state, player, map_name) and
+                                                        can_access_region(state, player, map_type, profession),
+                      profession)
+
+
+def has_map(state: CollectionState, player: int, map_name: str):
+    gw2_map = map_data[map_name]
+    has_item = state.has(gw2_map.name, player)
+    # print("item.name: ", item.name, ", has_item: ", has_item)
+    return has_item
 
 
 def has_skill(state: CollectionState, player: int, group: str, count: int, elite_spec: Optional[str] = None):
@@ -151,3 +170,46 @@ def has_full_build(state: CollectionState, player: int, profession: CharacterPro
                 and has_full_build_helper(state, player, profession, elite_spec)):
             return True
     return False
+
+
+def can_access_all_maps_in_region(state: CollectionState, player: int, region: MapType, storyline: StorylineEnum,
+                                  profession: Optional[CharacterProfession]) -> bool:
+    # print("can_access_all_maps_in_region: ", region)
+    if not can_access_region(state, player, region, profession):
+        # print("Cannot access Region")
+        return False
+
+    if region is MapType.STORY:
+        region = MapType.OPEN_WORLD
+
+    for item in item_groups["Maps"]:
+        gw2_map = map_data[item.name]
+        # print(gw2_map.type, region)
+        if gw2_map.type == region:
+            if not state.has(item.name, player):
+                for owned_storyline in get_owned_storylines(storyline):
+                    if owned_storyline in gw2_map.storylines:
+                        return False
+
+    return True
+
+
+def can_access_region(state: CollectionState, player: int, region: MapType,
+                      profession: Optional[CharacterProfession]) -> bool:
+    # print(region)
+    if region == MapType.OPEN_WORLD or region == MapType.PVP:
+        return True
+    elif region == MapType.STORY:
+        return has_heal_skill(state, player, profession)
+    elif region in group_content or region == MapType.WVW:
+        return has_full_build(state, player, profession)
+
+
+def get_map_rule(gw2_map: Map, player: int, profession: Optional[CharacterProfession]) -> Optional[Rule]:
+    return MapRule(gw2_map.name, gw2_map.type, player, profession)
+
+
+def get_region_rule(map_type: MapType, player: int, storyline: StorylineEnum, profession: Optional[CharacterProfession]) -> Rule:
+    return Rule(player,
+                lambda state, player, profession: can_access_all_maps_in_region(state, player, map_type, storyline, profession),
+                profession)

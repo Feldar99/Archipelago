@@ -1,98 +1,46 @@
 import enum
 
-from BaseClasses import Item, ItemClassification
-from typing import Dict, Set, NamedTuple, Optional
+from BaseClasses import Item
+from typing import Dict, Optional
 from Utils import parse_yaml
 from . import data
 from importlib.resources import files
 
-from .storylines import storyline_from_str, StorylineEnum
+from .types import Profession, Race, Gw2ItemData, StorylineEnum, Spec
+from .regions import map_data
+
+from .storylines import storyline_from_str
 
 
 class Gw2Item(Item):
     game: str = "Guild Wars 2"
 
 
-class Weapon(enum.Enum):
-    AXE = enum.auto()
-    DAGGER = enum.auto()
-    MACE = enum.auto()
-    PISTOL = enum.auto()
-    SWORD = enum.auto()
-    SCEPTER = enum.auto()
-    FOCUS = enum.auto()
-    SHIELD = enum.auto()
-    TORCH = enum.auto()
-    WARHORN = enum.auto()
-    GREATSWORD = enum.auto()
-    HAMMER = enum.auto()
-    LONGBOW = enum.auto()
-    RIFLE = enum.auto()
-    SHORTBOW = enum.auto()
-    STAFF = enum.auto()
-    HARPOONGUN = enum.auto()
-    SPEAR = enum.auto()
-    TRIDENT = enum.auto()
+def create_item_data(name: str, quantity=1, storyline=None):
+    item = Gw2ItemData()
+    item.name = name
+    item.code = Gw2ItemData.next_id_val
+    item.quantity = quantity
+    item.specs = set()
+    item.race = None
+    item.storyline = storyline
+    Gw2ItemData.next_id_val += 1
+
+    item_data[item.code] = item
+    return item
 
 
-class Profession(enum.Enum):
-    WARRIOR = enum.auto()
-    GUARDIAN = enum.auto()
-    REVENANT = enum.auto()
-    THIEF = enum.auto()
-    ENGINEER = enum.auto()
-    RANGER = enum.auto()
-    MESMER = enum.auto()
-    ELEMENTALIST = enum.auto()
-    NECROMANCER = enum.auto()
+def create_trait_data(name: str, tier: int, spec_name: str, quantity=1, storyline=None):
+    trait_data = create_item_data(name, quantity, storyline)
+    trait_data.tier = tier
+    trait_data.spec_name = spec_name
 
-
-class Spec:
-    profession: Profession
-    elite_spec: Optional[str]
-
-    def __init__(self, profession: Profession, elite_spec=None):
-        self.profession = profession
-        self.elite_spec = elite_spec
-
-
-class Race(enum.Enum):
-    ASURA = enum.auto()
-    CHARR = enum.auto()
-    HUMAN = enum.auto()
-    NORN = enum.auto()
-    SYLVARI = enum.auto()
-
-
-class Gw2ItemData:
-    name: str
-    code: int
-    quantity: int
-    specs: Optional[Set[Spec]]
-    race: Optional[Race]
-    storyline: Optional[StorylineEnum]
-
-    next_id_val = 3_828_179_903_462_517  #selected at random between 0 and 2^53-1 to minimize chance of collision
-
-    def __init__(self, name: str, quantity=1, storyline=None):
-        self.name = name
-        self.code = Gw2ItemData.next_id_val
-        self.quantity = quantity
-        self.specs = set()
-        self.race = None
-        self.storyline = storyline
-        Gw2ItemData.next_id_val += 1
-        item_data[self.code] = self
+    return trait_data
 
 
 class TraitData(Gw2ItemData):
     tier: int
     spec_name: str
-
-    def __init__(self, name: str, tier: int, spec_name: str, quantity=1, storyline=None):
-        Gw2ItemData.__init__(self, name, quantity, storyline)
-        self.tier = tier
-        self.spec_name = spec_name
 
 
 item_data: dict[int, Gw2ItemData] = {}
@@ -123,7 +71,7 @@ def load_weapons():
                     spec = Spec(profession=Profession[profession.upper()], elite_spec=elite_spec)
                     specs.add(spec)
                 item_name = weapon_slot + " " + weapon_name
-                weapon = Gw2ItemData(item_name)
+                weapon = create_item_data(item_name)
                 weapon.specs = specs
                 weapons_items.append(weapon)
                 item_groups["Weapons"].append(weapon)
@@ -146,7 +94,7 @@ def load_skill_group(skills_data, spec: Optional[Spec] = None,
         if skill_type not in item_groups.keys():
             item_groups[skill_type] = []
         for skill_name in skills_data[skill_type]:
-            skill = Gw2ItemData(name=skill_name + " " + skill_type + " Skill", quantity=1, storyline=storyline)
+            skill = create_item_data(name=skill_name + " " + skill_type + " Skill", quantity=1, storyline=storyline)
             if spec is not None:
                 skill.specs.add(spec)
             skill.race = race
@@ -196,10 +144,10 @@ def load_traits():
                     core_specs.add(spec_name)
                 traits = spec_data["traits"]
                 for index, trait in enumerate(traits):
-                    item = TraitData(name=trait + " " + spec_name + " Trait",
-                                     tier=index//3,
-                                     spec_name=spec_name,
-                                     storyline=storyline)
+                    item = create_trait_data(name=trait + " " + spec_name + " Trait",
+                                             tier=index // 3,
+                                             spec_name=spec_name,
+                                             storyline=storyline)
                     spec = Spec(Profession[profession_name.upper()])
                     item.specs.add(spec)
                     traits_items.append(item)
@@ -233,11 +181,22 @@ def load_gear():
     armor_slots = ["Head", "Shoulders", "Chest", "Gloves", "Legs", "Boots", "Back", "Ring 1", "Ring 2", "Amulet",
                    "Accessory 1", "Accessory 2", "Relic", "Aqua Breather"]
     for slot in armor_slots:
-        item = Gw2ItemData(slot)
+        item = create_item_data(slot)
         armor_items.append(item)
 
     item_groups["Gear"] = armor_items
     return armor_items
+
+
+def create_map_item_data():
+    map_items = []
+    for gw2_map in map_data.values():
+        item = create_item_data(gw2_map.name)
+        map_items.append(item)
+        gw2_map.item = item
+
+    item_groups["Maps"] = map_items
+    return map_items
 
 
 item_table: Dict[str, Gw2ItemData] = {}
@@ -249,7 +208,8 @@ def load_items():
     items.extend(load_traits())
     items.extend(load_skills())
     items.extend(load_gear())
-    items.append(Gw2ItemData("Mist Fragment"))  # Quantity will get set after options have been loaded
+    items.extend(create_map_item_data())
+    items.append(create_item_data("Mist Fragment"))  # Quantity will get set after options have been loaded
 
     for item in items:
         item_table[item.name] = item

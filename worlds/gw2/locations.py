@@ -2,7 +2,7 @@ import enum
 from typing import Optional
 
 from BaseClasses import Location
-from .regions import RegionEnum
+from .regions import MapType, Map, map_data
 from .storylines import storyline_from_str
 
 from Utils import parse_yaml
@@ -23,11 +23,11 @@ class LocationType(enum.Enum):
 
     def get_valid_regions(self):
         if self == LocationType.ACHIEVEMENT:
-            return list(RegionEnum)
+            return list(MapType)
         elif self == LocationType.QUEST:
-            return [RegionEnum.STORY]
+            return [MapType.STORY]
         else:
-            return [RegionEnum.OPEN_WORLD]
+            return [MapType.OPEN_WORLD]
 
     @staticmethod
     def get_auto_generated():
@@ -36,14 +36,18 @@ class LocationType(enum.Enum):
 
 class LocationData:
     type: LocationType
-    region: RegionEnum
+    map: Map
     code: int
     name: str
 
     next_id_val = 3_828_179_903_462_517  #selected at random between 0 and 2^53-1 to minimize chance of collision
-    def __init__(self, type: LocationType, region: RegionEnum, name_index: int = 0, name: Optional[str] = None):
+
+    def __init__(self, type: LocationType, region: Optional[MapType] = None, gw2_map: Map = None, name_index: int = 0,
+                 name: Optional[str] = None):
         self.type = type
-        self.region = region
+        if region is None:
+            region = gw2_map.type
+        self.map = gw2_map
         self.code = LocationData.next_id_val
         if name == None:
             self.name = region.name + " " + type.name + " " + str(name_index)
@@ -53,19 +57,19 @@ class LocationData:
 
 
 location_table = {}
-location_groups = {}    #dict[LocationType, dict[RegionEnum, list[LocationData]]]
-storyline_items = {}    #dict[Storyline, list[LocationData]]
-storyline_pois = {}     #dict[Storyline, list[LocationData]]
+location_groups = {}  #dict[LocationType, dict[RegionEnum, list[LocationData]]]
+storyline_items = {}  #dict[Storyline, list[LocationData]]
+storyline_pois = {}  #dict[Storyline, list[LocationData]]
 
 
 def create_locations():
     from . import data
 
-    MINIMUM_LOCATION_COUNT = 150
+    MINIMUM_LOCATION_COUNT = 300
 
     for location_type in LocationType:
         location_groups[location_type] = {}
-        for region in RegionEnum:
+        for region in MapType:
             location_groups[location_type][region] = []
 
     for i in range(MINIMUM_LOCATION_COUNT):
@@ -77,31 +81,35 @@ def create_locations():
     with files(data).joinpath("Items.yaml").open() as f:
         item_data = parse_yaml(f.read())
         for storyline_name in item_data:
-            storyline = storyline_from_str(storyline_name)
-            # print(storyline_name, ": ", storyline)
-            storyline_items[storyline.value] = []
             storyline_data = item_data[storyline_name]
-            for map in storyline_data:
-                map_data = storyline_data[map]
-                for item in map_data:
-                    location_data = LocationData(type=LocationType.UNIQUE_ITEM, region=RegionEnum.OPEN_WORLD,
+            for map_name in storyline_data:
+                yaml_map = storyline_data[map_name]
+                gw2_map = map_data[map_name]
+                for item in yaml_map:
+
+                    location_data = LocationData(type=LocationType.UNIQUE_ITEM, gw2_map=gw2_map,
                                                  name="Item: " + item)
-                    location_groups[LocationType.UNIQUE_ITEM][RegionEnum.OPEN_WORLD].append(location_data)
-                    storyline_items[storyline.value].append(location_data)
+                    location_groups[LocationType.UNIQUE_ITEM][MapType.OPEN_WORLD].append(location_data)
+                    for storyline in gw2_map.storylines:
+                        if storyline.value not in storyline_items:
+                            storyline_items[storyline.value] = []
+                        storyline_items[storyline.value].append(location_data)
 
     with files(data).joinpath("Pois.yaml").open() as f:
         item_data = parse_yaml(f.read())
         for storyline_name in item_data:
-            storyline = storyline_from_str(storyline_name)
-            storyline_pois[storyline.value] = []
             storyline_data = item_data[storyline_name]
-            for map in storyline_data:
-                map_data = storyline_data[map]
-                for poi in map_data:
-                    location_data = LocationData(type=LocationType.POINT_OF_INTEREST, region=RegionEnum.OPEN_WORLD,
+            for map_name in storyline_data:
+                yaml_map = storyline_data[map_name]
+                gw2_map = map_data[map_name]
+                for poi in yaml_map:
+                    location_data = LocationData(type=LocationType.POINT_OF_INTEREST, gw2_map=gw2_map,
                                                  name="POI: " + poi)
-                    location_groups[LocationType.POINT_OF_INTEREST][RegionEnum.OPEN_WORLD].append(location_data)
-                    storyline_pois[storyline.value].append(location_data)
+                    location_groups[LocationType.POINT_OF_INTEREST][MapType.OPEN_WORLD].append(location_data)
+                    for storyline in gw2_map.storylines:
+                        if storyline.value not in storyline_pois:
+                            storyline_pois[storyline.value] = []
+                        storyline_pois[storyline.value].append(location_data)
 
     for location_type, data in location_groups.items():
         for region_type, locations in data.items():

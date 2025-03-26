@@ -10,13 +10,13 @@ Core:
       - 32132
     Gargoyle Fossil:
       - 23498
-    Latera's Light Gloves:
+    "Latera's Light Gloves":
       - 4248
     Bottle of Barradin Family Wine:
       - 8529
     Flaming Effigy Piece:
       - 8687
-    Champion's Mace:
+    "Champion's Mace":
       - 30028
     Blood Legion Axe:
       - 30022
@@ -73,7 +73,7 @@ Core:
     Cattle Prod:
       - 8682
   Fields of Ruin:
-    Worker's Sickle:
+    "Worker's Sickle":
       - 23036
     Pick Axe:
       - 23035
@@ -88,7 +88,7 @@ Core:
     Gearshot Pistol:
       - 30096
       - 30121
-    Sentinel's Perch Scout Medal:
+    "Sentinel's Perch Scout Medal":
       - 23567
       - 23585
     Grind Mace:
@@ -97,19 +97,19 @@ Core:
     Oil Funnel Warhorn:
       - 30102
       - 30128
-    Pit Fighter's Skirt:
+    "Pit Fighter's Skirt":
       - 4316
-    Silent Walker's Gloves:
+    "Silent Walker's Gloves":
       - 4328
       - 4321
     Clockwork Scepter:
       - 30105
       - 30119
-    Silent Walker's Shoulder Guards:
+    "Silent Walker's Shoulder Guards":
       - 4337
       - 4312
   Blazeridge Steppes:
-    Sneakpaw's Warhorn:
+    "Sneakpaw's Warhorn":
       - 30182
       - 30183
     Stone of Rinn:
@@ -120,9 +120,9 @@ Core:
       - 23628
     Flashing Mine Blinker:
       - 23629
-    Sentinel's Cout Badge:
+    "Sentinel's Cout Badge":
       - 23632
-    Deno's Fish Hook:
+    "Deno's Fish Hook":
       - 23624
     Iron Legion Badge of Bravery:
       - 23626
@@ -188,7 +188,7 @@ Core:
       - 4912
     Verdant Charm:
       - 23878
-    Warden's Staff:
+    "Warden's Staff":
       - 30556
     Briarthorn Dager:
       - 30543
@@ -206,7 +206,7 @@ Core:
       - 30561
     Krait Tooth Pendant:
       - 23888
-    Fisher's Shield:
+    "Fisher's Shield":
       - 30560
     Kraitbane Model I Pistol:
       - 30547
@@ -239,19 +239,19 @@ Core:
       - 23864
     Lionguard Warhorn:
       - 30535
-    Charged Scepter (Researcher Ahjj):
+    "Charged Scepter (Researcher Ahjj)":
       - 30537
     Deputy Peacemaker Badge:
       - 23862
-    Fireman's Axe:
+    "Fireman's Axe":
       - 30527
     Radiation Shield:
       - 30533
   Brisban Wildlands:
-    Woodsman's Axe:
+    "Woodsman's Axe":
       - 30595
       - 30596
-    Glaxx's Focus:
+    "Glaxx's Focus":
       - 30597
       - 30598
     Seraph Sword:
@@ -269,10 +269,10 @@ Core:
     Razor-Sharp Dagger:
       - 30583
       - 30584
-    Worm Rancher's Studded Gloves:
+    "Worm Rancher's Studded Gloves":
       - 4879
       - 4882
-    Twitchok's Trusty Pistol:
+    "Twitchok's Trusty Pistol":
       - 30573
       - 30574
     Stolen Bandit Button:
@@ -315,7 +315,7 @@ Core:
       - 4951
     Chum Trispear:
       - 30622
-    Rescuer's Shoulderpads:
+    "Rescuer's Shoulderpads":
       - 4942
       - 4957
     Brackwater Scepter:
@@ -325,17 +325,17 @@ Core:
       - 23978
     Briar Sword:
       - 30620
-    United Arcanist Lab's Metal Gauntlets:
+    "United Arcanist Lab's Metal Gauntlets":
       - 4927
       - 4964
   Mount Maelstrom:
-    Bard's Valley Shield:
+    "Bard's Valley Shield":
       - 30657
       - 30662
     Quandry Torch:
       - 30658
       - 30664
-    Excavator's Metal Gauntlets:
+    "Excavator's Metal Gauntlets":
       - 5003
       - 5006
     Firebreak Shoulderpads:
@@ -347,7 +347,7 @@ Core:
     Magmatic Helm:
       - 4991
       - 4994
-    Gallant's Mace:
+    "Gallant's Mace":
       - 30650
       - 30674
     Leather Oxbow Aquabreather:
@@ -409,7 +409,7 @@ Core:
       - 29354
     Heart-Shaped Cookie:
       - 8500
-    Leika's Mace:
+    "Leika's Mace":
       - 29387
       - 29360
     Hunter Boots:
@@ -423,19 +423,19 @@ Core:
     Giant Wolf Tooth:
       - 23301
       - 23314
-    Lionguard Pistol (Lionguard Haral):
+    "Lionguard Pistol (Lionguard Haral)":
       - 29372
       - 29361
     Sharp Sword:
       - 29379
       - 29368
-    Lionguard Gloves (medium):
+    "Lionguard Gloves (medium)":
       - 3932
       - 3920
     Quaggan Friendship Bracelet:
       - 23303
       - 23318
-  Lornar's Pass:
+  "Lornar's Pass":
     Herding Horn:
       - 29472
       - 29483
@@ -444,10 +444,10 @@ Core:
     Queldip Gauntlets:
       - 4034
       - 4051
-    Duidda's Leather Aquabreather:
+    "Duidda's Leather Aquabreather":
       - 4043
       - 4046
-    Dredge Manifesto (Level 30):
+    "Dredge Manifesto (Level 30)":
       - 23364
       - 23381
     Horned Focus:
@@ -456,7 +456,7 @@ Core:
     Skritt Neutralizer:
       - 29461
       - 29475
-    Hidden Pistl (weapon):
+    "Hidden Pistol (weapon)":
       - 29462
       - 29480
     Steam Sprocket:
@@ -468,7 +468,7 @@ Core:
     Mining Lantern:
       - 23362
       - 23379
-    Hune's Leather Work Gloves:
+    "Hune's Leather Work Gloves":
       - 4028
       - 4068
     Hunting Trophy:
@@ -487,12 +487,12 @@ Core:
     De Molish Mace:
       - 29513
       - 29515
-    Painted Mokooki Hunter's Pottery:
+    "Painted Mokooki Hunter's Pottery":
       - 23402
       - 23417
     Ratatosk Pistol:
       - 29492
-    Travelen's Lodge Commemorative Spoon:
+    "Travelen's Lodge Commemorative Spoon":
       - 23401
       - 23416
     Priory Granite Citadel History:
@@ -514,7 +514,7 @@ Core:
   Timberline Falls:
     Whisper Model K Pistol:
       - 29419
-    Explorer's Focus:
+    "Explorer's Focus":
       - 29429
     Order Dagger:
       - 29412
@@ -524,15 +524,15 @@ Core:
       - 29443
     Experimental Collection Staff:
       - 29433
-    Crusader's Mace:
+    "Crusader's Mace":
       - 29422
-    Leather Excavator's Gloves:
+    "Leather Excavator's Gloves":
       - 4002
     Caer Axe:
       - 29418
-    Hunter's Speargun:
+    "Hunter's Speargun":
       - 29432
-    Spleedoop Breather (light):
+    "Spleedoop Breather (light)":
       - 3995
       - 3998
   Frostgorge Sound:
@@ -572,7 +572,7 @@ Core:
       - 23734
     Portal Shatterer:
       - 30368
-    Monk's Beer Stein:
+    "Monk's Beer Stein":
       - 23731
     Tamini Axe:
       - 30360
@@ -594,18 +594,18 @@ Core:
       - 23732
     Chewed Dog Whistle:
       - 23733
-    Bone (consumable):
+    "Bone (consumable)":
       - 8743
-    Elmder's Mace:
+    "Elmder's Mace":
       - 30359
     Militia Shield:
       - 30357
-    Harpy Feather (level 3):
+    "Harpy Feather (level 3)":
       - 23722
   Kessex Hills:
     Tengu Feather Charm:
       - 23745
-    Lion's Claw Model I:
+    "Lion's Claw Model I":
       - 30372
     Matlal Enchanted Pig Truffle:
       - 8748
@@ -616,26 +616,26 @@ Core:
     Seraph-Issue Shield:
       - 30388
       - 30344
-    Researcher's Scepter:
+    "Researcher's Scepter":
       - 30386
     Seraph-Issue Shoulderpads:
       - 4718
       - 4715
-    Waldo's Torch:
+    "Waldo's Torch":
       - 30351
     Seraph-Issue Gauntlets:
       - 4686
       - 4688
-    Miner's Mace Mark G:
+    "Miner's Mace Mark G":
       - 30374
-    Triskellian Breather (medium):
+    "Triskellian Breather (medium)":
       - 4691
     Ancient Shining Blade Emblem:
       - 23752
-    Doolsileep's Seashell Charm:
+    "Doolsileep's Seashell Charm":
       - 23750
   Gendarran Fields:
-    Vejj's Dusty Focus:
+    "Vejj's Dusty Focus":
       - 30452
     Ascalonian Warhorn:
       - 30449
@@ -644,9 +644,9 @@ Core:
       - 23813
     Lionguard Iron Mace:
       - 30459
-    Milton's Golden Apple Corer:
+    "Milton's Golden Apple Corer":
       - 23795
-    Farmer's Rusty Axe:
+    "Farmer's Rusty Axe":
       - 30458
       - 30479
     Leather Lionguard Rebreather:
@@ -658,7 +658,7 @@ Core:
     Sheriff Kaargoth Bloodclaw:
       - 30456
       - 30476
-    Johan's Heavy Shoulderguard:
+    "Johan's Heavy Shoulderguard":
       - 4741
       - 4725
     First Haven Cloth Gloves:
@@ -671,10 +671,10 @@ Core:
     Seraph Assault Kit:
       - 23834
       - 23845
-    Seraph's Landing Mace:
+    "Seraph's Landing Mace":
       - 30496
       - 30515
-    Luke's Torch:
+    "Luke's Torch":
       - 30492
       - 30507
     Modniir Effigy:
@@ -686,7 +686,7 @@ Core:
     Ancient Focus:
       - 30489
       - 30512
-    Cane's Justice:
+    "Cane's Justice":
       - 30494
       - 30514
     Leather Modniir Kickers:
@@ -694,7 +694,7 @@ Core:
       - 4825
     Warhorn of the Company:
       - 30486
-    Private Felix's Leather Gloves:
+    "Private Felix's Leather Gloves":
       - 4812
       - 4818
   Bloodtide Coast:
@@ -710,7 +710,7 @@ Core:
     Pirate Axe:
       - 30424
       - 30425
-    Magi's Soft Wood Scepter:
+    "Magi's Soft Wood Scepter":
       - 14029
       - 14030
     Fisherman Carter:
@@ -742,10 +742,10 @@ Core:
     Thunderhead Axe:
       - 30228
       - 30229
-    Sarayi Gloves (light):
+    "Sarayi Gloves (light)":
       - 4443
       - 4446
-    Orrian Pearl (accessory):
+    "Orrian Pearl (accessory)":
       - 23709
       - 23716
     Lone Dagger:
@@ -760,7 +760,7 @@ Core:
     Rally Greaves:
       - 4448
       - 4460
-  Malchor's Leap:
+  "Malchor's Leap":
     Bottle of Standard Research Issue Aged Wine:
       - 8567
     Orrian Mirror Shard:
@@ -783,10 +783,10 @@ Core:
     Doric Torch:
       - 30300
       - 30302
-    Pagga's Shield:
+    "Pagga's Shield":
       - 30320
       - 30329
-    Colonnade Gloves (light):
+    "Colonnade Gloves (light)":
       - 4523
       - 4544
     Shelter Focus:
@@ -804,13 +804,13 @@ Core:
       - 23678
     Bottle of Putrid Wine:
       - 8550
-    Meddler's Torch:
+    "Meddler's Torch":
       - 30262
       - 30264
     Shank Sword:
       - 30275
       - 30277
-    Jofast's Mace:
+    "Jofast's Mace":
       - 30274
       - 30276
     Shadowfain Greaves:
@@ -825,7 +825,7 @@ Core:
     Pact Medal of Valor:
       - 23671
       - 23682
-    Gavbeorn Breather (light):
+    "Gavbeorn Breather (light)":
       - 4475
       - 4481
     Cachistic Handwraps:
@@ -845,10 +845,10 @@ Living World Season 1:
   The Tower of Nightmares:
     Tricolor Key:
       - 49132
-  The Battle For Lion's Arch:
-    Standard Citizen's Rescue Bag:
+  "The Battle For Lion's Arch":
+    "Standard Citizen's Rescue Bag":
       - 50073
-    Ultimate Citizen's Rescue Bag:
+    "Ultimate Citizen's Rescue Bag":
       - 50071
   The Twisted Marionette:
     Hoard of the Marionette Warden I:
@@ -891,7 +891,7 @@ Heart of Thorns:
     "Tangled Depths: Hero's Choice Chest":
       - 78332
       - 78751
-  Dragon's Stand:
+  "Dragon's Stand":
     "Dragon's Stand: Hero's Choice Chest":
       - 78617
       - 78783
@@ -920,7 +920,7 @@ Living World Season 3:
     Winterberry Pie:
       - 79748
   Lake Doric:
-    Key to Noran's Secret Chest:
+    "Key to Noran's Secret Chest":
       - 80262
     Seraph Pearl Carver:
       - 80139
@@ -934,7 +934,7 @@ Living World Season 3:
       - 81082
       - 81204
       - 81205
-  Siren's Landing:
+  "Siren's Landing":
     Orrian Coffer:
       - 81782
 Path of Fire:
@@ -1023,7 +1023,7 @@ Living World Season 4:
   Domain of Kourna:
     Roller Beetle Treat:
       - 87689
-    Debbie's Cake:
+    "Debbie's Cake":
       - 88101
     Firefly Bits:
       - 87658
@@ -1049,7 +1049,7 @@ Living World Season 4:
       - 87621
     "Domain of Kourna Griffon Expert: Gold":
       - 87587
-    Plaguedoctor's Orichalcum-Imbued Inscription:
+    "Plaguedoctor's Orichalcum-Imbued Inscription":
       - 87809
   Jahai Bluffs:
     "Jahai Bluffs Griffon Master: Bronze":
@@ -1095,7 +1095,7 @@ Living World Season 4:
       - 89606
     Forge Supplies:
       - 89870
-    Diviner's Orichalcum-Imbued Inscription:
+    "Diviner's Orichalcum-Imbued Inscription":
       - 89735
   Dragonfall:
     Volatile Logging Axe:
@@ -1131,7 +1131,7 @@ The Icebrood Saga:
   Bjora Marches:
     Boneskinner Tonic:
       - 92302
-    Raven Statue (decoration):
+    "Raven Statue (decoration)":
       - 92344
   Drizzlewood Coast:
     "Arena of the Wolverine: Bronze":
@@ -1154,9 +1154,6 @@ The Icebrood Saga:
       - 93732
     Shard of Crystallized Blood of Jormag:
       - 93734
-  The Eye of the North:
-    Olmakhan Supply Box:
-      - 94860
 End of Dragons:
   Seitung Province:
     Jaiju Minnow:
@@ -1193,8 +1190,8 @@ End of Dragons:
       - 96561
     "The Echovald Wilds: Hero's Choice Chest":
       - 97894
-  Dragon's End:
-    Writ of Dragon's End:
+  "Dragon's End":
+    "Writ of Dragon's End":
       - 95692
     "Dragon's End: Hero's Choice Chest":
       - 97896
@@ -1253,7 +1250,7 @@ Secrets of the Obscure:
       - 101195
     "Citadel of Zakiros: Hero's Choice Chest":
       - 101748
-  The Wizard's Tower:
+  "The Wizard's Tower":
     "Fly-by-Night: Bronze":
       - 100670
       - 100690
