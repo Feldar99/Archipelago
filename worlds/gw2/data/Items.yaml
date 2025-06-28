@@ -655,7 +655,7 @@ Core:
     Lionguard Cloth Shoes:
       - 4756
       - 4752
-    Sheriff Kaargoth Bloodclaw:
+    Junction Haven Shield:
       - 30456
       - 30476
     "Johan's Heavy Shoulderguard":
@@ -1278,6 +1278,7 @@ Janthir Wilds:
       - 102841
     "Homestead Recipe Book: Pillars": 103208
     Precious Lowland Shore Gear Box: 102346
+    Janthiri Gear Box: 102283
   Janthir Syntri:
     "Homestead Recipe Book: Guild Arena": 102649
     "Homestead Recipe Book: Paintings and Shelves": 102764
@@ -1293,4 +1294,17 @@ Janthir Wilds:
     "Homestead Recipe Book: Statues": 102461
     Janthir Syntri Renown Token: 102881
     "Janthir Syntri: Hero's Choice Chest": 102265
-
+  Mistburned Barrens:
+    "True Sight Armor Recipe: Masks": 104478
+    Valley of Agony Survey Result Chest: 104431
+    Wrath's Pass Survey Result Chest: 104461
+    Bloodstone Corridor Survey Result Chest: 104440
+    Angler Eel: 104303
+    Hermit Titancrab: 104459
+    "Mistburned Barrens Adventure: Bronze": 104490
+    "Mistburned Barrens Adventure: Silver": 104263
+    "Mistburned Barrens Adventure: Gold": 104401
+  Bava Nisos:
+    Curious Mursaat Remnants: 104829
+    "Bava Nisos: Commander's Choice Chest": 104714
+    Slime-Encrusted Mursaat Strongbox: 104936

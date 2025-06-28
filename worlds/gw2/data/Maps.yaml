@@ -671,6 +671,7 @@
   entrances:
     - Twilight Oasis Fractal
     - Thaumanova Reactor Fractal
+    - Kinfall Fractal
   storylines:
     - Season 1
 - id: 968
@@ -828,6 +829,7 @@
   type: Fractal
   entrances:
     - Silent Surf Fractal
+    - Solid Ocean Fractal
   storylines:
     - Season 3
 - id: 1178
@@ -1215,6 +1217,8 @@
   type: Fractal
   entrances:
     - Shattered Observatory Fractal
+    - Silent Surf Fractal
+    - Solid Ocean Fractal
   storylines:
     - Icebrood Saga
 - id: 1385
@@ -1547,6 +1551,9 @@
   type: Fractal
   entrances:
     - Sunqua Peak Fractal
+    - Shattered Observatory Fractal
+    - Silent Surf Fractal
+    - Solid Ocean Fractal
   storylines:
     - Secrets of the Obscure
 - id: 1550
@@ -1584,5 +1591,27 @@
   type: Convergence
   entrances:
     - Lowland Shore
+  storylines:
+    - Janthir Wilds
+- id: 1574 
+  name: Bava Nisos
+  type: Open World
+  entrances:
+    - Mistburned Barrens
+  storylines:
+    - Janthir Wilds
+- id: 1575
+  name: Mistburned Barrens
+  type: Open World
+  entrances:
+    - Janthir Syntri
+  storylines:
+    - Janthir Wilds
+- id: 1584
+  name: Kinfall Fractal
+  type: Fractal
+  entrances:
+    - Thaumanova Reactor Fractal
+    - Twilight Oasis Fractal
   storylines:
     - Janthir Wilds

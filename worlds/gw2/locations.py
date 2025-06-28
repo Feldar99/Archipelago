@@ -96,20 +96,18 @@ def create_locations():
                         storyline_items[storyline.value].append(location_data)
 
     with files(data).joinpath("Pois.yaml").open() as f:
-        item_data = parse_yaml(f.read())
-        for storyline_name in item_data:
-            storyline_data = item_data[storyline_name]
-            for map_name in storyline_data:
-                yaml_map = storyline_data[map_name]
-                gw2_map = map_data[map_name]
-                for poi in yaml_map:
-                    location_data = LocationData(type=LocationType.POINT_OF_INTEREST, gw2_map=gw2_map,
-                                                 name="POI: " + poi)
-                    location_groups[LocationType.POINT_OF_INTEREST][MapType.OPEN_WORLD].append(location_data)
-                    for storyline in gw2_map.storylines:
-                        if storyline.value not in storyline_pois:
-                            storyline_pois[storyline.value] = []
-                        storyline_pois[storyline.value].append(location_data)
+        poi_data = parse_yaml(f.read())
+        for map_name in poi_data:
+            yaml_map = poi_data[map_name]
+            gw2_map = map_data[map_name]
+            for poi in yaml_map:
+                location_data = LocationData(type=LocationType.POINT_OF_INTEREST, gw2_map=gw2_map,
+                                             name="POI: " + poi)
+                location_groups[LocationType.POINT_OF_INTEREST][MapType.OPEN_WORLD].append(location_data)
+                for storyline in gw2_map.storylines:
+                    if storyline.value not in storyline_pois:
+                        storyline_pois[storyline.value] = []
+                    storyline_pois[storyline.value].append(location_data)
 
     for location_type, data in location_groups.items():
         for region_type, locations in data.items():
