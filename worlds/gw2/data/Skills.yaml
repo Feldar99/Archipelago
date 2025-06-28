@@ -1,551 +1,566 @@
 WARRIOR:
-  Healing:
-    - Mending
-    - '"To the Limit!"'
-    - Healing Signet
-    - Defiant Stance
-  Utility:
-    - Banner of Defense
-    - Banner of Discipline
-    - Banner of Strength
-    - Banner of Tactics
-    - Bull's Charge
-    - Kick
-    - Stomp
-    - Throw Bolas
-    - '"Fear Me!"'
-    - '"For Great Justice!"'
-    - '"On My Mark!"'
-    - '"Shake it Off!"'
-    - Dolyak Signet
-    - Signet of Fury
-    - Signet of Might
-    - Signet of Stamina
-    - Balanced Stance
-    - Berserker Stance
-    - Endure Pain
-    - Frenzy
-  Elite:
-    - Battle Standard
-    - Rampage
-    - Signet of Rage
+  Core:
+    Healing:
+      Mending: 14401
+      "To the Limit!": 14402
+      Healing Signet: 14389
+      Defiant Stance: 21815
+    Utity:
+      Banner of Defense: 14528
+      Banner of Discipline: 14407
+      Banner of Strength: 14405
+      Banner of Tactics: 14408
+      Bull's Charge: 14516
+      Kick: 14502
+      Stomp: 14388
+      Throw Bolas: 14354
+      "Fear Me!": 14409
+      "For Great Justice!": 14403
+      "On My Mark!": 14575
+      "Shake it Off!": 14372
+      Dolyak Signet: 14413
+      Signet of Fury: 14410
+      Signet of Might: 14404
+      Signet of Stamina: 14479
+      Balanced Stance: 14412
+      Berserker Stance: 14406
+      Endure Pain: 14392
+      Frenzy: 14368
+    Elite:
+      Battle Standard: 14419
+      Rampage: 14483
+      Signet of Rage: 14355
   Berserker:
     Healing:
-      - Blood Reckoning
+      Blood Reckoning: 30189
     Utility:
-      - Outrage
-      - Shattering Blow
-      - Sundering Leap
-      - Wild Blow
+      Outrage: 30258
+      Shattering Blow: 30074
+      Sundering Leap: 29613
+      Wild Blow: 29941
     Elite:
-      - Head Butt
+      Head Butt: 30343
   Spellbreaker:
     Healing:
-      - Natural Healing
+      Natural Healing: 41100
     Utility:
-      - Sight beyond Sight
-      - Featherfoot Grace
-      - Imminent Threat
-      - Break Enchantments
+      Sight beyond Sight: 43745
+      Featherfoot Grace: 45380
+      Imminent Threat: 41919
+      Break Enchantments: 43123
     Elite:
-      - Winds of Disenchantment
+      Winds of Disenchantment: 45333
   Bladesworn:
     Healing:
-      - Combat Stimulant
+      Combat Stimulant: 62978
     Utility:
-      - Flow Stabilizer
-      - Overcharged Cartridges
-      - Electric Fence
-      - Dragonspike Mine
+      Flow Stabilizer: 62967
+      Overcharged Cartridges: 68085
+      Electric Fence: 62804
+      Dragonspike Mine: 62960
     Elite:
-      - Tactical Reload
+      Tactical Reload: 62901
 GUARDIAN:
-  Healing:
-    - '"Receive the Light!"'
-    - Litany of Wrath
-    - Shelter
-    - Signet of Resolve
-  Utility:
-    - Hallowed Ground
-    - Purging Flames
-    - Sanctuary
-    - Wall of Reflection
-    - Contemplation of Purity
-    - Judge's Intervention
-    - Merciful Intervention
-    - Smite Condition
-    - '"Hold the Line!"'
-    - '"Advance!"'
-    - '"Save Yourselves!"'
-    - '"Stand Your Ground!"'
-    - Bane Signet
-    - Signet of Judgment
-    - Signet of Mercy
-    - Signet of Wrath
-    - Bow of Truth
-    - Hammer of Wisdom
-    - Shield of the Avenger
-    - Sword of Justice
-  Elite:
-    - '"Feel My Wrath!"'
-    - Renewed Focus
-    - Signet of Courage
+  Core:
+    Healing:
+      "Receive the Light!": 9083
+      Litany of Wrath: 21664
+      Shelter: 9102
+      Signet of Resolve: 9158
+    Utility:
+      Hallowed Ground: 9253
+      Purging Flames: 9187
+      Sanctuary: 9128
+      Wall of Reflection: 9251
+      Contemplation of Purity: 9248
+      Judge's Intervention: 9247
+      Merciful Intervention: 9246
+      Smite Condition: 9245
+      "Hold the Line!": 9152
+      "Advance!": 9084
+      "Save Yourselves!": 9085
+      "Stand Your Ground!": 9153
+      Bane Signet: 9093
+      Signet of Judgment: 9150
+      Signet of Mercy: 9163
+      Signet of Wrath: 9151
+      Bow of Truth: 9175
+      Hammer of Wisdom: 9125
+      Shield of the Avenger: 9182
+      Sword of Justice: 9168
+    Elite:
+      "Feel My Wrath!": 29965
+      Renewed Focus: 9154
+      Signet of Courage: 30461
   Dragonhunter:
     Healing:
-      - Purification
+      Purification: 30025
     Utility:
-      - Fragments of Faith
-      - Light's Judgement
-      - Test of Faith
-      - Procession of Blades
+      Fragments of Faith: 30553
+      Light's Judgement: 30871
+      Test of Faith: 29786
+      Procession of Blades: 30364
     Elite:
-      - Dragon's Maw
+      Dragon's Maw: 30273
   Firebrand:
     Healing:
-      - Mantra of Solace
+      Mantra of Solace: 41714
     Utility:
-      - Mantra of Flame
-      - Mantra of Lore
-      - Mantra of Truth
-      - Mantra of Potence
+      Mantra of Flame: 46148
+      Mantra of Lore: 45460
+      Mantra of Truth: 44080
+      Mantra of Potence: 40915
     Elite:
-      - Mantra of Liberation
+      Mantra of Liberation: 43357
   Willbender:
     Healing:
-      - Reversal of Fortune
+      Reversal of Fortune: 62622
     Utility:
-      - Flash Combo
-      - Whirling Light
-      - Heel Crack
-      - Roiling Light
+      Flash Combo: 62608
+      Whirling Light: 62565
+      Heel Crack: 62549
+      Roiling Light: 62521
     Elite:
-      - Heaven's Palm
+      Heaven's Palm: 62561
 REVENANT:
-  Legend:
-    - Legendary Assassin Stance
-    - Legendary Demon Stance
-    - Legendary Dwarf Stance
-    - Legendary Centaur Stance
+  Core:
+    Legend:
+      Legendary Assassin Stance: 28134
+      Legendary Demon Stance: 28494
+      Legendary Dwarf Stance: 28419
+      Legendary Centaur Stance: 28195
   Herald:
     Legend:
-      - Legendary Dragon Stance
+      Legendary Dragon Stance: 28085
   Renegade:
     Legend:
-      - Legendary Renegade Stance
+      Legendary Renegade Stance: 41858
   Vindicator:
     Legend:
-      - Legendary Alliance Stance
+      Legendary Alliance Stance: 62749
 THIEF:
-  Healing:
-    - Hide in Shadows
-    - Signet of Malice
-    - Withdraw
-    - Skelk Venom
-  Utility:
-    - Blinding Powder
-    - Shadow Refuge
-    - Shadowstep
-    - Smoke Screen
-    - Prepare Pitfall
-    - Prepare Thousand Needles
-    - Prepare Shadow Portal
-    - Prepare Seal Area
-    - Assassin's Signet
-    - Infiltrator's Signet
-    - Signet of Agility
-    - Signet of Shadows
-    - Caltrops
-    - Haste
-    - Roll for Initiative
-    - Scorpion Wire
-    - Devourer Venom
-    - Ice Drake Venom
-    - Skale Venom
-    - Spider Venom
-  Elite:
-    - Thieves Guild
-    - Basilisk Venom
-    - Dagger Storm
+  Core:
+    Healing:
+      Hide in Shadows: 13027
+      Signet of Malice: 13050
+      Withdraw: 13021
+      Skelk Venom: 21778
+    Utility:
+      Blinding Powder: 13044
+      Shadow Refuge: 13117
+      Shadowstep: 13002
+      Smoke Screen: 13065
+      Prepare Pitfall: 13057
+      Prepare Thousand Needles: 13026
+      Prepare Shadow Portal: 13038
+      Prepare Seal Area: 13056
+      Assassin's Signet: 13046
+      Infiltrator's Signet: 13064
+      Signet of Agility: 13062
+      Signet of Shadows: 13060
+      Caltrops: 13028
+      Haste: 13066
+      Roll for Initiative: 13035
+      Scorpion Wire: 13020
+      Devourer Venom: 13093
+      Ice Drake Venom: 13096
+      Skale Venom: 13055
+      Spider Venom: 13037
+    Elite:
+      Thieves Guild: 13082
+      Basilisk Venom: 13132
+      Dagger Storm: 13085
   Daredevil:
     Healing:
-      - Channeled Vigor
+      Channeled Vigor: 30400
     Utility:
-      - Bandit's Defense
-      - Distracting Daggers
-      - Fist Flurry
-      - Impairing Daggers
+      Bandit's Defense: 30661
+      Distracting Daggers: 30568
+      Fist Flurry: 30868
+      Impairing Daggers: 30369
     Elite:
-      - Impact Strike
+      Impact Strike: 29516
   Deadeye:
     Healing:
-      - Malicious Restoration
+      Malicious Restoration: 45088
     Utility:
-      - Binding Shadow
-      - Mercy
-      - Shadow Flare
-      - Shadow Gust
+      Binding Shadow: 41205
+      Mercy: 41372
+      Shadow Flare: 41158
+      Shadow Gust: 463358
     Elite:
-      - Shadow Meld
+      Shadow Meld: 45508
   Specter:
     Healing:
-      - Well of Gloom
+      Well of Gloom: 63292
     Utility:
-      - Well of Bounty
-      - Well of Silence
-      - Well of Sorrow
-      - Well of Tears
+      Well of Bounty: 43323
+      Well of Silence: 63230
+      Well of Sorrow: 63276
+      Well of Tears: 63294
     Elite:
-      - Shadowfall
+      Shadowfall: 63275
 ENGINEER:
-  Healing:
-    - A.E.D.
-    - Elixir H
-    - Healing Turret
-    - Med Kit
-  Utility:
-    - Bomb Kit
-    - Grenade Kit
-    - Elixir Gun
-    - Flamethrower
-    - Tool Kit
-    - Elixir B
-    - Elixir C
-    - Elixir R
-    - Elixir S
-    - Elixir U
-    - Personal Battering Ram
-    - Rocket Boots
-    - Slick Shoes
-    - Throw Mine
-    - Utility Goggles
-    - Flame Turret
-    - Net Turret
-    - Rifle Turret
-    - Rocket Turret
-    - Thumper Turret
-  Elite:
-    - Elite Mortar Kit
-    - Elixir X
-    - Supply Crate
+  Core:
+    Healing:
+      A.E.D.: 21659
+      Elixir H: 5834
+      Healing Turret: 5857
+      Med Kit: 5802
+    Utility:
+      Bomb Kit: 5812
+      Grenade Kit: 5805
+      Elixir Gun: 5933
+      Flamethrower: 5927
+      Tool Kit: 5904
+      Elixir B: 5821
+      Elixir C: 5860
+      Elixir R: 5968
+      Elixir S: 5861
+      Elixir U: 5862
+      Personal Battering Ram: 5811
+      Rocket Boots: 5910
+      Slick Shoes: 5825
+      Throw Mine: 6161
+      Utility Goggles: 5865
+      Flame Turret: 5836
+      Net Turret: 5837
+      Rifle Turret: 5818
+      Harpoon Turret: 6093
+      Rocket Turret: 5912
+      Thumper Turret: 5838
+    Elite:
+      Elite Mortar Kit: 30800
+      Elixir X: 5832
+      Supply Crate: 5868
   Scrapper:
     Healing:
-      - Medic Gyro
+      Medic Gyro: 30357
     Utility:
-      - Blast Gyro
-      - Bulwark Gyro
-      - Purge Gyro
-      - Shredder Gyro
+      Blast Gyro: 31248
+      Bulwark Gyro: 30101
+      Purge Gyro: 29739
+      Shredder Gyro: 29921
     Elite:
-      - Sneak Gyro
+      Sneak Gyro: 30815
   Holosmith:
     Healing:
-      - Coolant Blast
+      Coolant Blast: 40507
     Utility:
-      - Spectrum Shield
-      - Hard Light Arena
-      - Laser Disk
-      - Photon Wall
+      Spectrum Shield: 41218
+      Hard Light Arena: 44646
+      Laser Disk: 42842
+      Photon Wall: 43739
     Elite:
-      - Prime Light Beam
+      Prime Light Beam: 42009
   Mechanist:
     Healing:
-      - Rectifier Signet
+      Rectifier Signet: 63049
     Utility:
-      - Barrier Signet
-      - Force Signet
-      - Shift Signet
-      - Superconducting Signet
+      Barrier Signet: 63262
+      Force Signet: 63253
+      Shift Signet: 63111
+      Superconducting Signet: 63113
     Elite:
-      - Overclock Signet
+      Overclock Signet: 63095
 RANGER:
-  Healing:
-    - '"We Heal as One!"'
-    - Water Spirit
-    - Troll Unguent
-    - Healing Spring
-  Utility:
-    - '"Guard!"'
-    - '"Protect Me!"'
-    - '"Search and Rescue!"'
-    - '"Sic ''Em!"'
-    - Signet of Renewal
-    - Signet of Stone
-    - Signet of the Hunt
-    - Signet of the Wild
-    - Frost Spirit
-    - Stone Spirit
-    - Storm Spirit
-    - Sun Spirit
-    - Lightning Reflexes
-    - Muddy Terrain
-    - Quickening Zephyr
-    - Sharpening Stone
-    - Flame Trap
-    - Frost Trap
-    - Spike Trap
-    - Viper's Nest
-  Elite:
-    - '"Strength of the Pack!"'
-    - Spirit of Nature
-    - Entangle
+  Core:
+    Healing:
+      "We Heal as One!": 31914
+      Water Spirit: 21773
+      Troll Unguent: 12483
+      Healing Spring: 12489
+    Utility:
+      "Guard!": 12632
+      "Protect Me!": 12631
+      "Search and Rescue!": 34309
+      "Sic 'Em!": 12633
+      Signet of Renewal: 12502
+      Signet of Stone: 12500
+      Signet of the Hunt: 12542
+      Signet of the Wild: 12491
+      Frost Spirit: 12497
+      Stone Spirit: 12495
+      Storm Spirit: 12493
+      Sun Spirit: 12498
+      Lightning Reflexes: 12494
+      Muddy Terrain: 12501
+      Quickening Zephyr: 12550
+      Sharpening Stone: 12537
+      Flame Trap: 12499
+      Frost Trap: 12492
+      Spike Trap: 12476
+      Viper's Nest: 12496
+    Elite:
+      "Strength of the Pack!": 12516
+      Spirit of Nature: 12569
+      Entangle: 12580
   Druid:
     Healing:
-      - Glyph of Rejuvenation
+      Glyph of Rejuvenation: 31407
     Utility:
-      - Glyph of Alignment
-      - Glyph of Equality
-      - Glyph of Unity
-      - Glyph of the Tides
+      Glyph of Alignment: 31322
+      Glyph of Equality: 31746
+      Glyph of Unity: 31582
+      Glyph of the Tides: 30238
     Elite:
-      - Glyph of the Stars
+      Glyph of the Stars: 31677
   Soulbeast:
     Healing:
-      - Bear Stance
+      Bear Stance: 44948
     Utility:
-      - Dolyak Stance
-      - Griffon Stance
-      - Moa Stance
-      - Vulture Stance
+      Dolyak Stance: 45789
+      Griffon Stance: 45142
+      Moa Stance: 45970
+      Vulture Stance: 40498
     Elite:
-      - One Wolf Pack
+      One Wolf Pack: 45717
   Untamed:
     Healing:
-      - Perilous Gift
+      Perilous Gift: 63319
     Utility:
-      - Exploding Spores
-      - Mutate Conditions
-      - Unnatural Traversal
-      - Nature's Binding
+      Exploding Spores: 63157
+      Mutate Conditions: 63256
+      Unnatural Traversal: 63195
+      Nature's Binding: 63130
     Elite:
-      - Forest's Fortification
+      Forest's Fortification: 63163
 MESMER:
-  Healing:
-    - Ether Feast
-    - Mirror
-    - Mantra of Recovery
-    - Signet of the Ether
-  Utility:
-    - Decoy
-    - Mirror Images
-    - Feedback
-    - Null Field
-    - Portal Entre
-    - Veil
-    - Arcane Thievery
-    - Blink
-    - Illusion of Life
-    - Mimic
-    - Mantra of Concentration
-    - Mantra of Distraction
-    - Mantra of Pain
-    - Mantra of Resolve
-    - Phantasmal Defender
-    - Phantasmal Disenchanter
-    - Signet of Domination
-    - Signet of Illusions
-    - Signet of Inspiration
-    - Signet of Midnight
-  Elite:
-    - Time Warp
-    - Mass Invisibility
-    - Signet of Humility
+  Core:
+    Healing:
+      Ether Feast: 10176
+      Mirror: 10177
+      Mantra of Recovery: 10213
+      Signet of the Ether: 21750
+    Utility:
+      Decoy: 10201
+      Mirror Images: 10202
+      Feedback: 10302
+      Null Field: 10203
+      Portal Entre: 10197
+      Veil: 10187
+      Arcane Thievery: 10185
+      Blink: 10200
+      Illusion of Life: 10244
+      Mimic: 29578
+      Mantra of Concentration: 10237
+      Mantra of Distraction: 10204
+      Mantra of Pain: 10211
+      Mantra of Resolve: 10207
+      Phantasmal Defender: 10341
+      Phantasmal Disenchanter: 10267
+      Signet of Domination: 10232
+      Signet of Illusions: 10247
+      Signet of Inspiration: 10236
+      Signet of Midnight: 10234
+    Elite:
+      Time Warp: 10311
+      Mass Invisibility: 10245
+      Signet of Humility: 29519
   Chronomancer:
     Healing:
-      - Well of Eternity
+      Well of Eternity: 30305
     Utility:
-      - Well of Action
-      - Well of Calamity
-      - Well of Precognition
-      - Well of Senility
+      Well of Action: 30814
+      Well of Calamity: 30525
+      Well of Precognition: 29526
+      Well of Senility: 29856
     Elite:
-      - Gravity Well
+      Gravity Well: 30359
   Mirage:
     Healing:
-      - False Oasis
+      False Oasis: 40200
     Utility:
-      - Crystal Sands
-      - Illusionary Ambush
-      - Mirage Advance
-      - Sand through Glass
+      Crystal Sands: 41065
+      Illusionary Ambush: 45046
+      Mirage Advance: 42851
+      Sand through Glass: 43064
     Elite:
-      - Jaunt
+      Jaunt: 45449
   Virtuoso:
     Healing:
-      - Twin Blade Restoration
+      Twin Blade Restoration: 62522
     Utility:
-      - Blade Renewal
-      - Rain of Swords
-      - Psychic Force
-      - Sword of Decimation
+      Blade Renewal: 43343
+      Rain of Swords: 62553
+      Psychic Force: 62573
+      Sword of Decimation: 35637
     Elite:
-      - Thousand Cuts
+      Thousand Cuts: 24755
 ELEMENTALIST:
-  Healing:
-    - Arcane Brilliance
-    - Ether Renewal
-    - Glyph of Elemental Harmony
-    - Signet of Restoration
-  Utility:
-    - Arcane Blast
-    - Arcane Power
-    - Arcane Shield
-    - Arcane Wave
-    - Armor of Earth
-    - Cleansing Fire
-    - Lightning Flash
-    - Mist Form
-    - Conjure Earth Shield
-    - Conjure Flame Axe
-    - Conjure Frost Bow
-    - Conjure Lightning Hammer
-    - Glyph of Elemental Power
-    - Glyph of Lesser Elementals
-    - Glyph of Renewal
-    - Glyph of Storms
-    - Signet of Air
-    - Signet of Earth
-    - Signet of Fire
-    - Signet of Water
-  Elite:
-    - Conjure Fiery Greatsword
-    - Glyph of Elementals
-    - Tornado
-    - Whirlpool
+  Core:
+    Healing:
+      Arcane Brilliance: 21656
+      Ether Renewal: 5507
+      Glyph of Elemental Harmony: 5569
+      Signet of Restoration: 5503
+    Utility:
+      Arcane Blast: 5539
+      Arcane Power: 5635
+      Arcane Shield: 5641
+      Arcane Wave: 5638
+      Armor of Earth: 5639
+      Cleansing Fire: 5535
+      Lightning Flash: 5536
+      Mist Form: 5554
+      Conjure Earth Shield: 5546
+      Conjure Flame Axe: 5540
+      Conjure Frost Bow: 5567
+      Conjure Lightning Hammer: 5624
+      Glyph of Elemental Power: 5506
+      Glyph of Lesser Elementals: 5502
+      Glyph of Renewal: 5573
+      Glyph of Storms: 5734
+      Signet of Air: 5572
+      Signet of Earth: 5571
+      Signet of Fire: 5542
+      Signet of Water: 5570
+    Elite:
+      Conjure Fiery Greatsword: 5516
+      Glyph of Elementals: 5666
+      Tornado: 5534
+      Whirlpool: 5602
   Tempest:
     Healing:
-      - '"Wash the Pain Away!"'
+      "Wash the Pain Away!": 29535
     Utility:
-      - '"Feel the Burn!"'
-      - '"Eye of the Storm!"'
-      - '"Aftershock!"'
-      - '"Flash-Freeze!"'
+      "Feel the Burn!": 30662
+      "Eye of the Storm!": 30047
+      "Aftershock!": 30432
+      "Flash-Freeze!": 29948
     Elite:
-      - '"Rebound!"'
+      "Rebound!": 29968
   Weaver:
     Healing:
-      - Aquatic Stance
+      Aquatic Stance: 44239
     Utility:
-      - Primordial Stance
-      - Stone Resonance
-      - Unravel
-      - Twist of Fate
+      Primordial Stance: 40183
+      Stone Resonance: 44926
+      Unravel: 44612
+      Twist of Fate: 45746
     Elite:
-      - Weave Self
+      Weave Self: 43638
   Catalyst:
     Healing:
-      - Soothing Water
+      Soothing Water: 62827
     Utility:
-      - Relentless Fire
-      - Shattering Ice
-      - Invigorating Air
-      - Fortified Earth
+      Relentless Fire: 62965
+      Shattering Ice: 62698
+      Invigorating Air: 62982
+      Fortified Earth: 622826
     Elite:
-      - Elemental Celerity
+      Elemental Celerity: 62725
 NECROMANCER:
-  Healing:
-    - Consume Conditions
-    - Summon Blood Fiend
-    - Signet of Vampirism
-    - Well of Blood
-  Utility:
-    - Blood Is Power
-    - Corrosive Poison Cloud
-    - Corrupt Boon
-    - Epidemic
-    - Summon Bone Fiend
-    - Summon Bone Minions
-    - Summon Flesh Wurm
-    - Summon Shadow Fiend
-    - Plague Signet
-    - Signet of Spite
-    - Signet of the Locust
-    - Signet of Undeath
-    - Spectral Armor
-    - Spectral Grasp
-    - Spectral Walk
-    - Spectral Ring
-    - Well of Corruption
-    - Well of Darkness
-    - Well of Power
-    - Well of Suffering
-  Elite:
-    - Plaguelands
-    - Summon Flesh Golem
-    - Lich Form
+  Core:
+    Healing:
+      Consume Conditions: 10548
+      Summon Blood Fiend: 10547
+      Signet of Vampirism: 21762
+      Well of Blood: 10527
+    Utility:
+      Blood Is Power: 10544
+      Corrosive Poison Cloud: 10689
+      Corrupt Boon: 10602
+      Epidemic: 10606
+      Summon Bone Fiend: 10533
+      Summon Bone Minions: 10541
+      Summon Flesh Wurm: 10543
+      Summon Shadow Fiend: 10589
+      Plague Signet: 10562
+      Signet of Spite: 10622
+      Signet of the Locust: 10612
+      Signet of Undeath: 10611
+      Spectral Armor: 10583
+      Spectral Grasp: 10620
+      Spectral Walk: 10685
+      Spectral Ring: 10608
+      Well of Corruption: 10545
+      Well of Darkness: 10607
+      Well of Power: 10609
+      Well of Suffering: 10546
+    Elite:
+      Plaguelands: 10549
+      Summon Flesh Golem: 10646
+      Lich Form: 10550
   Reaper:
     Healing:
-      - '"Your Soul is Mine!"'
+      "Your Soul is Mine!": 30488
     Utility:
-      - '"Nothing Can Save You!"'
-      - '"Rise!"'
-      - '"Suffer!"'
-      - '"You Are All Weaklings!"'
+      "Nothing Can Save You!": 29666
+      "Rise!": 30772
+      "Suffer!": 30670
+      "You Are All Weaklings!": 29414
     Elite:
-      - '"Chilled to the Bone!"'
+      "Chilled to the Bone!": 30105
   Scourge:
     Healing:
-      - Sand Flare
+      Sand Flare: 43148
     Utility:
-      - Trail of Anguish
-      - Desiccate
-      - Sand Swell
-      - Serpent Siphon
+      Trail of Anguish: 40274
+      Desiccate: 42935
+      Sand Swell: 42917
+      Serpent Siphon: 41615
     Elite:
-      - Ghastly Breach
+      Ghastly Breach: 42355
   Harbinger:
     Healing:
-      - Elixir of Promise
+      Elixir of Promise: 62667
     Utility:
-      - Elixir of Risk
-      - Elixir of Anguish
-      - Elixir of Bliss
-      - Elixir of Ignorance
+      Elixir of Risk: 62530
+      Elixir of Anguish: 62662
+      Elixir of Bliss: 62514
+      Elixir of Ignorance: 62646
     Elite:
-      - Elixir of Ambition
+      Elixir of Ambition: 62655
 ASURA:
-  Utility:
-    - Pain Inverter
-    - Radiation Field
-    - Technobabble
-  Elite:
-    - Summon 7-Series Golem
-    - Summon D-Series Golem
-    - Summon Power Suit
+  Core:
+    Utility:
+      Pain Inverter: 12320
+      Radiation Field: 12319
+      Technobabble: 12318
+    Elite:
+      Summon 7-Series Golem: 12323
+      Summon D-Series Golem: 12324
+      Summon Power Suit: 12325
 CHARR:
-  Utility:
-    - Battle Roar
-    - Hidden Pistol
-    - Shrapnel Mine
-  Elite:
-    - Artillery Barrage
-    - Charrzooka
-    - Warband Support
+  Core:
+    Utility:
+      Battle Roar: 12338
+      Hidden Pistol: 12339
+      Shrapnel Mine: 12337
+    Elite:
+      Artillery Barrage: 12343
+      Charrzooka: 12344
+      Warband Support: 12340
 HUMAN:
-  Healing:
-    - Prayer to Dwayna
-  Utility:
-  - Prayer to Kormir
-  - Prayer to Lyssa
-  Elite:
-  - Avatar of Melandru
-  - Hounds of Balthazar
-  - Reaper of Grenth
+  Core:
+    Healing:
+      Prayer to Dwayna: 12360
+    Utility:
+      Prayer to Kormir: 12361
+      Prayer to Lyssa: 12362
+    Elite:
+      Avatar of Melandru: 12373
+      Hounds of Balthazar: 12363
+      Reaper of Grenth: 12367
 NORN:
-  Utility:
-    - Call Owl
-    - Call Wurm
-  Elite:
-    - Become the Bear
-    - Become the Raven
-    - Become the Snow Leopard
-    - Become the Wolf
+  Core:
+    Utility:
+      Call Owl: 12387
+      Call Wurm: 12417
+    Elite:
+      Become the Bear: 12385
+      Become the Raven: 12403
+      Become the Snow Leopard: 12401
+      Become the Wolf: 12391
 SYLVARI:
-  Healing:
-    - Healing Seed
-  Utility:
-    - Grasping Vines
-    - Seed Turret
-  Elite:
-    - Summon Druid Spirit
-    - Summon Sylvan Hound
-    - Take Root
+  Core:
+    Healing:
+      Healing Seed: 12440
+    Utility:
+      Grasping Vines: 12453
+      Seed Turret: 12456
+    Elite:
+      Summon Druid Spirit: 12447
+      Summon Sylvan Hound: 12450
+      Take Root: 12457

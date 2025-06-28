@@ -110,7 +110,7 @@ def load_skills():
         skill_data = parse_yaml(f.read())
         for profession in Profession:
             spec = Spec(profession)
-            skills.extend(load_skill_group(skill_data[profession.name], spec=spec))
+            skills.extend(load_skill_group(skill_data[profession.name]["Core"], spec=spec))
 
             for group in skill_data[profession.name].keys():
                 if group in elite_specs:
