@@ -232,7 +232,8 @@
     - Red Desert Borderlands
     - Blue Alpine Borderlands
     - Obsidian Sanctum
-  storylines: Core
+  storylines: 
+    - Core
 - id: 39
   name: Mount Maelstrom
   type: Open World
