@@ -142,6 +142,7 @@ Core:
     Pressed Friendship Flower:
       - 23631
   Fireheart Rise:
+    #Fire Elemental Powder
     Tar Removal Tool:
       - 23589
       - 23606
@@ -850,17 +851,17 @@ Living World Season 1:
       - 50073
     "Ultimate Citizen's Rescue Bag":
       - 50071
-  The Twisted Marionette:
-    Hoard of the Marionette Warden I:
-      - 49657
-    Hoard of the Marionette Warden II:
-      - 49556
-    Hoard of the Marionette Warden III:
-      - 49655
-    Hoard of the Marionette Warden IV:
-      - 49654
-    Hoard of the Marionette Warden V:
-      - 49658
+  # The Twisted Marionette:
+    # Hoard of the Marionette Warden I:
+      # - 49657
+    # Hoard of the Marionette Warden II:
+      # - 49556
+    # Hoard of the Marionette Warden III:
+      # - 49655
+    # Hoard of the Marionette Warden IV:
+      # - 49654
+    # Hoard of the Marionette Warden V:
+      # - 49658
 Living World Season 2:
   Dry Top:
     Sandy Bag of Gear:
