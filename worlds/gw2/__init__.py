@@ -233,11 +233,16 @@ class Gw2World(World):
             item_count -= 1
 
         #create a number of locations equal to the number of items that will be generated
-
         location_count = 0
         unused_locations = deepcopy(location_groups)
         unused_items = deepcopy(storyline_items[self.options.storyline.value]) if self.options.storyline in storyline_items else []
         unused_pois = deepcopy(storyline_pois[self.options.storyline.value]) if self.options.storyline in storyline_pois else []
+        early_items = [item for item in unused_items if item.map.name == start_map.name]
+        early_pois = [poi for poi in unused_pois if poi.map.name == start_map.name]
+        print(self.starting_map)
+        print(early_items)
+        print(early_pois)
+
         max_counts = (item_count,
                       self.options.max_quests.value,
                       0,
@@ -245,6 +250,15 @@ class Gw2World(World):
                       len(unused_items),
                       len(unused_pois),
                       )
+        counts = [0, 0, 0, 0, 0, 0]
+
+        #start at one for the first map unlock item
+        early_item_count = 1
+        for item_name in self.multiworld.early_items[self.player]:
+            early_item_count += self.multiworld.early_items[self.player][item_name]
+
+        early_location_count = 0
+
         weights = [self.options.achievement_weight.value,
                    self.options.quest_weight.value if max_counts[1] > 0 else 0,
                    self.options.training_weight.value if max_counts[2] > 0 else 0,
@@ -252,7 +266,6 @@ class Gw2World(World):
                    self.options.unique_item_weight.value if max_counts[4] > 0 else 0,
                    self.options.poi_weight.value if max_counts[5] > 0 else 0,
                    ]
-        counts = [0, 0, 0, 0, 0, 0]
         while location_count < item_count:
             location_type = self.random.choices([location for location in LocationType], weights=weights, k=1)[0]
 
@@ -271,12 +284,24 @@ class Gw2World(World):
                     region = self.region_table[region_enum.name]
 
             if location_type == LocationType.UNIQUE_ITEM:
-                location_index = self.random.randint(0, len(unused_items) - 1)
-                # print(location_index, " / ", len(unused_items))
-                location_data = unused_items.pop(location_index)
+                if early_location_count < early_item_count and len(early_items) > 0:
+                    location_index = self.random.randint(0, len(early_items) - 1)
+                    location_data = early_items.pop(location_index)
+                    unused_items.remove(location_data)
+                    early_item_count += 1
+                else:
+                    location_index = self.random.randint(0, len(unused_items) - 1)
+                    # print(location_index, " / ", len(unused_items))
+                    location_data = unused_items.pop(location_index)
             elif location_type == LocationType.POINT_OF_INTEREST:
-                location_index = self.random.randint(0, len(unused_pois) - 1)
-                location_data = unused_pois.pop(location_index)
+                if early_location_count < early_item_count and len(early_pois) > 0:
+                    location_index = self.random.randint(0, len(early_pois) - 1)
+                    location_data = early_pois.pop(location_index)
+                    unused_pois.remove(location_data)
+                    early_item_count += 1
+                else:
+                    location_index = self.random.randint(0, len(unused_pois) - 1)
+                    location_data = unused_pois.pop(location_index)
             else:
                 location_data_objects = location_region_data[region_enum]
                 location_data = location_data_objects.pop(0)
