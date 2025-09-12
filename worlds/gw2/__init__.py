@@ -288,7 +288,7 @@ class Gw2World(World):
                     location_index = self.random.randint(0, len(early_items) - 1)
                     location_data = early_items.pop(location_index)
                     unused_items.remove(location_data)
-                    early_item_count += 1
+                    early_location_count += 1
                 else:
                     location_index = self.random.randint(0, len(unused_items) - 1)
                     # print(location_index, " / ", len(unused_items))
@@ -298,7 +298,7 @@ class Gw2World(World):
                     location_index = self.random.randint(0, len(early_pois) - 1)
                     location_data = early_pois.pop(location_index)
                     unused_pois.remove(location_data)
-                    early_item_count += 1
+                    early_location_count += 1
                 else:
                     location_index = self.random.randint(0, len(unused_pois) - 1)
                     location_data = unused_pois.pop(location_index)
