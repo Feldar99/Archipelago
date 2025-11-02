@@ -87,7 +87,7 @@ def has_spec(state: CollectionState, player: int, spec_name: str, elite_spec: Op
     trait_count = 0
     group = item_groups["Core Traits"]
     if elite_spec is not None:
-        group = item_groups["Elite Traits"]
+        group = item_groups["Elite Spec Traits"]
     for trait in group:
         if spec_name == trait.spec_name and not tiers[trait.tier]:
             if state.has(trait.name, player, 1):
