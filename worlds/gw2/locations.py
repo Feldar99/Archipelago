@@ -15,6 +15,7 @@ class Gw2Location(Location):
 
 class LocationType(enum.Enum):
     ACHIEVEMENT = enum.auto(value=0)
+    ACHIEVEMENT_SPECIFIC = enum.auto()
     QUEST = enum.auto()
     TRAINING = enum.auto()
     WORLD_BOSS = enum.auto()

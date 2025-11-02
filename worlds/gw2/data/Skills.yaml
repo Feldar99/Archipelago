@@ -60,6 +60,16 @@ WARRIOR:
       Dragonspike Mine: 62960
     Elite:
       Tactical Reload: 62901
+  Paragon:
+    Healing:
+      "We Shall Return!": 76755
+    Utility:
+      "Find Their Weakness!": 77040
+      "Never Surrender!": 76769
+      "Brace Yourselves!": 76964
+      "On Your Knees!": 77114
+    Elite:
+      "We Will Never Yield!": 76562
 GUARDIAN:
   Core:
     Healing:
@@ -122,6 +132,16 @@ GUARDIAN:
       Roiling Light: 62521
     Elite:
       Heaven's Palm: 62561
+  Luminary:
+    Healing:
+      Resolute Stance: 76621
+    Utility:
+      Stalwart Stance: 77321
+      Valorous Stance: 77300
+      Effulgent Stance: 76813
+      Piercing Stance: 77078
+    Elite:
+      Daring Advance: 76687
 REVENANT:
   Core:
     Legend:
@@ -138,6 +158,9 @@ REVENANT:
   Vindicator:
     Legend:
       Legendary Alliance Stance: 62749
+  Conduit:
+    Legend:
+      Legendary Entity Stance: 76610
 THIEF:
   Core:
     Healing:
@@ -200,6 +223,16 @@ THIEF:
       Well of Tears: 63294
     Elite:
       Shadowfall: 63275
+  Antiquary:
+    Healing:
+      Antivenom Draught: 76886
+    Utility:
+      Stone Summit Cannon: 76725
+      Inquest Portal Device: 76808
+      Emergency Jade Shield: 76879
+      Canach-Coin Toss: 77230
+    Elite:
+      Skritt Scuffle: 77255
 ENGINEER:
   Core:
     Healing:
@@ -263,6 +296,24 @@ ENGINEER:
       Superconducting Signet: 63113
     Elite:
       Overclock Signet: 63095
+  Amalgam:
+    Profession:
+      "Defensive Protocol: Protect": 76959
+      "Defensive Protocol: Cleanse": 76798
+      "Defensive Protocol: Thorns": 77163
+      "Offensive Protocol: Pierce": 76815
+      "Offensive Protocol: Obliterate": 76806
+      "Offensive Protocol: Shred": 77103
+      "Offensive Protocol: Demolish": 76927
+    Healing:
+      Mitotic State: 76738
+    Utility:
+      Solid State: 77069
+      Liquid State: 76908
+      Gaseous State: 77018
+      Plasmatic State: 77209
+    Elite:
+      Flux State: 76993
 RANGER:
   Core:
     Healing:
@@ -325,6 +376,16 @@ RANGER:
       Nature's Binding: 63130
     Elite:
       Forest's Fortification: 63163
+  Galeshot:
+    Healing:
+      Soothing Breeze: 77271
+    Utility:
+      Piercing Gales: 77264
+      Wind Shear: 77211
+      Whirlwind: 76619
+      Mistral: 76757
+    Elite:
+      Perfect Storm: 76979
 MESMER:
   Core:
     Healing:
@@ -387,6 +448,16 @@ MESMER:
       Sword of Decimation: 35637
     Elite:
       Thousand Cuts: 24755
+  Troubadour:
+    Healing:
+      Tale of the Second Scion: 76695
+    Utility:
+      Tale of the Soulkeeper: 76850
+      Tale of the Honorable Rogue: 76611
+      Tale of the Valiant Marshal: 77178
+      Tale of the Tortured Mastermind: 77066
+    Elite:
+      Tale of the August Queen: 76971
 ELEMENTALIST:
   Core:
     Healing:
@@ -450,6 +521,16 @@ ELEMENTALIST:
       Fortified Earth: 622826
     Elite:
       Elemental Celerity: 62725
+  Evoker:
+    Healing:
+      Rejuvenate: 76634
+    Utility:
+      Fox's Fury: 76711
+      Otter's Compassion: 77190
+      Hare's Agility: 77038
+      Toad's Fortitude: 77320
+    Elite:
+      Elemental Procession: 76841
 NECROMANCER:
   Core:
     Healing:
@@ -512,6 +593,16 @@ NECROMANCER:
       Elixir of Ignorance: 62646
     Elite:
       Elixir of Ambition: 62655
+  Ritualist:
+    Healing:
+      Resilient Weapon: 77259
+    Utility:
+      Splinter Weapon: 76975
+      Nightmare Weapon: 76739
+      Weapon of Remedy: 77022
+      Weapon of Warding: 76752
+    Elite:
+      Xinrae's Weapon: 76941
 ASURA:
   Core:
     Utility:

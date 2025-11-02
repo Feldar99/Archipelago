@@ -8,7 +8,8 @@
   storylines:
     - Core
   start:
-    Core: HUMAN
+    Core:
+     - HUMAN
 - id: 17
   name: Harathi Hinterlands
   type: Open World
@@ -34,9 +35,15 @@
     - End of Dragons
     - Secrets of the Obscure
     - Janthir Wilds
+    - Visions of Eternity
   start:
-    Secrets of the Obscure: HUMAN
-    Janthir Wilds: HUMAN
+    Secrets of the Obscure:
+      - HUMAN
+    Janthir Wilds:
+      - HUMAN
+    Visions of Eternity: 
+      - WARRIOR
+      - NECROMANCER
 - id: 19
   name: Plains of Ashford
   type: Open World
@@ -48,7 +55,8 @@
   storylines:
     - Core
   start:
-    Core: CHARR
+    Core:
+      - CHARR
 - id: 20
   name: Blazeridge Steppes
   type: Open World
@@ -132,6 +140,10 @@
   storylines:
     - Core
     - Season 1
+    - Visions of Eternity
+  start:
+    Visions of Eternity:
+      - REVENANT
 - id: 28
   name: Wayfarer Foothills
   type: Open World
@@ -144,7 +156,8 @@
     - Core
     - Season 1
   start:
-    Core: NORN
+    Core:
+      - NORN
 - id: 29
   name: Timberline Falls
   type: Open World
@@ -204,7 +217,8 @@
     - Core
     - Season 1
   start:
-    Core: SYLVARI
+    Core:
+      - SYLVARI
 - id: 35
   name: Metrica Province
   type: Open World
@@ -215,7 +229,8 @@
   storylines:
     - Core
   start:
-    Core: ASURA
+    Core:
+      - ASURA
 - id: 36
   name: Ascalonian Catacombs (explorable)
   type: Dungeon
@@ -273,10 +288,17 @@
     - Season 4
     - End of Dragons
     - Janthir Wilds
+    - Visions of Eternity
   start:
-    Season 1: ANY
-    Path of Fire: ANY
-    End of Dragons: ANY
+    Season 1:
+      - ANY
+    Path of Fire:
+      - ANY
+    End of Dragons:
+      - ANY
+    Visions of Eternity: 
+      - RANGER
+      - THIEF
 - id: 51
   name: Straits of Devastation
   type: Open World
@@ -308,7 +330,8 @@
     - Core
     - Season 2
   start:
-    Season 2: ANY
+    Season 2:
+      - ANY
 - id: 62
   name: Cursed Shore
   type: Open World
@@ -428,9 +451,14 @@
     - Core
     - Secrets of the Obscure
     - Janthir Wilds
+    - Visions of Eternity
   start:
-    Secrets of the Obscure: SYLVARI
-    Janthir Wilds: SYLVARI
+    Secrets of the Obscure:
+      - SYLVARI
+    Janthir Wilds:
+      - SYLVARI
+    Visions of Eternity:
+      - MESMER
 - id: 95
   name: Green Alpine Borderlands
   type: WvW
@@ -468,9 +496,14 @@
     - Core
     - Secrets of the Obscure
     - Janthir Wilds
+    - Visions of Eternity
   start:
-    Secrets of the Obscure: ASURA
-    Janthir Wilds: ASURA
+    Secrets of the Obscure:
+      - ASURA
+    Janthir Wilds:
+      - ASURA
+    Visions of Eternity:
+      - ENGINEER
 - id: 218
   name: Black Citadel
   type: City
@@ -484,10 +517,16 @@
     - Secrets of the Obscure
     - Janthir Wilds
     - Icebrood Saga
+    - Visions of Eternity
   start:
-    Icebrood Saga: ANY
-    Secrets of the Obscure: CHARR
-    Janthir Wilds: CHARR
+    Icebrood Saga:
+      - ANY
+    Secrets of the Obscure:
+      - CHARR
+    Janthir Wilds:
+      - CHARR
+    Visions of Eternity:
+      - GUARDIAN
 - id: 326
   name: Hoelbrak
   type: City
@@ -501,10 +540,16 @@
     - Secrets of the Obscure
     - Janthir Wilds
     - Season 3
+    - Visions of Eternity
   start:
-    Season 3: ANY
-    Secrets of the Obscure: NORN
-    Janthir Wilds: NORN
+    Season 3:
+      - ANY
+    Secrets of the Obscure:
+      - NORN
+    Janthir Wilds:
+      - NORN
+    Visions of Eternity:
+      - ELEMENTALIST
 - id: 350
   name: Heart of the Mists
   type: Pvp
@@ -714,7 +759,8 @@
     - Season 2
     - Heart of Thorns
   start:
-    Heart of Thorns: ANY
+    Heart of Thorns:
+      - ANY
 - id: 1041
   name: Dragon's Stand
   type: Open World
@@ -902,7 +948,8 @@
     - Path of Fire
     - Season 4
   start:
-    Season 4: ANY
+    Season 4:
+      - ANY
 - id: 1211
   name: Desert Highlands
   type: Open World
@@ -1527,7 +1574,7 @@
   storylines:
     - Secrets of the Obscure
 - id: 1523
-  name: Convergences (Public)
+  name: "Convergence: Outer Nayos"
   type: Convergence
   entrances:
     - The Wizard's Tower
@@ -1605,7 +1652,7 @@
   name: Mistburned Barrens
   type: Open World
   entrances:
-    - Janthir Syntri
+    - Divinity's Reach
   storylines:
     - Janthir Wilds
 - id: 1584
@@ -1616,3 +1663,17 @@
     - Twilight Oasis Fractal
   storylines:
     - Janthir Wilds
+- id: 1593
+  name: Starlit Weald
+  type: Open World
+  entrances:
+    - Shipwreck Strand
+  storylines:
+    - Visions of Eternity
+- id: 1595
+  name: Shipwreck Strand
+  type: Open World
+  entrances:
+    - Lion's Arch
+  storylines:
+    - Visions of Eternity

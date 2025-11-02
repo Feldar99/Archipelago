@@ -1,7 +1,7 @@
 from typing import Dict, Any, Optional, List
 from copy import deepcopy
 
-from .types import Race, StorylineEnum
+from .types import Race, StorylineEnum, Profession
 from .storylines import storyline_from_str, get_owned_storylines
 from .rules import get_map_rule, get_region_rule
 from BaseClasses import Region, Tutorial, ItemClassification
@@ -176,9 +176,11 @@ class Gw2World(World):
             # if len(gw2_map.start) > 0:
             #     print(storyline, gw2_map.start)
             if storyline in gw2_map.start:
-                race = gw2_map.start[storyline]
+                requirements = set(gw2_map.start[storyline])
+                race = Race(self.options.character_race.value).name
+                profession = Profession(self.options.character_profession.value).name
                 # print(race, Race(self.options.character_race.value))
-                if race == "ANY" or Race[race] == Race(self.options.character_race.value):
+                if "ANY" in requirements or race in requirements or profession in requirements:
                     # print(region)
                     start_map = region
 
@@ -239,18 +241,19 @@ class Gw2World(World):
         unused_pois = deepcopy(storyline_pois[self.options.storyline.value]) if self.options.storyline in storyline_pois else []
         early_items = [item for item in unused_items if item.map.name == start_map.name]
         early_pois = [poi for poi in unused_pois if poi.map.name == start_map.name]
-        print(self.starting_map)
-        print(early_items)
-        print(early_pois)
+        # print(self.starting_map)
+        # print(early_items)
+        # print(early_pois)
 
         max_counts = (item_count,
+                      0,
                       self.options.max_quests.value,
                       0,
                       0,
                       len(unused_items),
                       len(unused_pois),
                       )
-        counts = [0, 0, 0, 0, 0, 0]
+        counts = [0, 0, 0, 0, 0, 0, 0]
 
         #start at one for the first map unlock item
         early_item_count = 1
@@ -260,11 +263,12 @@ class Gw2World(World):
         early_location_count = 0
 
         weights = [self.options.achievement_weight.value,
-                   self.options.quest_weight.value if max_counts[1] > 0 else 0,
-                   self.options.training_weight.value if max_counts[2] > 0 else 0,
-                   self.options.world_boss_weight.value if max_counts[3] > 0 else 0,
-                   self.options.unique_item_weight.value if max_counts[4] > 0 else 0,
-                   self.options.poi_weight.value if max_counts[5] > 0 else 0,
+                   self.options.achievement_weight.value if max_counts[1] > 0 else 0,
+                   self.options.quest_weight.value if max_counts[2] > 0 else 0,
+                   self.options.training_weight.value if max_counts[3] > 0 else 0,
+                   self.options.world_boss_weight.value if max_counts[4] > 0 else 0,
+                   self.options.unique_item_weight.value if max_counts[5] > 0 else 0,
+                   self.options.poi_weight.value if max_counts[6] > 0 else 0,
                    ]
         while location_count < item_count:
             location_type = self.random.choices([location for location in LocationType], weights=weights, k=1)[0]
@@ -319,15 +323,6 @@ class Gw2World(World):
                 weights[location_type.value] = 0
 
         self.multiworld.regions.extend(self.region_table.values())
-        # for name in self.region_table:
-        #     region = self.region_table[name]
-        #     print("Region: ", name)
-        #     print("Locations: ")
-        #     for location in region.locations:
-        #         print("  ", location)
-        #     print("Exits: ")
-        #     for exit in region.exits:
-        #         print("  ", exit.name)
 
     def create_item(self, item_name: str) -> Gw2Item:
         return Gw2Item(item_name, ItemClassification.progression, self.item_name_to_id[item_name], self.player)

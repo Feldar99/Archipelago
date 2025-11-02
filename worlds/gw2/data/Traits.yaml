@@ -1,900 +1,1017 @@
-Warrior:
-  Discipline:
-    id: 51
-    traits:
-      - Crack Shot
-      - Warrior's Sprint
-      - Stalwart Focus
-      - Doubled Standards
-      - Destruction of the Empowered
-      - Brawler's Recovery
-      - Axe Mastery
-      - Heightened Focus
-      - Burst Mastery
-  Berserker:
-    id: 18
-    storyline: HeartOfThorns
-    traits:
-      - Smash Brawler
-      - Last Blaze
-      - Savage Instinct
-      - Blood Reaction
-      - Heat the Soul
-      - Dead or Alive
-      - Bloody Roar
-      - King of Fires
-      - Eternal Champion
-  Strength:
-    id: 4
-    traits:
-      - Brave Stride
-      - Restorative Strength
-      - Peak Performance
-      - Body Blow
-      - Forceful Greatsword
-      - Great Fortitude
-      - Berserker's Power
-      - Might Makes Right
-      - Aggressive Onslaught
-  Defense:
-    id: 22
-    traits:
-      - Shield Master
-      - Dogged March
-      - Cull the Weak
-      - Defy Pain
-      - Resilient Roll
-      - Merciless Hammer
-      - Last Stand
-      - Cleansing Ire
-      - Stalwart Strength
-  Tactics:
-    id: 11
-    traits:
-      - Leg Specialist
-      - Soldier's Comfort
-      - Roaring Reveille
-      - Warrior's Cunning
-      - Shrug It Off
-      - Empower Allies
-      - Martial Cadence
-      - Vigorous Shouts
-      - Phalanx Strength
-  Spellbreaker:
-    id: 61
-    storyline: PathOfFire
-    traits:
-      - Pure Strike
-      - Guard Counter
-      - No Escape
-      - Loss Aversion
-      - Slow Counter
-      - Sun and Moon Style
-      - Enchantment Collapse
-      - Revenge Counter
-      - Magebane Tether
-  Bladesworn:
-    id: 68
-    storyline: EndOfDragons
-    traits:
-      - River's Flow
-      - Swift as the Wind
-      - Unseen Sword
-      - Unshakable Mountain
-      - Fierce as Fire
-      - Lush Forest
-      - Immortal Dragon
-      - Unyielding Dragon
-      - Daring Dragon
-  Arms:
-    id: 36
-    traits:
-      - Wounding Precision
-      - Signet Mastery
-      - Opportunist
-      - Unsuspecting Foe
-      - Sundering Burst
-      - Blademaster
-      - Burst Precision
-      - Furious
-      - Dual Wielding
-Engineer:
-  Firearms:
-    id: 38
-    traits:
-      - Chemical Rounds
-      - Sanguine Array
-      - High Caliber
-      - Pinpoint Distribution
-      - Thermal Vision
-      - No Scope
-      - Juggernaut
-      - Modified Ammunition
-      - Incendiary Powder
-  Holosmith:
-    id: 57
-    storyline: PathOfFire
-    traits:
-      - Light Density Amplifier
-      - Prismatic Converter
-      - Solar Focusing Lens
-      - 'Crystal Configuration: Storm'
-      - 'Crystal Configuration: Eclipse'
-      - 'Crystal Configuration: Zephyr'
-      - Thermal Release Valve
-      - Enhanced Capacity Storage Unit
-      - Photonic Blasting Module
-  Tools:
-    id: 21
-    traits:
-      - Static Discharge
-      - Reactive Lenses
-      - Power Wrench
-      - Streamlined Kits
-      - Lock On
-      - Takedown Round
-      - Kinetic Battery
-      - Adrenal Implant
-      - Gadgeteer
-  Inventions:
-    id: 47
-    traits:
-      - Over Shield
-      - Automated Medical Response
-      - Autodefense Bomb Dispenser
-      - Experimental Turrets
-      - Soothing Detonation
-      - Mecha Legs
-      - Anticorrosion Plating
-      - Bunker Down
-      - Medical Dispersion Field
-  Alchemy:
-    id: 29
-    traits:
-      - Invigorating Speed
-      - Protection Injection
-      - Health Insurance
-      - Comeback Cure
-      - Boiling Point
-      - Backpack Regenerator
-      - HGH
-      - Purity of Purpose
-      - Chain Reactivity
-  Explosives:
-    id: 6
-    traits:
-      - Grenadier
-      - Short Fuse
-      - Glass Cannon
-      - Aim-Assisted Rocket
-      - Explosive Temper
-      - Blast Shield
-      - Flashbang
-      - Shrapnel
-      - Big Boomer
-  Scrapper:
-    id: 43
-    storyline: HeartOfThorns
-    traits:
-      - Gyroscopic Acceleration
-      - System Shocker
-      - Mass Momentum
-      - Rapid Regeneration
-      - Expert Examination
-      - Object in Motion
-      - Ex Machina
-      - Kinetic Accelerators
-      - Applied Force
-  Mechanist:
-    id: 70
-    storyline: EndOfDragons
-    traits:
-      - 'Mech Arms: Single-Edge Cutters'
-      - 'Mech Arms: High-Impact Drivers'
-      - 'Mech Arms: Jade Cannons'
-      - 'Mech Frame: Conductive Alloys'
-      - 'Mech Frame: Channeling Conduits'
-      - 'Mech Frame: Variable Mass Distributor'
-      - 'Mech Core: Jade Dynamo'
-      - 'Mech Core: Barrier Engine'
-      - 'Mech Core: J-Drive'
-Elementalist:
-  Air:
-    id: 41
-    traits:
-      - Zephyr's Boon
-      - One with Air
-      - Ferocious Winds
-      - Inscription
-      - Raging Storm
-      - Stormsoul
-      - Bolt to the Heart
-      - Fresh Air
-      - Lightning Rod
-  Water:
-    id: 17
-    traits:
-      - Soothing Ice
-      - Piercing Shards
-      - Stop, Drop, and Roll
-      - Soothing Disruption
-      - Cleansing Wave
-      - Flow like Water
-      - Cleansing Water
-      - Powerful Aura
-      - Soothing Power
-  Catalyst:
-    id: 67
-    storyline: EndOfDragons
-    traits:
-      - Hardened Auras
-      - Vicious Empowerment
-      - Energized Elements
-      - Empowering Auras
-      - Evasive Empowerment
-      - Spectacular Sphere
-      - Staunch Auras
-      - Empowered Empowerment
-      - Sphere Specialist
-  Tempest:
-    id: 48
-    storyline: HeartOfThorns
-    traits:
-      - Gale Song
-      - Latent Stamina
-      - Unstable Conduit
-      - Tempestuous Aria
-      - Harmonious Conduit
-      - Invigorating Torrents
-      - Transcendent Tempest
-      - Lucid Singularity
-      - Elemental Bastion
-  Arcane:
-    id: 37
-    traits:
-      - Arcane Precision
-      - Renewing Stamina
-      - Arcane Restoration
-      - Arcane Resurrection
-      - Elemental Lockdown
-      - Final Shielding
-      - Evasive Arcana
-      - Arcane Lightning
-      - Bountiful Power
-  Earth:
-    id: 26
-    traits:
-      - Earth's Embrace
-      - Serrated Stones
-      - Elemental Shielding
-      - Strength of Stone
-      - Rock Solid
-      - Earthen Blessing
-      - Diamond Skin
-      - Written in Stone
-      - Stone Heart
-  Fire:
-    id: 31
-    traits:
-      - Burning Precision
-      - Conjurer
-      - Burning Fire
-      - Burning Rage
-      - Smothering Auras
-      - Power Overwhelming
-      - Persisting Flames
-      - Pyromancer's Puissance
-      - Blinding Ashes
-  Weaver:
-    id: 56
-    storyline: PathOfFire
-    traits:
-      - Superior Elements
-      - Elemental Pursuit
-      - Master's Fortitude
-      - Weaver's Prowess
-      - Swift Revenge
-      - Bolstered Elements
-      - Elements of Rage
-      - Woven Stride
-      - Invigorating Strikes
-Revenant:
-  Devastation:
-    id: 15
-    traits:
-      - Aggressive Agility
-      - Unsuspecting Strikes
-      - Battle Scarred
-      - Assassin's Presence
-      - Notoriety
-      - Thrill of Combat
-      - Brutality
-      - Swift Termination
-      - Dance of Death
-  Retribution:
-    id: 9
-    traits:
-      - Planar Protection
-      - Close Quarters
-      - Spiritual Reckoning
-      - Set in Stone
-      - Resolute Evasion
-      - Dwarven Battle Training
-      - Vicious Reprisal
-      - Versed in Stone
-      - Steadfast Rejuvenation
-  Invocation:
-    id: 3
-    traits:
-      - Cleansing Channel
-      - Rising Tide
-      - Glaring Resolve
-      - Spirit Boon
-      - Rapid Flow
-      - Incensed Response
-      - Song of the Mists
-      - Charged Mists
-      - Roiling Mists
-  Herald:
-    id: 52
-    storyline: HeartOfThorns
-    traits:
-      - Elder's Respite
-      - Core Value
-      - Rising Momentum
-      - Shared Empowerment
-      - Shining Aspects
-      - Hardening Persistence
-      - Elevated Compassion
-      - Draconic Echo
-      - Forceful Persistence
-  Renegade:
-    id: 63
-    storyline: PathOfFire
-    traits:
-      - Ashen Demeanor
-      - Blood Fury
-      - Wrought-Iron Will
-      - Bold Reversal
-      - Heartpiercer
-      - All for One
-      - Vindication
-      - Lasting Legacy
-      - Righteous Rebel
-  Salvation:
-    id: 12
-    traits:
-      - Invoking Harmony
-      - Blinding Truths
-      - Eluding Nullification
-      - Words of Censure
-      - Resilient Spirit
-      - Fortified Blessing
-      - Generous Abundance
-      - Unyielding Devotion
-      - Invigorating Dismissal
-  Corruption:
-    id: 14
-    traits:
-      - Acolyte of Torment
-      - Demonic Defiance
-      - Replenishing Despair
-      - Abyssal Chill
-      - Demonic Resistance
-      - Pact of Pain
-      - Diabolic Inferno
-      - Fiendish Tenacity
-      - Permeating Pestilence
-  Vindicator:
-    id: 69
-    storyline: EndOfDragons
-    traits:
-      - Leviathan Strength
-      - Amnesty of Shing Jea
-      - Redemptor's Sermon
-      - Reaver's Curse
-      - Angsiyan's Trust
-      - Song of Arboreum
-      - Forerunner of Death
-      - Vassals of the Empire
-      - Saint of zu Heltzer
-Ranger:
-  Untamed:
-    id: 72
-    storyline: EndOfDragons
-    traits:
-      - Debilitating Blows
-      - Nature's Shield
-      - Blinding Outburst
-      - Enhancing Impact
-      - Cleansing Unleash
-      - Corrupting Vines
-      - Let Loose
-      - Restorative Strikes
-      - Ferocious Symbiosis
-  Beastmastery:
-    id: 32
-    traits:
-      - Go for the Eyes
-      - Potent Ally
-      - Resounding Timbre
-      - Wilting Strike
-      - Two-Handed Training
-      - Natural Healing
-      - Beastly Warden
-      - Zephyr's Speed
-      - Honed Axes
-  Wilderness Survival:
-    id: 33
-    traits:
-      - Child of Earth
-      - Oakheart Salve
-      - Taste for Danger
-      - Ambidexterity
-      - Survival Instincts
-      - Empathic Bond
-      - Carnivore
-      - Wilderness Knowledge
-      - Poison Master
-  Soulbeast:
-    id: 55
-    storyline: PathOfFire
-    traits:
-      - Fresh Reinforcement
-      - Live Fast
-      - Unstoppable Union
-      - Second Skin
-      - Essence of Speed
-      - Predator's Cunning
-      - Eternal Bond
-      - Leader of the Pack
-      - Oppressive Superiority
-  Skirmishing:
-    id: 30
-    traits:
-      - Sharpened Edges
-      - Primal Reflexes
-      - Trapper's Expertise
-      - Spotter
-      - Strider's Strength
-      - Hidden Barbs
-      - Quick Draw
-      - Light on your Feet
-      - Vicious Quarry
-  Nature Magic:
-    id: 25
-    traits:
-      - Bountiful Hunter
-      - Wellspring
-      - Allies' Aid
-      - Evasive Purity
-      - Spirited Arrival
-      - Windborne Notes
-      - Nature's Vengeance
-      - Protective Ward
-      - Invigorating Bond
-  Druid:
-    id: 5
-    storyline: HeartOfThorns
-    traits:
-      - Druidic Clarity
-      - Cultivated Synergy
-      - Blood Moon
-      - Celestial Shadow
-      - Verdant Etching
-      - Natural Balance
-      - Grace of the Land
-      - Lingering Light
-      - Eclipse
-  Marksmanship:
-    id: 8
-    traits:
-      - Stoneform
-      - Hunter's Gaze
-      - Clarion Bond
-      - Brutish Seals
-      - Farsighted
-      - Moment of Clarity
-      - Predator's Onslaught
-      - Remorseless
-      - Lead the Wind
-Guardian:
-  Valor:
-    id: 13
-    traits:
-      - Strength of the Fallen
-      - Smiter's Boon
-      - Focus Mastery
-      - Stalwart Defender
-      - Redemption
-      - Communal Defenses
-      - Altruistic Healing
-      - Monk's Focus
-      - Tenacious Defense
-  Radiance:
-    id: 16
-    traits:
-      - Inner Fire
-      - Right-Hand Strength
-      - Healer's Resolution
-      - Wrath of Justice
-      - Radiant Fire
-      - Retribution
-      - Amplified Wrath
-      - Perfect Inscriptions
-      - Righteous Instincts
-  Zeal:
-    id: 42
-    traits:
-      - Wrathful Spirit
-      - Fiery Wrath
-      - Zealous Scepter
-      - Furious Focus
-      - Zealous Blade
-      - Kindled Zeal
-      - Eternal Armory
-      - Shattered Aegis
-      - Symbolic Avenger
-  Honor:
-    id: 49
-    traits:
-      - Invigorated Bulwark
-      - Protective Reviver
-      - Protector's Restoration
-      - Honorable Staff
-      - Pure of Heart
-      - Empowering Might
-      - Pure of Voice
-      - Writ of Persistence
-      - Force of Will
-  Willbender:
-    id: 65
-    storyline: EndOfDragons
-    traits:
-      - Searing Pact
-      - Power for Power
-      - Conceited Curate
-      - Restorative Virtues
-      - Holy Reckoning
-      - Vanguard Tactics
-      - Phoenix Protocol
-      - Tyrant's Momentum
-      - Deathless Courage
-  Dragonhunter:
-    id: 27
-    storyline: HeartOfThorns
-    traits:
-      - Hunter's Premonition
-      - Dulled Senses
-      - Soaring Devastation
-      - Hunter's Determination
-      - Zealot's Aggression
-      - Bulwark
-      - Hunter's Fortification
-      - Heavy Light
-      - Big Game Hunter
-  Virtues:
-    id: 46
-    traits:
-      - Unscathed Contender
-      - Resolute Subconscious
-      - Master of Consecrations
-      - Inspiring Virtue
-      - Absolute Resolve
-      - Glacial Heart
-      - Permeating Wrath
-      - Battle Presence
-      - Indomitable Courage
-  Firebrand:
-    id: 62
-    storyline: PathOfFire
-    traits:
-      - Unrelenting Criticism
-      - Liberator's Vow
-      - Archivist of Whispers
-      - Weighty Terms
-      - Stalwart Speed
-      - Legendary Lore
-      - Stoic Demeanor
-      - Quickfire
-      - Loremaster
-Thief:
-  Acrobatics:
-    id: 54
-    traits:
-      - Instant Reflexes
-      - Pumping Up
-      - Pain Response
-      - Guarded Initiation
-      - Swindler's Equilibrium
-      - Hard to Catch
-      - Assassin's Reward
-      - Upper Hand
-      - Don't Stop
-  Daredevil:
-    id: 7
-    storyline: HeartOfThorns
-    traits:
-      - Marauder's Resilience
-      - Escapist's Fortitude
-      - Brawler's Tenacity
-      - Staff Master
-      - Havoc Specialist
-      - Impacting Disruption
-      - Lotus Training
-      - Unhindered Combatant
-      - Bounding Dodger
-  Trickery:
-    id: 44
-    traits:
-      - Uncatchable
-      - Burst of Agility
-      - Thrill of the Crime
-      - Bountiful Theft
-      - Trickster
-      - Pressure Striking
-      - Quick Pockets
-      - Sleight of Hand
-      - Deadly Ambush
-  Critical Strikes:
-    id: 35
-    traits:
-      - Assassin's Fury
-      - Signets of Power
-      - Twin Fangs
-      - Sundering Shade
-      - Practiced Tolerance
-      - Deadly Aim
-      - No Quarter
-      - Hidden Killer
-      - Invigorating Precision
-  Deadeye:
-    id: 58
-    storyline: PathOfFire
-    traits:
-      - Malicious Intent
-      - Collateral Damage
-      - One in the Chamber
-      - Silent Scope
-      - Payback
-      - Premeditation
-      - Maleficent Seven
-      - Be Quick or Be Killed
-      - Fire for Effect
-  Specter:
-    id: 71
-    storyline: EndOfDragons
-    traits:
-      - Second Opinion
-      - Shallow Grave
-      - Consume Shadows
-      - Larcenous Torment
-      - Amplified Siphoning
-      - Traversing Dusk
-      - Strength of Shadows
-      - Hungering Darkness
-      - Shadestep
-  Deadly Arts:
-    id: 28
-    traits:
-      - Dagger Training
-      - Mug
-      - Deadly Ambition
-      - Even the Odds
-      - Panic Strike
-      - Revealed Training
-      - Potent Poison
-      - Improvisation
-      - Executioner
-  Shadow Arts:
-    id: 20
-    traits:
-      - Shielding Restoration
-      - Shadow's Embrace
-      - Hidden Thief
-      - Shadow Savior
-      - Leeching Venoms
-      - Cloaked in Shadow
-      - Cover of Shadow
-      - Shadow's Rejuvenation
-      - Rending Shade
-Necromancer:
-  Scourge:
-    id: 60
-    storyline: PathOfFire
-    traits:
-      - Abrasive Grit
-      - Fell Beacon
-      - Nourishing Ashes
-      - Feed from Corruption
-      - Sadistic Searing
-      - Herald of Sorrow
-      - Sand Savant
-      - Demonic Lore
-      - Desert Empowerment
-  Death Magic:
-    id: 2
-    traits:
-      - Flesh of the Master
-      - Putrid Defense
-      - Shrouded Removal
-      - Necromantic Corruption
-      - Dark Defiance
-      - Deadly Strength
-      - Death Nova
-      - Corrupter's Fervor
-      - Unholy Sanctuary
-  Curses:
-    id: 39
-    traits:
-      - Insidious Disruption
-      - Plague Sending
-      - Chilling Darkness
-      - Master of Corruption
-      - Path of Corruption
-      - Parasitic Contagion
-      - Weakening Shroud
-      - Terror
-      - Lingering Curse
-  Blood Magic:
-    id: 19
-    traits:
-      - Ritual of Life
-      - Overflowing Thirst
-      - Blood Bond
-      - Life from Death
-      - Banshee's Wail
-      - Vampiric Presence
-      - Blood Bank
-      - Unholy Martyr
-      - Transfusion
-  Soul Reaping:
-    id: 50
-    traits:
-      - Unyielding Blast
-      - Soul Marks
-      - Speed of Shadows
-      - Soul Barbs
-      - Vital Persistence
-      - Fear of Death
-      - Eternal Life
-      - Death Perception
-      - Dhuumfire
-  Spite:
-    id: 53
-    traits:
-      - Spiteful Talisman
-      - Spiteful Renewal
-      - Bitter Chill
-      - Chill of Death
-      - Awaken the Pain
-      - Signets of Suffering
-      - Dread
-      - Close to Death
-      - Spiteful Spirit
-  Reaper:
-    id: 34
-    storyline: HeartOfThorns
-    traits:
-      - Augury of Death
-      - Chilling Nova
-      - Relentless Pursuit
-      - Soul Eater
-      - Chilling Victory
-      - Decimate Defenses
-      - Blighter's Boon
-      - Deathly Chill
-      - Reaper's Onslaught
-  Harbinger:
-    id: 64
-    storyline: EndOfDragons
-    traits:
-      - Wicked Corruption
-      - Bolstering Brew
-      - Septic Corruption
-      - Implacable Foe
-      - Twisted Medicine
-      - Dark Gunslinger
-      - Cascading Corruption
-      - Deathly Haste
-      - Doom Approaches
 Mesmer:
-  Illusions:
-    id: 24
-    traits:
-      - Shatter Storm
-      - Persistence of Memory
-      - The Pledge
-      - Escape Artist
-      - Phantasmal Haste
-      - Maim the Disillusioned
-      - Phantasmal Force
-      - Master of Fragmentation
-      - Malicious Sorcery
   Chaos:
     id: 45
     traits:
-      - Method of Madness
-      - Illusionary Defense
-      - Master of Manipulation
-      - Auspicious Anguish
-      - Chaotic Transference
-      - Chaotic Potency
-      - Chaotic Interruption
-      - Prismatic Understanding
-      - Bountiful Disillusionment
+    - Method of Madness
+    - Illusionary Defense
+    - Master of Manipulation
+    - Auspicious Anguish
+    - Chaotic Transference
+    - Chaotic Potency
+    - Chaotic Interruption
+    - Prismatic Understanding
+    - Bountiful Disillusionment
   Domination:
     id: 10
     traits:
-      - Bountiful Blades
-      - Empowered Illusions
-      - Rending Shatter
-      - Shattered Concentration
-      - Egotism
-      - Furious Interruption
-      - Vicious Expression
-      - Mental Anguish
-      - Power Block
-  Dueling:
-    id: 1
-    traits:
-      - Phantasmal Fury
-      - Mental Gymnastics
-      - Duelist's Discipline
-      - Blinding Dissipation
-      - Evasive Mirror
-      - Fencer's Finesse
-      - Superiority Complex
-      - Ineptitude
-      - Deceptive Evasion
-  Inspiration:
-    id: 23
-    traits:
-      - Medic's Feedback
-      - Restorative Mantras
-      - Sympathetic Visage
-      - Warden's Feedback
-      - Ego Restoration
-      - Temporal Enchanter
-      - Mental Defense
-      - Restorative Illusions
-      - Blurred Inscriptions
+    - Bountiful Blades
+    - Empowered Illusions
+    - Rending Shatter
+    - Shattered Concentration
+    - Egotism
+    - Furious Interruption
+    - Vicious Expression
+    - Mental Anguish
+    - Power Block
   Chronomancer:
     id: 40
     storyline: HeartOfThorns
     traits:
-      - Delayed Reactions
-      - Time Catches Up
-      - All's Well That Ends Well
-      - Danger Time
-      - Illusionary Reversion
-      - Improved Alacrity
-      - Stretched Time
-      - Seize the Moment
-      - Chronophantasma
-  Virtuoso:
-    id: 66
-    storyline: EndOfDragons
-    traits:
-      - Bladeturn Refrain
-      - Mental Focus
-      - Jagged Mind
-      - Duelist's Reversal
-      - Phantasmal Blades
-      - Sharpening Sorrow
-      - Psychic Riposte
-      - Infinite Forge
-      - Bloodsong
+    - Delayed Reactions
+    - Time Catches Up
+    - All's Well That Ends Well
+    - Danger Time
+    - Illusionary Reversion
+    - Improved Alacrity
+    - Stretched Time
+    - Seize the Moment
+    - Chronophantasma
   Mirage:
     id: 59
     storyline: PathOfFire
     traits:
-      - Self-Deception
-      - Renewing Oasis
-      - Riddle of Sand
-      - Desert Distortion
-      - Mirage Mantle
-      - Mirrored Axes
-      - Infinite Horizon
-      - Elusive Mind
-      - Dune Cloak
+    - Self-Deception
+    - Renewing Oasis
+    - Riddle of Sand
+    - Desert Distortion
+    - Mirage Mantle
+    - Phantom Pain
+    - Infinite Horizon
+    - Elusive Mind
+    - Dune Cloak
+  Virtuoso:
+    id: 66
+    storyline: EndOfDragons
+    traits:
+    - Bladeturn Refrain
+    - Mental Focus
+    - Jagged Mind
+    - Duelist's Reversal
+    - Phantasmal Blades
+    - Sharpening Sorrow
+    - Psychic Riposte
+    - Infinite Forge
+    - Bloodsong
+  Illusions:
+    id: 24
+    traits:
+    - Shatter Storm
+    - Persistence of Memory
+    - The Pledge
+    - Escape Artist
+    - Phantasmal Haste
+    - Maim the Disillusioned
+    - Phantasmal Force
+    - Master of Fragmentation
+    - Malicious Sorcery
+  Troubadour:
+    id: 73
+    storyline: VisionsOfEternity
+    traits:
+    - Mayhem
+    - Raconteur
+    - Syncopate
+    - Shredding
+    - Life of the Party
+    - Love Song
+    - Fortissimo
+    - Call and Response
+    - Altered Chord
+  Inspiration:
+    id: 23
+    traits:
+    - Medic's Feedback
+    - Restorative Mantras
+    - Sympathetic Visage
+    - Warden's Feedback
+    - Ego Restoration
+    - Temporal Enchanter
+    - Mental Defense
+    - Restorative Illusions
+    - Blurred Inscriptions
+  Dueling:
+    id: 1
+    traits:
+    - Phantasmal Fury
+    - Mental Gymnastics
+    - Duelist's Discipline
+    - Blinding Dissipation
+    - Wandering Mind
+    - Fencer's Finesse
+    - Superiority Complex
+    - Ineptitude
+    - Deceptive Evasion
+Necromancer:
+  Blood Magic:
+    id: 19
+    traits:
+    - Ritual of Life
+    - Overflowing Thirst
+    - Blood Bond
+    - Life from Death
+    - Banshee's Wail
+    - Vampiric Presence
+    - Blood Bank
+    - Unholy Martyr
+    - Transfusion
+  Reaper:
+    id: 34
+    storyline: HeartOfThorns
+    traits:
+    - Augury of Death
+    - Chilling Nova
+    - Relentless Pursuit
+    - Soul Eater
+    - Chilling Victory
+    - Decimate Defenses
+    - Blighter's Boon
+    - Deathly Chill
+    - Reaper's Onslaught
+  Curses:
+    id: 39
+    traits:
+    - Insidious Disruption
+    - Plague Sending
+    - Chilling Darkness
+    - Master of Corruption
+    - Path of Corruption
+    - Parasitic Contagion
+    - Weakening Shroud
+    - Terror
+    - Lingering Curse
+  Harbinger:
+    id: 64
+    storyline: EndOfDragons
+    traits:
+    - Wicked Corruption
+    - Bolstering Brew
+    - Septic Corruption
+    - Implacable Foe
+    - Twisted Medicine
+    - Dark Gunslinger
+    - Cascading Corruption
+    - Deathly Haste
+    - Doom Approaches
+  Soul Reaping:
+    id: 50
+    traits:
+    - Unyielding Blast
+    - Soul Marks
+    - Speed of Shadows
+    - Soul Barbs
+    - Vital Persistence
+    - Fear of Death
+    - Eternal Life
+    - Death Perception
+    - Dhuumfire
+  Death Magic:
+    id: 2
+    traits:
+    - Flesh of the Master
+    - Putrid Defense
+    - Shrouded Removal
+    - Necromantic Corruption
+    - Dark Defiance
+    - Deadly Strength
+    - Death Nova
+    - Corrupter's Fervor
+    - Unholy Sanctuary
+  Ritualist:
+    id: 76
+    storyline: VisionsOfEternity
+    traits:
+    - Wandering Spirits
+    - Spirit's Gift
+    - Explosive Growth
+    - Spirits' Remedy
+    - Empowering Spirits
+    - Spirit's Strength
+    - Wielder's Boon
+    - Lingering Spirits
+    - Soul Twisting
+  Scourge:
+    id: 60
+    storyline: PathOfFire
+    traits:
+    - Abrasive Grit
+    - Fell Beacon
+    - Nourishing Ashes
+    - Feed from Corruption
+    - Sadistic Searing
+    - Herald of Sorrow
+    - Sand Savant
+    - Demonic Lore
+    - Desert Empowerment
+  Spite:
+    id: 53
+    traits:
+    - Spiteful Talisman
+    - Spiteful Renewal
+    - Bitter Chill
+    - Chill of Death
+    - Awaken the Pain
+    - Signets of Suffering
+    - Dread
+    - Close to Death
+    - Spiteful Spirit
+Ranger:
+  Wilderness Survival:
+    id: 33
+    traits:
+    - Child of Earth
+    - Oakheart Salve
+    - Arachnophobia
+    - Ambidexterity
+    - Survival Instincts
+    - Empathic Bond
+    - Carnivore
+    - Wilderness Knowledge
+    - Poison Master
+  Nature Magic:
+    id: 25
+    traits:
+    - Bountiful Hunter
+    - Wellspring
+    - Allies' Aid
+    - Evasive Purity
+    - Spirited Arrival
+    - Windborne Notes
+    - Nature's Vengeance
+    - Protective Ward
+    - Invigorating Bond
+  Marksmanship:
+    id: 8
+    traits:
+    - Stoneform
+    - Hunter's Gaze
+    - Clarion Bond
+    - Wolfsong
+    - Farsighted
+    - Moment of Clarity
+    - Predator's Onslaught
+    - Remorseless
+    - Lead the Wind
+  Beastmastery:
+    id: 32
+    traits:
+    - Go for the Eyes
+    - Potent Ally
+    - Resounding Timbre
+    - Wilting Strike
+    - Two-Handed Training
+    - Natural Healing
+    - Beastly Warden
+    - Zephyr's Speed
+    - Honed Axes
+  Untamed:
+    id: 72
+    storyline: EndOfDragons
+    traits:
+    - Debilitating Blows
+    - Nature's Shield
+    - Blinding Outburst
+    - Enhancing Impact
+    - Cleansing Unleash
+    - Corrupting Vines
+    - Let Loose
+    - Biorhythm
+    - Ferocious Symbiosis
+  Galeshot:
+    id: 78
+    storyline: VisionsOfEternity
+    traits:
+    - Joy of Movement
+    - Feel the Rush
+    - Wuthering Wind
+    - Flock Together
+    - Perilous Skies
+    - Thrill of the Catch
+    - Cloudburst
+    - Gale Force
+    - Shrike
+  Soulbeast:
+    id: 55
+    storyline: PathOfFire
+    traits:
+    - Fresh Reinforcement
+    - Live Fast
+    - Unstoppable Union
+    - Second Skin
+    - Essence of Speed
+    - Predator's Cunning
+    - Eternal Bond
+    - Leader of the Pack
+    - Oppressive Superiority
+  Druid:
+    id: 5
+    storyline: HeartOfThorns
+    traits:
+    - Druidic Clarity
+    - Cultivated Synergy
+    - Blood Moon
+    - Celestial Shadow
+    - Verdant Etching
+    - Natural Balance
+    - Grace of the Land
+    - Lingering Light
+    - Eclipse
+  Skirmishing:
+    id: 30
+    traits:
+    - Sharpened Edges
+    - Primal Reflexes
+    - Trapper's Expertise
+    - Fang and Claw
+    - Strider's Strength
+    - Hidden Barbs
+    - Quick Draw
+    - Light on your Feet
+    - Vicious Quarry
+Guardian:
+  Virtues:
+    id: 46
+    traits:
+    - Unscathed Contender
+    - Resolute Subconscious
+    - Master of Consecrations
+    - Inspiring Virtue
+    - Absolute Resolve
+    - Glacial Heart
+    - Permeating Wrath
+    - Battle Presence
+    - Indomitable Courage
+  Firebrand:
+    id: 62
+    storyline: PathOfFire
+    traits:
+    - Unrelenting Criticism
+    - Liberator's Vow
+    - Archivist of Whispers
+    - Weighty Terms
+    - Stalwart Speed
+    - Legendary Lore
+    - Stoic Demeanor
+    - Quickfire
+    - Loremaster
+  Dragonhunter:
+    id: 27
+    storyline: HeartOfThorns
+    traits:
+    - Hunter's Premonition
+    - Dulled Senses
+    - Soaring Devastation
+    - Hunter's Determination
+    - Zealot's Aggression
+    - Bulwark
+    - Hunter's Fortification
+    - Heavy Light
+    - Big Game Hunter
+  Willbender:
+    id: 65
+    storyline: EndOfDragons
+    traits:
+    - Searing Pact
+    - Power for Power
+    - Conceited Curate
+    - Restorative Virtues
+    - Holy Reckoning
+    - Vanguard Tactics
+    - Phoenix Protocol
+    - Tyrant's Momentum
+    - Deathless Courage
+  Valor:
+    id: 13
+    traits:
+    - Strength of the Fallen
+    - Smiter's Boon
+    - Focus Mastery
+    - Stalwart Defender
+    - Redemption
+    - Communal Defenses
+    - Altruistic Healing
+    - Monk's Focus
+    - Tenacious Defense
+  Zeal:
+    id: 42
+    traits:
+    - Wrathful Spirit
+    - Fiery Wrath
+    - Zealous Scepter
+    - Furious Focus
+    - Zealous Blade
+    - Kindled Zeal
+    - Eternal Armory
+    - Shattered Aegis
+    - Symbolic Avenger
+  Radiance:
+    id: 16
+    traits:
+    - Inner Fire
+    - Right-Hand Strength
+    - Healer's Resolution
+    - Wrath of Justice
+    - Radiant Fire
+    - Retribution
+    - Amplified Wrath
+    - Perfect Inscriptions
+    - Righteous Instincts
+  Luminary:
+    id: 81
+    storyline: VisionsOfEternity
+    traits:
+    - Shimmering Stances
+    - Resolute Blessing
+    - Persistent Blessing
+    - Resplendent Weaponry
+    - Purging Light
+    - Empowered Armaments
+    - Illuminating Inspiration
+    - Sovereign of Light
+    - Master-at-Arms
+  Honor:
+    id: 49
+    traits:
+    - Invigorated Bulwark
+    - Protective Reviver
+    - Protector's Restoration
+    - Honorable Staff
+    - Pure of Heart
+    - Empowering Might
+    - Pure of Voice
+    - Writ of Persistence
+    - Force of Will
+Elementalist:
+  Fire:
+    id: 31
+    traits:
+    - Burning Precision
+    - Conjurer
+    - Burning Fire
+    - Burning Rage
+    - Smothering Auras
+    - Power Overwhelming
+    - Persisting Flames
+    - Pyromancer's Puissance
+    - Inferno
+  Catalyst:
+    id: 67
+    storyline: EndOfDragons
+    traits:
+    - Hardened Auras
+    - Vicious Empowerment
+    - Energized Elements
+    - Empowering Auras
+    - Evasive Empowerment
+    - Spectacular Sphere
+    - Staunch Auras
+    - Empowered Empowerment
+    - Sphere Specialist
+  Tempest:
+    id: 48
+    storyline: HeartOfThorns
+    traits:
+    - Gale Song
+    - Latent Stamina
+    - Unstable Conduit
+    - Tempestuous Aria
+    - Harmonious Conduit
+    - Invigorating Torrents
+    - Transcendent Tempest
+    - Lucid Singularity
+    - Elemental Bastion
+  Water:
+    id: 17
+    traits:
+    - Soothing Ice
+    - Piercing Shards
+    - Stop, Drop, and Roll
+    - Soothing Disruption
+    - Cleansing Wave
+    - Flow like Water
+    - Cleansing Water
+    - Powerful Aura
+    - Soothing Power
+  Arcane:
+    id: 37
+    traits:
+    - Arcane Precision
+    - Renewing Stamina
+    - Arcane Restoration
+    - Arcane Resurrection
+    - Elemental Lockdown
+    - Final Shielding
+    - Evasive Arcana
+    - Arcane Lightning
+    - Bountiful Power
+  Weaver:
+    id: 56
+    storyline: PathOfFire
+    traits:
+    - Superior Elements
+    - Elemental Pursuit
+    - Master's Fortitude
+    - Weaver's Prowess
+    - Swift Revenge
+    - Bolstered Elements
+    - Elements of Rage
+    - Woven Stride
+    - Invigorating Strikes
+  Air:
+    id: 41
+    traits:
+    - Zephyr's Boon
+    - One with Air
+    - Ferocious Winds
+    - Inscription
+    - Raging Storm
+    - Stormsoul
+    - Bolt to the Heart
+    - Fresh Air
+    - Lightning Rod
+  Evoker:
+    id: 80
+    storyline: VisionsOfEternity
+    traits:
+    - Fiery Might
+    - Altruistic Aspect
+    - Spirit's Succor
+    - Familiar's Focus
+    - Familiar's Blessing
+    - Elemental Dynamo
+    - Galvanic Enchantment
+    - Elemental Balance
+    - Specialized Elements
+  Earth:
+    id: 26
+    traits:
+    - Earth's Embrace
+    - Serrated Stones
+    - Elemental Shielding
+    - Strength of Stone
+    - Rock Solid
+    - Earthen Blessing
+    - Diamond Skin
+    - Written in Stone
+    - Stone Heart
+Revenant:
+  Invocation:
+    id: 3
+    traits:
+    - Cleansing Channel
+    - Rising Tide
+    - Glaring Resolve
+    - Spirit Boon
+    - Rapid Flow
+    - Incensed Response
+    - Song of the Mists
+    - Charged Mists
+    - Roiling Mists
+  Vindicator:
+    id: 69
+    storyline: EndOfDragons
+    traits:
+    - Leviathan Strength
+    - Amnesty of Shing Jea
+    - Redemptor's Sermon
+    - Reaver's Curse
+    - Angsiyan's Trust
+    - Song of Arboreum
+    - Forerunner of Death
+    - Vassals of the Empire
+    - Saint of zu Heltzer
+  Conduit:
+    id: 79
+    storyline: VisionsOfEternity
+    traits:
+    - Conductive Armaments
+    - Boundless Knowledge
+    - Lingering Determination
+    - Kinetic Insight
+    - Expanded Consciousness
+    - Ethereal Purification
+    - Mistfire
+    - Enhanced Embodiment
+    - Perpetual Wisdom
+  Retribution:
+    id: 9
+    traits:
+    - Planar Protection
+    - Close Quarters
+    - Spiritual Reckoning
+    - Set in Stone
+    - Resolute Evasion
+    - Dwarven Battle Training
+    - Vicious Reprisal
+    - Versed in Stone
+    - Steadfast Rejuvenation
+  Corruption:
+    id: 14
+    traits:
+    - Acolyte of Torment
+    - Demonic Defiance
+    - Replenishing Despair
+    - Abyssal Chill
+    - Demonic Resistance
+    - Pact of Pain
+    - Diabolic Inferno
+    - Fiendish Tenacity
+    - Permeating Pestilence
+  Salvation:
+    id: 12
+    traits:
+    - Invoking Harmony
+    - Blinding Truths
+    - Eluding Nullification
+    - Words of Censure
+    - Resilient Spirit
+    - Fortified Blessing
+    - Generous Abundance
+    - Unyielding Devotion
+    - Invigorating Dismissal
+  Devastation:
+    id: 15
+    traits:
+    - Aggressive Arrival
+    - Unsuspecting Strikes
+    - Battle Scarred
+    - Assassin's Presence
+    - Notoriety
+    - Thrill of Combat
+    - Brutality
+    - Swift Termination
+    - Dance of Death
+  Renegade:
+    id: 63
+    storyline: PathOfFire
+    traits:
+    - Ashen Demeanor
+    - Blood Fury
+    - Wrought-Iron Will
+    - Bold Reversal
+    - Heartpiercer
+    - All for One
+    - Vindication
+    - Lasting Legacy
+    - Righteous Rebel
+  Herald:
+    id: 52
+    storyline: HeartOfThorns
+    traits:
+    - Elder's Respite
+    - Core Value
+    - Rising Momentum
+    - Shared Empowerment
+    - Shining Aspects
+    - Hardening Persistence
+    - Elevated Compassion
+    - Draconic Echo
+    - Forceful Persistence
+Engineer:
+  Explosives:
+    id: 6
+    traits:
+    - Grenadier
+    - Short Fuse
+    - Glass Cannon
+    - Aim-Assisted Rocket
+    - Explosive Temper
+    - Blast Shield
+    - Grand Entrance
+    - Shrapnel
+    - Big Boomer
+  Amalgam:
+    id: 75
+    storyline: VisionsOfEternity
+    traits:
+    - Stainless Steel
+    - Innervating Alloy
+    - Hardened Chrome
+    - Carbolic Composition
+    - Mercurial Tendencies
+    - Silver Lining
+    - Symbiotic Synergy
+    - New Genes
+    - Double Helix
+  Alchemy:
+    id: 29
+    traits:
+    - Invigorating Speed
+    - Protection Injection
+    - Health Insurance
+    - Comeback Cure
+    - Boiling Point
+    - Backpack Regenerator
+    - HGH
+    - Purity of Purpose
+    - Chain Reactivity
+  Firearms:
+    id: 38
+    traits:
+    - Chemical Rounds
+    - Sanguine Array
+    - High Caliber
+    - Juggernaut
+    - Thermal Vision
+    - No Scope
+    - Equal and Opposite Reaction
+    - Modified Ammunition
+    - Incendiary Powder
+  Holosmith:
+    id: 57
+    storyline: PathOfFire
+    traits:
+    - Light Density Amplifier
+    - Prismatic Converter
+    - Solar Focusing Lens
+    - 'Crystal Configuration: Storm'
+    - 'Crystal Configuration: Eclipse'
+    - 'Crystal Configuration: Zephyr'
+    - Thermal Release Valve
+    - Enhanced Capacity Storage Unit
+    - Photonic Blasting Module
+  Scrapper:
+    id: 43
+    storyline: HeartOfThorns
+    traits:
+    - Gyroscopic Acceleration
+    - System Shocker
+    - Mass Momentum
+    - Rapid Regeneration
+    - Expert Examination
+    - Object in Motion
+    - Ex Machina
+    - Kinetic Accelerators
+    - Applied Force
+  Tools:
+    id: 21
+    traits:
+    - Static Discharge
+    - Reactive Lenses
+    - Power Wrench
+    - Streamlined Kits
+    - Lock On
+    - Takedown Round
+    - Kinetic Battery
+    - Adrenal Implant
+    - Gadgeteer
+  Inventions:
+    id: 47
+    traits:
+    - Over Shield
+    - Automated Medical Response
+    - Autodefense Bomb Dispenser
+    - Experimental Turrets
+    - Soothing Detonation
+    - Mecha Legs
+    - Anticorrosion Plating
+    - Bunker Down
+    - Medical Dispersion Field
+  Mechanist:
+    id: 70
+    storyline: EndOfDragons
+    traits:
+    - 'Mech Arms: Single-Edge Cutters'
+    - 'Mech Arms: High-Impact Drivers'
+    - 'Mech Arms: Jade Cannons'
+    - 'Mech Frame: Conductive Alloys'
+    - 'Mech Frame: Channeling Conduits'
+    - 'Mech Frame: Variable Mass Distributor'
+    - 'Mech Core: Jade Dynamo'
+    - 'Mech Core: Barrier Engine'
+    - 'Mech Core: J-Drive'
+Warrior:
+  Defense:
+    id: 22
+    traits:
+    - Shield Master
+    - Dogged March
+    - Cull the Weak
+    - Defy Pain
+    - Resilient Roll
+    - Merciless Hammer
+    - Last Stand
+    - Cleansing Ire
+    - Stalwart Strength
+  Bladesworn:
+    id: 68
+    storyline: EndOfDragons
+    traits:
+    - River's Flow
+    - Swift as the Wind
+    - Unseen Sword
+    - Unshakable Mountain
+    - Fierce as Fire
+    - Lush Forest
+    - Immortal Dragon
+    - Unyielding Dragon
+    - Daring Dragon
+  Arms:
+    id: 36
+    traits:
+    - Wounding Precision
+    - Signet Mastery
+    - Opportunist
+    - Unsuspecting Foe
+    - Sundering Burst
+    - Blademaster
+    - Burst Precision
+    - Furious
+    - Dual Wielding
+  Discipline:
+    id: 51
+    traits:
+    - Crack Shot
+    - Warrior's Sprint
+    - Stalwart Focus
+    - Doubled Standards
+    - Destruction of the Empowered
+    - Brawler's Recovery
+    - Axe Mastery
+    - Heightened Focus
+    - Burst Mastery
+  Spellbreaker:
+    id: 61
+    storyline: PathOfFire
+    traits:
+    - Pure Strike
+    - Guard Counter
+    - No Escape
+    - Loss Aversion
+    - Slow Counter
+    - Sun and Moon Style
+    - Enchantment Collapse
+    - Revenge Counter
+    - Magebane Tether
+  Strength:
+    id: 4
+    traits:
+    - Brave Stride
+    - Restorative Strength
+    - Peak Performance
+    - Body Blow
+    - Forceful Greatsword
+    - Great Fortitude
+    - Berserker's Power
+    - Might Makes Right
+    - Aggressive Onslaught
+  Berserker:
+    id: 18
+    storyline: HeartOfThorns
+    traits:
+    - Smash Brawler
+    - Last Blaze
+    - Savage Instinct
+    - Blood Reaction
+    - Heat the Soul
+    - Dead or Alive
+    - Bloody Roar
+    - King of Fires
+    - Eternal Champion
+  Tactics:
+    id: 11
+    traits:
+    - Leg Specialist
+    - Soldier's Comfort
+    - Roaring Reveille
+    - Warrior's Cunning
+    - Shrug It Off
+    - Empower Allies
+    - Martial Cadence
+    - Vigorous Shouts
+    - Phalanx Strength
+  Paragon:
+    id: 74
+    storyline: VisionsOfEternity
+    traits:
+    - Call to Action
+    - Calming Tongue
+    - Liberating Liaise
+    - Strengthening Stanzas
+    - Invigorating Tempo
+    - Reverberation
+    - Feverish Pulse
+    - Brisk Pacing
+    - Enduring Refrain
+Thief:
+  Trickery:
+    id: 44
+    traits:
+    - Uncatchable
+    - Burst of Agility
+    - Thrill of the Crime
+    - Bountiful Theft
+    - Trickster
+    - Pressure Striking
+    - Quick Pockets
+    - Sleight of Hand
+    - Deadly Ambush
+  Daredevil:
+    id: 7
+    storyline: HeartOfThorns
+    traits:
+    - Marauder's Resilience
+    - Escapist's Fortitude
+    - Brawler's Tenacity
+    - Staff Master
+    - Havoc Specialist
+    - Impacting Disruption
+    - Lotus Training
+    - Unhindered Combatant
+    - Bounding Dodger
+  Deadly Arts:
+    id: 28
+    traits:
+    - Dagger Training
+    - Mug
+    - Deadly Ambition
+    - Even the Odds
+    - Panic Strike
+    - Revealed Training
+    - Potent Poison
+    - Improvisation
+    - Executioner
+  Acrobatics:
+    id: 54
+    traits:
+    - Instant Reflexes
+    - Pumping Up
+    - Pain Response
+    - Guarded Initiation
+    - Swindler's Equilibrium
+    - Hard to Catch
+    - Assassin's Reward
+    - Upper Hand
+    - Don't Stop
+  Shadow Arts:
+    id: 20
+    traits:
+    - Shielding Restoration
+    - Shadow's Embrace
+    - Hidden Thief
+    - Shadow Savior
+    - Leeching Venoms
+    - Cloaked in Shadow
+    - Cover of Shadow
+    - Shadow's Rejuvenation
+    - Rending Shade
+  Specter:
+    id: 71
+    storyline: EndOfDragons
+    traits:
+    - Second Opinion
+    - Shallow Grave
+    - Consume Shadows
+    - Larcenous Torment
+    - Amplified Siphoning
+    - Traversing Dusk
+    - Strength of Shadows
+    - Hungering Darkness
+    - Shadestep
+  Deadeye:
+    id: 58
+    storyline: PathOfFire
+    traits:
+    - Malicious Intent
+    - Collateral Damage
+    - One in the Chamber
+    - Silent Scope
+    - Payback
+    - Premeditation
+    - Maleficent Seven
+    - Be Quick or Be Killed
+    - Fire for Effect
+  Antiquary:
+    id: 77
+    storyline: VisionsOfEternity
+    traits:
+    - Card Swap
+    - Repeat Ransacker
+    - Prolific Plunderer
+    - Scoundrel's Luck
+    - Meticulous Custodian
+    - Exhilarating Ephemera
+    - Prodigious Pincher
+    - Possessive Hoarder
+    - Combat High
+  Critical Strikes:
+    id: 35
+    traits:
+    - Assassin's Fury
+    - Signets of Power
+    - Twin Fangs
+    - Sundering Shade
+    - Practiced Tolerance
+    - Deadly Aim
+    - No Quarter
+    - Hidden Killer
+    - Invigorating Precision

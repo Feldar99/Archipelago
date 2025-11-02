@@ -67,6 +67,7 @@ class StorylineEnum(enum.Enum):
     END_OF_DRAGONS = enum.auto()
     SECRETS_OF_THE_OBSCURE = enum.auto()
     JANTHIR_WILDS = enum.auto()
+    VISIONS_OF_ETERNITY = enum.auto()
 
 
 class Spec:

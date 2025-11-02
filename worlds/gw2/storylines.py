@@ -28,6 +28,8 @@ def storyline_from_str(text) -> Optional[StorylineEnum]:
         return StorylineEnum.SECRETS_OF_THE_OBSCURE
     if text in ("janthir wilds", "janthirwilds", "janthir", "jw"):
         return StorylineEnum.JANTHIR_WILDS
+    if text in ("visions of eternity", "visionsofeternity", "voe"):
+        return StorylineEnum.VISIONS_OF_ETERNITY
     return None
 
 

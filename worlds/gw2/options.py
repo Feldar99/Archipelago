@@ -51,6 +51,7 @@ class Storyline(Choice):
     option_end_of_dragons = StorylineEnum.END_OF_DRAGONS.value
     option_secrets_of_the_obscure = StorylineEnum.SECRETS_OF_THE_OBSCURE.value
     option_janthir_wilds = StorylineEnum.JANTHIR_WILDS.value
+    option_visions_of_eternity = StorylineEnum.VISIONS_OF_ETERNITY.value
 
     default = option_core
 
@@ -232,7 +233,7 @@ class MistFragmentsRequired(Range):
 
     range_start = 1
     range_end = 100
-    default = 10
+    default = 20
 
 
 class ExtraMistFragmentPercent(Range):
